@@ -14,7 +14,7 @@ const PREFERS_DARK_MEDIA_QUERY = "(prefers-color-scheme: dark)";
 
 export type ThemeMode = "light" | "dark" | "system";
 
-export const THEME_STORAGE_KEY = "ui-library-motion-theme";
+export const THEME_STORAGE_KEY = "uitripled-theme";
 
 type ThemeContextValue = {
   theme: ThemeMode;
