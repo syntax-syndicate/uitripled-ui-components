@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/moumen-soliman/uitripled">Docs</a> ·
+  <a href="https://ui.tripled.work/components">Docs</a> ·
   <a href="https://github.com/moumen-soliman/uitripled/issues/new?template=bug_report.md">Report a bug</a> ·
   <a href="https://github.com/moumen-soliman/uitripled/issues/new?template=feature_request.md">Feature request</a> ·
 </p>
