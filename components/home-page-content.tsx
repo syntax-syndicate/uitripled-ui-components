@@ -107,7 +107,7 @@ export default function HomePageContent() {
       </section>
 
       {/* Components gallery in a bento-style grid */}
-      <section className="container-fluid px-6 mx-auto">
+      <section className="container-fluid md:max-w-[95rem] px-6 mx-auto">
         <div className="flex w-full flex-col gap-12 py-12">
           <AnimatedProfileMenu />
 
