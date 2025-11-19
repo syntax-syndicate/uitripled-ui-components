@@ -40,6 +40,7 @@ function generateRegistryFiles() {
         }
 
         // Read file contents
+        // All paths in registry.json should be in format: components/component-name.tsx
         const filesWithContent = files.map((file) => {
           try {
             const filePath = path.join(__dirname, "..", file.path);
@@ -59,22 +60,38 @@ function generateRegistryFiles() {
               throw new Error(`File is empty: ${file.path}`);
             }
 
+            // Generate target path: extract filename from path
+            // path format: components/component-name.tsx
+            // target format: component-name.tsx (for CLI to install in appropriate components directory)
+            let targetPath = file.target;
+            if (!targetPath) {
+              // Extract filename from path (e.g., "components/about-us-page.tsx" -> "about-us-page.tsx")
+              const pathParts = file.path.split("/");
+              targetPath = pathParts[pathParts.length - 1];
+            }
+
             return {
               path: file.path,
               content: content,
               type: file.type || type,
-              target: file.target || file.path,
+              target: targetPath,
             };
           } catch (error) {
             const errorMessage =
               error instanceof Error ? error.message : String(error);
             console.error(`Error reading file ${file.path}:`, errorMessage);
             // Return file with error message in content
+            // Extract filename for target even on error
+            let targetPath = file.target;
+            if (!targetPath) {
+              const pathParts = file.path.split("/");
+              targetPath = pathParts[pathParts.length - 1];
+            }
             return {
               path: file.path,
               content: `// Error: Could not read file ${file.path}\n// ${errorMessage}`,
               type: file.type || type,
-              target: file.target || file.path,
+              target: targetPath,
             };
           }
         });
