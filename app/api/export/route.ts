@@ -437,7 +437,7 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     const zipBlob = await zip.generateAsync({ type: "nodebuffer" });
 
     // Return the zip file as a response
-    return new NextResponse(zipBlob, {
+    return new NextResponse(new Uint8Array(zipBlob), {
       headers: {
         "Content-Type": "application/zip",
         "Content-Disposition": `attachment; filename="${projectName}.zip"`,
