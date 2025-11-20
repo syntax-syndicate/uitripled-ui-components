@@ -1977,6 +1977,27 @@
       "subcategory": null
     },
     {
+      "name": "kanban-board",
+      "type": "registry:block",
+      "title": "Kanban Board",
+      "description": "Interactive Kanban board with drag-and-drop, glassmorphism styling, and task management features",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/kanban/kanban-board.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
       "name": "liquid-cursor",
       "type": "registry:ui",
       "title": "Liquid Cursor",

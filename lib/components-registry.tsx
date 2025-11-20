@@ -135,6 +135,7 @@ import { DynamicSpotlightCTA } from "@/components/motion-core/dynamic-spotlight-
 import { AIGlowInput } from "@/components/motion-core/ai-glow-input";
 import { AIResponseTyping } from "@/components/motion-core/ai-response-typing";
 import { AIUnlockAnimation } from "@/components/motion-core/ai-unlock-animation";
+import { KanbanBoard } from "@/components/components/kanban/kanban-board";
 
 import { DashboardPage } from "@/components/components/stocks-dashboard/dashboard";
 import { BrowseFolder } from "@/components/sections/browse-folder";
@@ -1907,6 +1908,19 @@ export const componentsRegistry: Component[] = [
     codePath: "@/components/sections/glassmorphism-statistics-card.tsx",
     duration: "500ms",
     easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "kanban-board",
+    name: "Kanban Board",
+    description:
+      "Interactive Kanban board with drag-and-drop, glassmorphism styling, and task management features",
+    category: "blocks",
+    tags: ["kanban", "board", "drag-drop", "task", "management", "glassmorphism"],
+    component: KanbanBoard,
+    codePath: "@/components/components/kanban/kanban-board.tsx",
+    duration: "N/A",
+    easing: "spring",
     display: true,
   },
 ];

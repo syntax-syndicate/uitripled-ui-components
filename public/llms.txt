@@ -120,6 +120,7 @@
 - [Glowy Waves Hero](https://ui.tripled.work/components/glowy-waves-hero): Hero section with glowy waves effect
 - [Hero Block](https://ui.tripled.work/components/hero-block): Personal portfolio hero section with animated avatar, staggered text, social links, and scroll indicator
 - [Interactive Logs Table](https://ui.tripled.work/components/interactive-logs-table): Observability logs panel with animated filters, search, and expandable rows
+- [Kanban Board](https://ui.tripled.work/components/kanban-board): Interactive Kanban board with drag-and-drop, glassmorphism styling, and task management features
 - [N8N Workflow Block](https://ui.tripled.work/components/n8n-workflow-block): Visual workflow automation builder with animated nodes, connections, and real-time execution monitoring
 - [New Hero Section](https://ui.tripled.work/components/new-hero-section): Modern hero section with gradient background, animated stats, and call-to-action buttons
 - [Newsletter Signup Block](https://ui.tripled.work/components/newsletter-signup-block): Animated newsletter subscription form with success state and gradient background

@@ -140,7 +140,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'default', size = 'default', ...props }, ref) => {
     const baseStyles = 'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'
-    
+
     const variants = {
       default: 'bg-primary text-primary-foreground hover:bg-primary/90',
       destructive: 'bg-red-500 text-white hover:bg-red-600',
@@ -149,14 +149,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ghost: 'hover:bg-slate-100',
       link: 'text-slate-700 underline-offset-4 hover:underline',
     }
-    
+
     const sizes = {
       default: 'h-10 px-4 py-2',
       sm: 'h-9 rounded-md px-3',
       lg: 'h-11 rounded-md px-8',
       icon: 'h-10 w-10',
     }
-    
+
     return (
       <button
         className={cn(baseStyles, variants[variant], sizes[size], className)}
@@ -414,15 +414,15 @@ function Badge({ className, variant = 'default', ...props }: BadgeProps) {
     destructive: 'border-transparent bg-red-500 text-white hover:bg-red-600',
     outline: 'border-slate-300',
   }
-  
+
   return (
-    <div 
+    <div
       className={cn(
         'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
         variants[variant],
         className
-      )} 
-      {...props} 
+      )}
+      {...props}
     />
   )
 }
@@ -442,12 +442,12 @@ interface TabsProps extends React.HTMLAttributes<HTMLDivElement> {
 const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
   ({ className, children, defaultValue, value, onValueChange, ...props }, ref) => {
     const [activeValue, setActiveValue] = React.useState(value || defaultValue || '')
-    
+
     const handleValueChange = (newValue: string) => {
       setActiveValue(newValue)
       onValueChange?.(newValue)
     }
-    
+
     return (
       <div ref={ref} className={className} {...props}>
         {React.Children.map(children, child => {
@@ -492,7 +492,7 @@ interface TabsTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 const TabsTrigger = React.forwardRef<HTMLButtonElement, TabsTriggerProps>(
   ({ className, value, activeValue, onValueChange, ...props }, ref) => {
     const isActive = activeValue === value
-    
+
     return (
       <button
         ref={ref}
@@ -517,7 +517,7 @@ interface TabsContentProps extends React.HTMLAttributes<HTMLDivElement> {
 const TabsContent = React.forwardRef<HTMLDivElement, TabsContentProps>(
   ({ className, value, activeValue, ...props }, ref) => {
     if (activeValue !== value) return null
-    
+
     return (
       <div
         ref={ref}
@@ -777,10 +777,10 @@ export { Checkbox }`,
     "/components/ui/switch.tsx": {
       code: `import * as React from 'react'
   import { cn } from '../../lib/utils'
-  
+
   export interface SwitchProps
     extends React.InputHTMLAttributes<HTMLInputElement> {}
-  
+
   const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
     ({ className, ...props }, ref) => {
       return (
@@ -797,7 +797,7 @@ export { Checkbox }`,
     }
   )
   Switch.displayName = 'Switch'
-  
+
   export { Switch }`,
     },
     "/components/ui/avatar.tsx": {
@@ -832,7 +832,20 @@ const AvatarFallback = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTM
 )
 AvatarFallback.displayName = 'AvatarFallback'
 
-export { Avatar, AvatarFallback }`,
+const AvatarImage = React.forwardRef<HTMLImageElement, React.ImgHTMLAttributes<HTMLImageElement>>(
+  ({ className, ...props }, ref) => {
+    return (
+      <img
+        ref={ref}
+        className={cn('aspect-square h-full w-full', className)}
+        {...props}
+      />
+    )
+  }
+)
+AvatarImage.displayName = 'AvatarImage'
+
+export { Avatar, AvatarFallback, AvatarImage }`,
     },
     "/components/ui/separator.tsx": {
       code: `"use client"
@@ -1268,6 +1281,9 @@ body {
               "@radix-ui/react-slider": "^1.3.6",
               "@radix-ui/react-slot": "^1.2.3",
               "@radix-ui/react-switch": "^1.2.6",
+              "@dnd-kit/core": "^6.3.1",
+              "@dnd-kit/sortable": "^10.0.0",
+              "@dnd-kit/utilities": "^3.2.2",
             },
           }}
           options={{
