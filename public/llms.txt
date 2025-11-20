@@ -185,6 +185,7 @@
 - [Dynamic Tag Cloud](https://ui.tripled.work/components/dynamic-tag-cloud): Floating cluster of tags that drift and rearrange when hovered
 - [Floating Info Panel](https://ui.tripled.work/components/floating-info-panel): Info tooltip that drifts up/down while fading in/out intermittently
 - [Holographic Wall](https://ui.tripled.work/components/holographic-wall): Black wall with Pharaonic hieroglyphs and golden cursor light reflection
+- [Liquid Cursor](https://ui.tripled.work/components/liquid-cursor): A liquid-like cursor effect that mixes colors on movement
 - [Spotlight Section](https://ui.tripled.work/components/spotlight-section): Container where mouse creates soft radial spotlight following cursor
 
 ##### Text

@@ -139,6 +139,7 @@ import { AIUnlockAnimation } from "@/components/motion-core/ai-unlock-animation"
 import { DashboardPage } from "@/components/components/stocks-dashboard/dashboard";
 import { BrowseFolder } from "@/components/sections/browse-folder";
 import { GlowyWavesHero } from "@/components/sections/glowy-waves-hero";
+import { LiquidCursor } from "@/components/liquid-cursor";
 
 export const componentsRegistry: Component[] = [
   {
@@ -274,6 +275,18 @@ export const componentsRegistry: Component[] = [
     codePath: "@/components/components/notifications/notification-center.tsx",
     duration: "8000ms",
     easing: "spring",
+    display: true,
+  },
+  {
+    id: "liquid-cursor",
+    name: "Liquid Cursor",
+    description: "A liquid-like cursor effect that mixes colors on movement",
+    category: "decorative",
+    tags: ["cursor", "liquid", "effect", "canvas"],
+    component: LiquidCursor,
+    codePath: "@/components/liquid-cursor.tsx",
+    duration: "N/A",
+    easing: "N/A",
     display: true,
   },
   {
