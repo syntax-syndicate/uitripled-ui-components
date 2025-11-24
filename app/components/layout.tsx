@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useEffect, useCallback, Suspense } from "react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
@@ -19,7 +19,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 
-export default function ComponentsLayout({
+function ComponentsLayoutContent({
   children,
 }: {
   children: React.ReactNode;
@@ -269,5 +269,17 @@ export default function ComponentsLayout({
         <div className="flex-1 overflow-hidden">{children}</div>
       </div>
     </div>
+  );
+}
+
+export default function ComponentsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <Suspense fallback={<div className="flex h-screen items-center justify-center">Loading...</div>}>
+      <ComponentsLayoutContent>{children}</ComponentsLayoutContent>
+    </Suspense>
   );
 }
