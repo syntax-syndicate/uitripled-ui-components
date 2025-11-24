@@ -102,7 +102,30 @@ function generateLlmsTxt() {
     let content = "# UI TripleD\n\n";
     content +=
       "> Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.\n\n";
+
+    // Add Last Updated timestamp
+    const lastUpdated = new Date().toISOString();
+    content += `**Last Updated:** ${lastUpdated}\n\n`;
+
     content += "## Table of Contents\n\n";
+
+    // Generate table of contents
+    const tocItems = [];
+    if (itemsByType.component.length > 0) {
+      tocItems.push(`- Components (${itemsByType.component.length} items)`);
+    }
+    if (itemsByType.block.length > 0) {
+      tocItems.push(`- Blocks (${itemsByType.block.length} items)`);
+    }
+    if (itemsByType.page.length > 0) {
+      tocItems.push(`- Pages (${itemsByType.page.length} items)`);
+    }
+    if (itemsByType.ui.length > 0) {
+      tocItems.push(`- UI Elements (${itemsByType.ui.length} items)`);
+    }
+    if (tocItems.length > 0) {
+      content += tocItems.join("\n") + "\n\n";
+    }
 
     // Components section
     if (itemsByType.component.length > 0) {
