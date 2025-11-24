@@ -160,6 +160,11 @@ function generateRegistryFiles() {
       }
     }
 
+    // Copy registry.json to public/r/registry.json for RSS feed
+    const registryOutputPath = path.join(PUBLIC_R_DIR, "registry.json");
+    fs.copyFileSync(REGISTRY_JSON_PATH, registryOutputPath);
+    console.log(`📋 Copied registry.json to ${registryOutputPath}`);
+
     console.log(`\n✅ Successfully generated ${successCount} registry files`);
     if (errorCount > 0) {
       console.log(`⚠️  ${errorCount} items had errors`);

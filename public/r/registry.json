@@ -1,0 +1,2962 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "uitripled",
+  "homepage": "https://ui.tripled.work",
+  "items": [
+    {
+      "name": "about-us-page",
+      "type": "registry:page",
+      "title": "About Us Page",
+      "description": "Glassmorphism about page showcasing mission, values, and leadership with motion accents.",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/page/about/about-us-page.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": "about"
+    },
+    {
+      "name": "about-us-section",
+      "type": "registry:block",
+      "title": "About Us",
+      "description": "About us section with value cards, icons, and animated reveal effects",
+      "registryDependencies": [
+        "badge",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/about-us-section.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "ai-chat-interface",
+      "type": "registry:component",
+      "title": "AI Chat Interface",
+      "description": "Chat input with attachments, model selector, and accessible controls",
+      "registryDependencies": [
+        "button",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/chat/ai-chat-interface.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "chat"
+    },
+    {
+      "name": "ai-glow-input",
+      "type": "registry:component",
+      "title": "AI Glow Input",
+      "description": "Input field with dynamic glow that pulses based on typing speed - smart motion feedback",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/ai-glow-input.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "inputs"
+    },
+    {
+      "name": "ai-loading-skeleton",
+      "type": "registry:component",
+      "title": "AI Loading Skeleton",
+      "description": "Loading state with diagonal shimmer gradient and opacity wave",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/ai-loading-skeleton.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "ai-response-typing",
+      "type": "registry:component",
+      "title": "AI Response Typing Stream",
+      "description": "Character-by-character typing animation with natural pauses and thinking states",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/ai-response-typing.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "ai-unlock-animation",
+      "type": "registry:ui",
+      "title": "AI Unlock Animation",
+      "description": "Premium unlock animation with particles, ripples, and loading states",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/ai-unlock-animation.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": null
+    },
+    {
+      "name": "animated-accordion",
+      "type": "registry:component",
+      "title": "Animated Accordion",
+      "description": "Accordion with smooth expand/collapse and rotate arrow",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/disclosure/animated-accordion.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "animated-badge",
+      "type": "registry:ui",
+      "title": "Animated Badge",
+      "description": "Badge with scale and spin animation",
+      "registryDependencies": [
+        "badge"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/badges/animated-badge.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "badges"
+    },
+    {
+      "name": "animated-card-stack",
+      "type": "registry:component",
+      "title": "Animated Card Stack",
+      "description": "Stacked cards that expand on hover",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/animated-card-stack.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "animated-checkbox",
+      "type": "registry:component",
+      "title": "Animated Checkbox",
+      "description": "Checkbox with checkmark animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/forms/animated-checkbox.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "animated-dialog",
+      "type": "registry:component",
+      "title": "Animated Dialog",
+      "description": "Modal dialog with backdrop fade and spring animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/modals/animated-dialog.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "modal"
+    },
+    {
+      "name": "animated-list",
+      "type": "registry:component",
+      "title": "Animated List",
+      "description": "List with staggered item animations",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/components/lists/animated-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "lists"
+    },
+    {
+      "name": "animated-navbar",
+      "type": "registry:component",
+      "title": "Animated Navbar",
+      "description": "Navigation bar with animated underline indicator",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/navigation/animated-navbar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "animated-pagination",
+      "type": "registry:component",
+      "title": "Animated Pagination",
+      "description": "Pagination with smooth page transition indicator",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/navigation/animated-pagination.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "animated-profile-menu",
+      "type": "registry:component",
+      "title": "Animated Profile Menu",
+      "description": "Floating profile avatar that reveals quick action cards with smooth motion",
+      "registryDependencies": [
+        "avatar"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/navigation/animated-profile-menu.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "animated-progress",
+      "type": "registry:ui",
+      "title": "Animated Progress Bar",
+      "description": "Progress bar with smooth animation",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/data/progress/animated-progress.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "data",
+      "subcategory": "progress"
+    },
+    {
+      "name": "animated-quote-block",
+      "type": "registry:ui",
+      "title": "Animated Quote Block",
+      "description": "Quote that types itself in, pauses, then subtly breathes",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/animated-quote-block.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "animated-radio",
+      "type": "registry:component",
+      "title": "Animated Radio",
+      "description": "Radio button group with selection ripple",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/forms/animated-radio.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "animated-select",
+      "type": "registry:component",
+      "title": "Animated Select",
+      "description": "Select dropdown with smooth open/close animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/forms/animated-select.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "animated-sidebar",
+      "type": "registry:component",
+      "title": "Animated Sidebar",
+      "description": "Sidebar with slide-in animation and overlay",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/navigation/animated-sidebar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "animated-tabs",
+      "type": "registry:component",
+      "title": "Animated Tabs",
+      "description": "Tabs with sliding indicator animation",
+      "registryDependencies": [
+        "tabs"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/tabs/animated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "tabs"
+    },
+    {
+      "name": "animated-tooltip",
+      "type": "registry:component",
+      "title": "Animated Tooltip",
+      "description": "Tooltip with delay and slide animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/tooltips/animated-tooltip.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "auto-revealing-heading",
+      "type": "registry:page",
+      "title": "Auto-Revealing Heading",
+      "description": "Heading that reveals each letter/word with staggered motion on scroll",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/auto-revealing-heading.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:component",
+      "title": "Avatar Group",
+      "description": "Stacked avatar group with hover reveal and tooltips",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/avatars/avatar-group.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "bento-grid-block",
+      "type": "registry:block",
+      "title": "Bento Grid Block",
+      "description": "Layered bento grid with imagery, metrics, and smooth motion reveals",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/bento-grid-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "blog-block",
+      "type": "registry:block",
+      "title": "Blog Block",
+      "description": "Animated blog posts grid with staggered cards, date/time indicators, and hover effects",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/blog-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "bottom-modal",
+      "type": "registry:component",
+      "title": "Bottom Modal",
+      "description": "Cute bottom-centered modal with smooth slide-up animation and glassmorphism design",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/modals/bottom-modal.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "modal"
+    },
+    {
+      "name": "browse-folder",
+      "type": "registry:component",
+      "title": "Browse Folder",
+      "description": "Folder browser with animated tabs and content",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "tabs"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/browse-folder.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "cash-flow-chart",
+      "type": "registry:ui",
+      "title": "Accessible Cash Flow Chart",
+      "description": "Interactive cash flow bar chart with keyboard focus, tooltips, and screen reader support",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/data/charts/cash-flow-chart.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "data",
+      "subcategory": "charts"
+    },
+    {
+      "name": "chat-app",
+      "type": "registry:component",
+      "title": "Chat App",
+      "description": "Fully functional chat interface with animated messages",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "scroll-area"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/chat/chat-app.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "chat"
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:component",
+      "title": "Command Palette",
+      "description": "Command palette with search and keyboard navigation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/search/command-palette.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "contact-block",
+      "type": "registry:block",
+      "title": "Contact Block",
+      "description": "Contact form with animated contact info cards, working hours, and interactive icons",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/contact-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "contact-form-section",
+      "type": "registry:block",
+      "title": "Contact Form",
+      "description": "Contact form section with animated inputs, validation, and form handling",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/contact-form-section.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:component",
+      "title": "Context Menu",
+      "description": "Right-click context menu with nested items animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/navigation/context-menu.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "context-menu-bubble",
+      "type": "registry:component",
+      "title": "Context Menu Bubble",
+      "description": "Right-click reveals circular expanding radial menu with icons",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/context-menu-bubble.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "counter-up",
+      "type": "registry:ui",
+      "title": "Animated Counter",
+      "description": "Number counter that animates up from zero",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/data/progress/counter-up.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "data",
+      "subcategory": "progress"
+    },
+    {
+      "name": "credit-card",
+      "type": "registry:component",
+      "title": "Credit Card",
+      "description": "3D animated credit card with flip animation to show CVV",
+      "registryDependencies": [
+        "badge"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/credit-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "cta-banner-section",
+      "type": "registry:page",
+      "title": "CTA Banner Section",
+      "description": "Animated call-to-action banner with gradient background and button animations",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/cta-banner-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "cta-block",
+      "type": "registry:block",
+      "title": "CTA Block",
+      "description": "Call-to-action section with gradient overlay, animated buttons, and status indicator",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/cta-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "cta-hero-block",
+      "type": "registry:block",
+      "title": "CTA Hero Block",
+      "description": "Engaging hero section with email signup, video preview, and social proof",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/cta-hero-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "currency-converter-card",
+      "type": "registry:block",
+      "title": "Currency Converter Card",
+      "description": "Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/currency-converter-card.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "dashboard",
+      "type": "registry:block",
+      "title": "Dashboard",
+      "description": "Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/stocks-dashboard/dashboard.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "detail-task-card",
+      "type": "registry:component",
+      "title": "Detail Task Card",
+      "description": "Task management detail panel with animated assignee chips and editor controls",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "dropdown-menu",
+        "input",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/detail-task.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "drag-to-confirm-slider",
+      "type": "registry:component",
+      "title": "Drag-to-Confirm Slider",
+      "description": "Slider that activates action only when fully dragged to end",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/drag-to-confirm-slider.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "draggable-list",
+      "type": "registry:component",
+      "title": "Draggable List",
+      "description": "Reorderable list with drag and drop spring physics",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/lists/draggable-list.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "lists"
+    },
+    {
+      "name": "dynamic-spotlight-cta",
+      "type": "registry:page",
+      "title": "Dynamic Spotlight CTA",
+      "description": "Floating spotlight follows cursor to reveal gradient CTA text with premium effects",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/dynamic-spotlight-cta.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "dynamic-tag-cloud",
+      "type": "registry:ui",
+      "title": "Dynamic Tag Cloud",
+      "description": "Floating cluster of tags that drift and rearrange when hovered",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/dynamic-tag-cloud.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "ecommerce-highlight-card",
+      "type": "registry:component",
+      "title": "Ecommerce Highlight Card",
+      "description": "Product spotlight card with blurred border, bundle selector, and fulfillment details",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "separator"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/ecommerce-highlight-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "elastic-switch",
+      "type": "registry:ui",
+      "title": "Elastic Toggle Switch",
+      "description": "Toggle switch with elastic spring animation",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/toggles/elastic-switch.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "toggles"
+    },
+    {
+      "name": "error-400",
+      "type": "registry:page",
+      "title": "Error 400",
+      "description": "400 Error page with wavy background animation",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/error-400.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "expanding-search-dock",
+      "type": "registry:component",
+      "title": "Expanding Search Dock",
+      "description": "Minimal search icon that expands into full input with blur",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/expanding-search-dock.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "fade-slide-modal",
+      "type": "registry:component",
+      "title": "Fade & Slide Modal",
+      "description": "Modal with fade backdrop and slide-up animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/modal/fade-slide.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "modal"
+    },
+    {
+      "name": "faq-accordion-block",
+      "type": "registry:block",
+      "title": "FAQ Accordion",
+      "description": "Expandable FAQ section with smooth accordion animations",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/faq-accordion-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "faq-section",
+      "type": "registry:page",
+      "title": "FAQ Section",
+      "description": "Animated FAQ section with expandable questions and smooth transitions",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/faq-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "feature-cards-block",
+      "type": "registry:block",
+      "title": "Feature Cards Grid",
+      "description": "Three feature cards with icons, hover effects, and glassmorphism styling",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/feature-cards-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "feature-comparison-block",
+      "type": "registry:block",
+      "title": "Feature Comparison Table",
+      "description": "Interactive pricing comparison table with animated checkmarks and plan highlights",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/feature-comparison-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "feature-grid-section",
+      "type": "registry:page",
+      "title": "Feature Grid Section",
+      "description": "Animated feature grid with staggered card animations and icon reveals",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/feature-grid-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "floating-gradient",
+      "type": "registry:ui",
+      "title": "Floating Gradient",
+      "description": "Animated floating gradient background effect",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/decorative/background/floating-gradient.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": "background"
+    },
+    {
+      "name": "floating-info-panel",
+      "type": "registry:ui",
+      "title": "Floating Info Panel",
+      "description": "Info tooltip that drifts up/down while fading in/out intermittently",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/floating-info-panel.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "floating-label-input",
+      "type": "registry:component",
+      "title": "Floating Label Input",
+      "description": "Input with animated floating label",
+      "registryDependencies": [
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/inputs/floating-label-input.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "inputs"
+    },
+    {
+      "name": "fluid-modal-transition",
+      "type": "registry:component",
+      "title": "Fluid Modal Transition",
+      "description": "Modal that expands smoothly from clicked trigger element using layoutId",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/fluid-modal-transition.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "modal"
+    },
+    {
+      "name": "footer-block",
+      "type": "registry:block",
+      "title": "Footer Block",
+      "description": "Comprehensive footer with links, newsletter signup, social icons, and scroll-to-top",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/footer-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "gallery-grid-block",
+      "type": "registry:block",
+      "title": "Gallery Grid with Lightbox",
+      "description": "Filterable image gallery with animated lightbox and navigation",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/gallery-grid-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glass-account-settings-card",
+      "type": "registry:component",
+      "title": "Glass Account Settings Card",
+      "description": "Account management card with subscription overview and billing actions in glassmorphic style",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "label",
+        "switch"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-account-settings.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glass-forgot-password-card",
+      "type": "registry:component",
+      "title": "Glass Forgot Password Card",
+      "description": "Reset-password screen with glassmorphic styling and status messaging",
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-forgot-password.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glass-profile-settings-card",
+      "type": "registry:component",
+      "title": "Glass Profile Settings Card",
+      "description": "Glassmorphic profile settings form with avatar upload, bio, and notification preferences",
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "input",
+        "label",
+        "switch",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-profile-settings.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glass-sign-in-card",
+      "type": "registry:component",
+      "title": "Glass Sign-In Card",
+      "description": "Glassmorphic sign-in panel with social auth buttons and email form",
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "input",
+        "label"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-sign-in.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glass-sign-up-card",
+      "type": "registry:component",
+      "title": "Glass Sign-Up Card",
+      "description": "Glassmorphic sign-up flow with social providers, email fields, and terms checkbox",
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "input",
+        "label"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-sign-up.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glass-verification-code-card",
+      "type": "registry:component",
+      "title": "Glass Verification Code Card",
+      "description": "Verification code entry with glassmorphic inputs, status messaging, and reduced-motion support",
+      "registryDependencies": [
+        "button",
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/forms/glass-verification-code.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "glassmorphism-cta-block",
+      "type": "registry:block",
+      "title": "Glassmorphism CTA",
+      "description": "Call-to-action section with glassy card, gradient background, and animated buttons",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-cta-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-hero-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Hero",
+      "description": "Modern hero section with glassmorphism effects, animated background orbs, and CTA buttons",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-hero-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-launch-timeline-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Launch Timeline",
+      "description": "Frictionless launch roadmap with staggered motion, glassmorphism milestones, and paired CTA actions",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-launch-timeline-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-listen-app-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Listen App",
+      "description": "Music streaming block with glassmorphism player, curated highlights, and animated controls",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-listen-app-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-logo-showcase-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Logo Showcase",
+      "description": "Glassmorphism partner grid with floating motion, brand hints, and collaborative call-to-action",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-logo-showcase-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-minimal-metrics-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Minimal Metrics",
+      "description": "Focused metric cards with glass surfaces, subtle motion, and concierge insight CTA banner",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-minimal-metrics-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-portfolio-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Portfolio",
+      "description": "Personal portfolio spotlight with profile portrait, narrative highlights, and animated social links",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-portfolio-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-pricing-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Pricing",
+      "description": "Pricing cards with glassmorphism effects, hover animations, and feature lists",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-pricing-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-product-update-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Product Updates",
+      "description": "Multi-state changelog cards with glass overlays, status badges, and GitHub integration banner",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-product-update-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-statistics-card",
+      "type": "registry:component",
+      "title": "Glassmorphism Statistics Card",
+      "description": "Interactive statistics card with hover reveal and smooth transitions",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-statistics-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "glassmorphism-testimonials-block",
+      "type": "registry:block",
+      "title": "Glassmorphism Testimonials",
+      "description": "Customer testimonials with glassmorphism cards, star ratings, and hover effects",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glassmorphism-testimonials-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "glowy-waves-hero",
+      "type": "registry:block",
+      "title": "Glowy Waves Hero",
+      "description": "Hero section with glowy waves effect",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/glowy-waves-hero.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "gradient-animation",
+      "type": "registry:ui",
+      "title": "Gradient Animation",
+      "description": "Smoothly transitioning gradient background",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/decorative/backgrounds/gradient-animation.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": "background"
+    },
+    {
+      "name": "heart-favorite",
+      "type": "registry:ui",
+      "title": "Heart Favorite",
+      "description": "Animated heart icon for like/favorite actions",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/icons/heart-favorite.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "icons"
+    },
+    {
+      "name": "hero-block",
+      "type": "registry:block",
+      "title": "Hero Block",
+      "description": "Personal portfolio hero section with animated avatar, staggered text, social links, and scroll indicator",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/hero-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "hero-section",
+      "type": "registry:page",
+      "title": "Hero Section",
+      "description": "Hero section with staggered text and button reveal",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/hero-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": "hero"
+    },
+    {
+      "name": "holographic-wall",
+      "type": "registry:ui",
+      "title": "Holographic Wall",
+      "description": "Black wall with Pharaonic hieroglyphs and golden cursor light reflection",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/holographic-wall.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "hover-expand-card",
+      "type": "registry:component",
+      "title": "Hover Expand Card",
+      "description": "Card that lifts and expands on hover",
+      "registryDependencies": [
+        "badge"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/hover-expand.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "image-slider-card",
+      "type": "registry:component",
+      "title": "Accessible Image Slider Card",
+      "description": "Image carousel card with keyboard support, reduced motion handling, and screen reader-friendly labels",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/cards/image-slider-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "cards"
+    },
+    {
+      "name": "interactive-logs-table",
+      "type": "registry:block",
+      "title": "Interactive Logs Table",
+      "description": "Observability logs panel with animated filters, search, and expandable rows",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/interactive-logs-table.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "interactive-timeline",
+      "type": "registry:component",
+      "title": "Interactive Timeline",
+      "description": "Vertical timeline where elements animate and connect with lines on scroll",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/interactive-timeline.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "kanban-board",
+      "type": "registry:block",
+      "title": "Kanban Board",
+      "description": "Interactive Kanban board with drag-and-drop, glassmorphism styling, and task management features",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/kanban/kanban-board.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "liquid-cursor",
+      "type": "registry:ui",
+      "title": "Liquid Cursor",
+      "description": "A liquid-like cursor effect that mixes colors on movement",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/liquid-cursor.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "mac-searchbar",
+      "type": "registry:component",
+      "title": "Mac Searchbar",
+      "description": "Mac-style searchbar with animated dropdown, glassmorphism effects, and smooth transitions",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/search/mac-searchbar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "magnetic-avatar-group",
+      "type": "registry:component",
+      "title": "Magnetic Avatar Group",
+      "description": "Stacked avatars that spread apart on hover showing tooltips",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/magnetic-avatar-group.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "magnetic-button",
+      "type": "registry:ui",
+      "title": "Magnetic Button",
+      "description": "Button that magnetically follows your cursor",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/buttons/magnetic-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "buttons"
+    },
+    {
+      "name": "magnetic-cursor-link",
+      "type": "registry:ui",
+      "title": "Magnetic Cursor Link",
+      "description": "Link that slightly follows mouse cursor within boundary and snaps back",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/magnetic-cursor-link.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": null
+    },
+    {
+      "name": "messenger",
+      "type": "registry:component",
+      "title": "Messenger",
+      "description": "Glassmorphism messenger workspace with accessible motion and quick replies",
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "input",
+        "textarea"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/chat/messenger.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "chat"
+    },
+    {
+      "name": "mood-gradient-button",
+      "type": "registry:ui",
+      "title": "Mood Gradient Button",
+      "description": "Button with background gradient that shifts based on hover angle",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/mood-gradient-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": null
+    },
+    {
+      "name": "morphing-action-button",
+      "type": "registry:ui",
+      "title": "Morphing Action Button",
+      "description": "A circular FAB that morphs into a rectangular action panel using layoutId",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/morphing-action-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": null
+    },
+    {
+      "name": "multiple-accounts",
+      "type": "registry:component",
+      "title": "Multiple Accounts Switcher",
+      "description": "Glassmorphic account switcher with animated dropdown and accessible listbox controls",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/account-switcher/multiple-accounts.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "n8n-workflow-block",
+      "type": "registry:block",
+      "title": "N8N Workflow Block",
+      "description": "Visual workflow automation builder with animated nodes, connections, and real-time execution monitoring",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react",
+        "react-dom"
+      ],
+      "files": [
+        {
+          "path": "components/sections/n8n-workflow-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "new-hero-section",
+      "type": "registry:block",
+      "title": "New Hero Section",
+      "description": "Modern hero section with gradient background, animated stats, and call-to-action buttons",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/new-hero-section.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "newsletter-signup-block",
+      "type": "registry:block",
+      "title": "Newsletter Signup Block",
+      "description": "Animated newsletter subscription form with success state and gradient background",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "input"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/newsletter-signup-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "notification-bell",
+      "type": "registry:ui",
+      "title": "Notification Bell",
+      "description": "Bell icon that gently swings when new notification appears",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/notification-bell.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": null
+    },
+    {
+      "name": "notification-center",
+      "type": "registry:component",
+      "title": "Notification Center",
+      "description": "Multi-variant notification stack with accessible announcements, actions, and motion states",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/notifications/notification-center.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "notifications"
+    },
+    {
+      "name": "notion-blog-page",
+      "type": "registry:block",
+      "title": "Notion Blog Page",
+      "description": "Notion-style publishing playbook with rich text, toggles, and supporting visuals",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/notion-blog-page.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "our-services-section",
+      "type": "registry:block",
+      "title": "Our Services",
+      "description": "Services section with service cards, badges, icons, and hover animations",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/our-services-section.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "password-input",
+      "type": "registry:component",
+      "title": "Password Input",
+      "description": "Password input with toggle visibility and strength indicator",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/inputs/password-input.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "inputs"
+    },
+    {
+      "name": "preview-details-card",
+      "type": "registry:ui",
+      "title": "Preview Details Card",
+      "description": "Link card that reveals a smooth detail preview box on hover",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/links/preview-details-card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "links"
+    },
+    {
+      "name": "pricing-section",
+      "type": "registry:page",
+      "title": "Pricing Section",
+      "description": "Animated pricing cards with hover effects and feature lists",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/pricing-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "projects-block",
+      "type": "registry:component",
+      "title": "Projects Block",
+      "description": "Animated project card with hover effects, image zoom, and link buttons",
+      "registryDependencies": [
+        "badge",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/projects-block.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "reactive-background-grid",
+      "type": "registry:ui",
+      "title": "Reactive Background Grid",
+      "description": "Background pattern that reacts to mouse movement and click ripples",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/reactive-background-grid.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": "background"
+    },
+    {
+      "name": "ripple-click-button",
+      "type": "registry:ui",
+      "title": "Ripple Click Effect",
+      "description": "Material design inspired ripple effect on click",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/micro/buttons/ripple-click.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "buttons"
+    },
+    {
+      "name": "scale-hover-button",
+      "type": "registry:ui",
+      "title": "Scale Hover Button",
+      "description": "A button that scales up smoothly on hover",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/micro/buttons/scale-hover.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "buttons"
+    },
+    {
+      "name": "scroll-progress-tracker",
+      "type": "registry:page",
+      "title": "Scroll Progress Tracker",
+      "description": "Fixed progress bar that follows scroll and glows on section changes",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/scroll-progress-tracker.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "scroll-reveal",
+      "type": "registry:page",
+      "title": "Scroll Reveal",
+      "description": "Section that animates into view on scroll with intersection observer",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/scroll-reveal.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "services-grid-block",
+      "type": "registry:block",
+      "title": "Services Grid",
+      "description": "8-column responsive services grid with icons, features, and hover effects",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/services-grid-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "shimmer-button",
+      "type": "registry:ui",
+      "title": "Shimmer Button",
+      "description": "Button with continuous shimmer effect",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/micro/buttons/shimmer-button.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "micro",
+      "subcategory": "buttons"
+    },
+    {
+      "name": "simple-calendar",
+      "type": "registry:component",
+      "title": "Simple Calendar",
+      "description": "Calendar picker with date selection animation",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/forms/simple-calendar.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "forms"
+    },
+    {
+      "name": "smart-hover-card",
+      "type": "registry:component",
+      "title": "Smart Hover Card",
+      "description": "Card that detects cursor direction and reveals content from that side",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/smart-hover-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "spotlight-section",
+      "type": "registry:ui",
+      "title": "Spotlight Section",
+      "description": "Container where mouse creates soft radial spotlight following cursor",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/spotlight-section.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": null
+    },
+    {
+      "name": "stacked-card-carousel",
+      "type": "registry:component",
+      "title": "Stacked Card Carousel",
+      "description": "Three stacked cards that shift and tilt dynamically on hover",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/stacked-card-carousel.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
+      "name": "staggered-dropdown",
+      "type": "registry:component",
+      "title": "Staggered Dropdown",
+      "description": "Dropdown menu with staggered item animations",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/dropdown/staggered-items.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": "dropdown"
+    },
+    {
+      "name": "staggered-hero",
+      "type": "registry:page",
+      "title": "Staggered Text Hero",
+      "description": "Hero section with staggered text reveal",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/page/hero/staggered-text.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": "hero"
+    },
+    {
+      "name": "stats-counter-block",
+      "type": "registry:block",
+      "title": "Stats Counter Block",
+      "description": "Animated statistics counters with icons and gradient backgrounds",
+      "registryDependencies": [
+        "badge",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/stats-counter-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "stats-section",
+      "type": "registry:page",
+      "title": "Stats Section",
+      "description": "Animated statistics section with cards and counters",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/stats-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "stocks-dashboard",
+      "type": "registry:block",
+      "title": "Stocks Dashboard",
+      "description": "Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal",
+      "registryDependencies": [
+        "badge",
+        "card",
+        "dialog"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/stocks-dashboard/stocks-dashboard.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "team-section-block",
+      "type": "registry:block",
+      "title": "Team Section Block",
+      "description": "Animated team member cards with avatars, roles, and social links",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/team-section-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "testimonial-section",
+      "type": "registry:page",
+      "title": "Testimonial Section",
+      "description": "Carousel-style testimonial section with smooth transitions",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/testimonial-section.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": null
+    },
+    {
+      "name": "testimonials-block",
+      "type": "registry:block",
+      "title": "Testimonials Block",
+      "description": "Animated testimonials grid with staggered cards, star ratings, and hover effects",
+      "registryDependencies": [
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/testimonials-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "timeline-block",
+      "type": "registry:block",
+      "title": "Timeline Block",
+      "description": "Vertical timeline with alternating cards and animated progress line",
+      "registryDependencies": [
+        "badge",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/timeline-block.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "category": "sections",
+      "subcategory": null
+    },
+    {
+      "name": "toast-notification",
+      "type": "registry:page",
+      "title": "Toast Notification",
+      "description": "Animated toast notification popup",
+      "registryDependencies": [
+        "button",
+        "card"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/page/notifications/toast-notification.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": "notifications"
+    },
+    {
+      "name": "typewriter-text",
+      "type": "registry:ui",
+      "title": "Typewriter Effect",
+      "description": "Text that types out character by character",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "components/decorative/text/typewriter.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "category": "decorative",
+      "subcategory": "text"
+    },
+    {
+      "name": "veloura-hero",
+      "type": "registry:page",
+      "title": "Veloura Hero",
+      "description": "Vibrant hero section with glassmorphism cards and large typography",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/sections/veloura-hero.tsx",
+          "type": "registry:page"
+        }
+      ],
+      "category": "page",
+      "subcategory": "hero"
+    },
+    {
+      "name": "weather-dashboard",
+      "type": "registry:component",
+      "title": "Weather Dashboard",
+      "description": "Immersive weather dashboard with hourly charting, weekly outlook, and live air-quality alerts",
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/weather/weather-dashboard.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    }
+  ]
+}
