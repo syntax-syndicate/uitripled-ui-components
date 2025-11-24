@@ -160,7 +160,7 @@ function generateRegistryFiles() {
       }
     }
 
-    // Copy registry.json to public/r/registry.json for RSS feed
+    // Copy registry.json to public/r/registry.json for RSS feed & @wandry-ui
     const registryOutputPath = path.join(PUBLIC_R_DIR, "registry.json");
     fs.copyFileSync(REGISTRY_JSON_PATH, registryOutputPath);
     console.log(`📋 Copied registry.json to ${registryOutputPath}`);
