@@ -349,7 +349,7 @@ export default function AnimationDetailPageClient({ code }: { code: string }) {
                               <button
                                 onClick={() =>
                                   handleCopyInstall(
-                                    `yarn add @uitripled/${component.id}`,
+                                    `yarn shadcn@latest add @uitripled/${component.id}`,
                                     "yarn"
                                   )
                                 }
@@ -384,7 +384,7 @@ export default function AnimationDetailPageClient({ code }: { code: string }) {
                             </div>
                             <div className="overflow-x-auto bg-card p-4">
                               <code className="text-sm text-foreground">
-                                yarn add @uitripled/{component.id}
+                                yarn shadcn@latest add @uitripled/{component.id}
                               </code>
                             </div>
                           </div>
@@ -398,7 +398,7 @@ export default function AnimationDetailPageClient({ code }: { code: string }) {
                               <button
                                 onClick={() =>
                                   handleCopyInstall(
-                                    `pnpm add @uitripled/${component.id}`,
+                                    `pnpm dlx shadcn@latest add @uitripled/${component.id}`,
                                     "pnpm"
                                   )
                                 }
@@ -433,7 +433,7 @@ export default function AnimationDetailPageClient({ code }: { code: string }) {
                             </div>
                             <div className="overflow-x-auto bg-card p-4">
                               <code className="text-sm text-foreground">
-                                pnpm add @uitripled/{component.id}
+                                pnpm dlx shadcn@latest add @uitripled/{component.id}
                               </code>
                             </div>
                           </div>
