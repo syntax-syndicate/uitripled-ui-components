@@ -7,7 +7,7 @@ Quote that types itself in, pauses, then subtly breathes
 
 - **ID**: `animated-quote-block`
 - **Category**: decorative
-
+- **Tags**: quote, typewriter, breathing, pulse
 
 
 ## Technical Specifications
@@ -21,6 +21,7 @@ Quote that types itself in, pauses, then subtly breathes
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useState, useEffect } from "react";
@@ -30,10 +31,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
+
 - **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+quote?: string
+author?: string
+typingSpeed?: number
+```
 
 
 ## Usage Context
@@ -50,11 +61,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/motion-core/animated-quote-block.tsx`
+`@/components/motion-core/animated-quote-block.tsx`
 
 ## Code Structure
 
@@ -124,5 +136,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

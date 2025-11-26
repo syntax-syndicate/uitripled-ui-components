@@ -1,14 +1,13 @@
 # Gradient Animation
 
 ## Overview
-Smoothly transitioning gradient background",
-    category: "decorative
+Smoothly transitioning gradient background
 
 ## Component Details
 
 - **ID**: `gradient-animation`
-- **Category**: components
-- **Tags**: input, password, form, security, shadcn
+- **Category**: decorative
+- **Tags**: gradient, background, color
 - **Subcategory**: background
 
 ## Technical Specifications
@@ -19,20 +18,20 @@ Smoothly transitioning gradient background",
 
 
 - **Framer Motion**: Yes (for animations and motion effects)
-- **shadcn/ui**: Yes (UI component primitives)
+
+
 
 ### Key Imports
 ```typescript
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Eye, EyeOff } from "lucide-react";
+import { motion } from "framer-motion";
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
+
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -50,12 +49,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/inputs/password-input.tsx`
+`@/components/decorative/backgrounds/gradient-animation.tsx`
 
 ## Code Structure
 
@@ -111,20 +111,19 @@ This component is suitable for:
 ### Implementation Considerations
 When integrating this component, consider:
 1. **Dependencies**: Ensure all required dependencies are installed (framer-motion)
-2. **Setup**: Initialize shadcn/ui if not already done
+2. **Setup**: No additional setup required
 3. **Props**: Review the props interface for customization options
 4. **Styling**: Verify your Tailwind configuration matches the component's requirements
 5. **Accessibility**: Test with keyboard navigation and screen readers
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Interactive UI elements
-- Form components
-- Navigation elements
-- Data display components
+- General UI components
+- Interactive elements
+- Animated sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -1,14 +1,13 @@
 # About Us
 
 ## Overview
-About us section with value cards, icons, and animated reveal effects",
-    category: "blocks
+About us section with value cards, icons, and animated reveal effects
 
 ## Component Details
 
 - **ID**: `about-us-section`
 - **Category**: blocks
-- **Tags**: contact, form, inputs, validation, shadcn
+- **Tags**: about, values, team, mission, cards, shadcn
 
 
 ## Technical Specifications
@@ -23,25 +22,24 @@ About us section with value cards, icons, and animated reveal effects",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useState } from "react";
-import { motion, type Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Send, Mail, Phone, MessageSquare } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Users, Target, Award, Heart } from "lucide-react";
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
+
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -59,12 +57,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/contact-form-section.tsx`
+`@/components/sections/about-us-section.tsx`
 
 ## Code Structure
 
@@ -135,5 +135,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

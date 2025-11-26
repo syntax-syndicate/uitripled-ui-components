@@ -1,14 +1,13 @@
 # Expanding Search Dock
 
 ## Overview
-Minimal search icon that expands into full input with blur",
-    category: "components
+Minimal search icon that expands into full input with blur
 
 ## Component Details
 
 - **ID**: `expanding-search-dock`
-- **Category**: microinteractions
-- **Tags**: button, gradient, mood, interactive
+- **Category**: components
+- **Tags**: search, expand, dock, input, blur
 
 
 ## Technical Specifications
@@ -23,21 +22,32 @@ Minimal search icon that expands into full input with blur",
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import React, { useState, useRef, MouseEvent } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, X } from "lucide-react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
-- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+onSearch?: (query: string) => void
+placeholder?: string
+```
 
 
 ## Usage Context
@@ -53,12 +63,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/mood-gradient-button.tsx`
+`@/components/motion-core/expanding-search-dock.tsx`
 
 ## Code Structure
 
@@ -121,13 +133,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Button interactions
-- Toggle switches
-- Icon animations
-- Hover effects
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

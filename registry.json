@@ -898,7 +898,7 @@
     },
     {
       "name": "currency-converter-card",
-      "type": "registry:block",
+      "type": "registry:component",
       "title": "Currency Converter Card",
       "description": "Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback",
       "registryDependencies": [
@@ -913,10 +913,10 @@
       "files": [
         {
           "path": "components/sections/currency-converter-card.tsx",
-          "type": "registry:block"
+          "type": "registry:component"
         }
       ],
-      "category": "sections",
+      "category": "components",
       "subcategory": null
     },
     {
@@ -2126,6 +2126,25 @@
       "subcategory": "chat"
     },
     {
+      "name": "minimal-resume",
+      "type": "registry:component",
+      "title": "Minimal Resume",
+      "description": "Vercel-inspired minimal resume with clean typography and grid layout",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/resumes/minimal-resume.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "resumes",
+      "subcategory": null
+    },
+    {
       "name": "mood-gradient-button",
       "type": "registry:ui",
       "title": "Mood Gradient Button",
@@ -2412,6 +2431,25 @@
       "subcategory": null
     },
     {
+      "name": "professional-resume",
+      "type": "registry:component",
+      "title": "Professional Resume",
+      "description": "Clean, formal resume template suitable for corporate applications",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/resumes/professional-resume.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "resumes",
+      "subcategory": null
+    },
+    {
       "name": "projects-block",
       "type": "registry:component",
       "title": "Projects Block",
@@ -2451,6 +2489,25 @@
       ],
       "category": "decorative",
       "subcategory": "background"
+    },
+    {
+      "name": "resume-card",
+      "type": "registry:component",
+      "title": "Interactive Resume Card",
+      "description": "Professional resume template with animated sections and interactive elements",
+      "registryDependencies": [],
+      "dependencies": [
+        "framer-motion",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/components/resumes/resume-card.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "resumes",
+      "subcategory": null
     },
     {
       "name": "ripple-click-button",

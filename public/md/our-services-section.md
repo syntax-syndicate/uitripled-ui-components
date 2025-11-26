@@ -1,14 +1,13 @@
 # Our Services
 
 ## Overview
-Services section with service cards, badges, icons, and hover animations",
-    category: "blocks
+Services section with service cards, badges, icons, and hover animations
 
 ## Component Details
 
 - **ID**: `our-services-section`
-- **Category**: microinteractions
-- **Tags**: fab, morph, layout, button, action
+- **Category**: blocks
+- **Tags**: services, cards, badges, icons, hover, shadcn
 
 
 ## Technical Specifications
@@ -24,21 +23,26 @@ Services section with service cards, badges, icons, and hover animations",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useState } from "react";
-import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
-import { Plus, X } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
+
 
 - **Animations**: Contains motion animations powered by Framer Motion
-- **Props**: Accepts custom props for configuration and customization
+
+
 
 
 
@@ -55,12 +59,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/morphing-action-button.tsx`
+`@/components/sections/our-services-section.tsx`
 
 ## Code Structure
 
@@ -123,13 +129,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Button interactions
-- Toggle switches
-- Icon animations
-- Hover effects
+- Landing page sections
+- Portfolio showcases
+- Marketing pages
+- Content sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

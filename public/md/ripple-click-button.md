@@ -1,14 +1,13 @@
 # Ripple Click Effect
 
 ## Overview
-Material design inspired ripple effect on click",
-    category: "microinteractions
+Material design inspired ripple effect on click
 
 ## Component Details
 
 - **ID**: `ripple-click-button`
 - **Category**: microinteractions
-- **Tags**: toggle, switch, spring
+- **Tags**: button, click, ripple
 - **Subcategory**: buttons
 
 ## Technical Specifications
@@ -22,6 +21,7 @@ Material design inspired ripple effect on click",
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { motion } from "framer-motion";
@@ -32,7 +32,9 @@ import { useState } from "react";
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -51,11 +53,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/micro/toggles/elastic-switch.tsx`
+`@/components/micro/buttons/ripple-click.tsx`
 
 ## Code Structure
 
@@ -126,5 +129,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

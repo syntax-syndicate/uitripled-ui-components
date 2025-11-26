@@ -6,8 +6,8 @@ Link that slightly follows mouse cursor within boundary and snaps back
 ## Component Details
 
 - **ID**: `magnetic-cursor-link`
-- **Category**: micro
-
+- **Category**: microinteractions
+- **Tags**: magnetic, cursor, link, interactive
 
 
 ## Technical Specifications
@@ -21,6 +21,7 @@ Link that slightly follows mouse cursor within boundary and snaps back
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useState, useRef, MouseEvent } from "react";
@@ -31,9 +32,20 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+children: React.ReactNode
+href?: string
+onClick?: () => void
+strength?: number
+className?: string
+```
 
 
 ## Usage Context
@@ -50,11 +62,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/motion-core/magnetic-cursor-link.tsx`
+`@/components/motion-core/magnetic-cursor-link.tsx`
 
 ## Code Structure
 
@@ -117,12 +130,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Button interactions
+- Toggle switches
+- Icon animations
+- Hover effects
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

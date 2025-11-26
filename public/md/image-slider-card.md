@@ -1,14 +1,13 @@
 # Accessible Image Slider Card
 
 ## Overview
-Image carousel card with keyboard support, reduced motion handling, and screen reader-friendly labels",
-    category: "components
+Image carousel card with keyboard support, reduced motion handling, and screen reader-friendly labels
 
 ## Component Details
 
 - **ID**: `image-slider-card`
 - **Category**: components
-- **Tags**: input, form, label, shadcn
+- **Tags**: carousel, image, card, accessibility, keyboard
 - **Subcategory**: cards
 
 ## Technical Specifications
@@ -24,20 +23,24 @@ Image carousel card with keyboard support, reduced motion handling, and screen r
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
+import { useId, useMemo, useState } from "react";
+import {
+import { ChevronLeft, ChevronRight } from "lucide-react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -55,12 +58,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/components/inputs/floating-label-input.tsx`
+`@/components/components/cards/image-slider-card.tsx`
 
 ## Code Structure
 
@@ -131,5 +136,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

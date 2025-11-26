@@ -1,14 +1,13 @@
 # Glass Profile Settings Card
 
 ## Overview
-Glassmorphic profile settings form with avatar upload, bio, and notification preferences",
-    category: "components
+Glassmorphic profile settings form with avatar upload, bio, and notification preferences
 
 ## Component Details
 
 - **ID**: `glass-profile-settings-card`
 - **Category**: components
-- **Tags**: account, subscription, billing, form, glassmorphism
+- **Tags**: profile, settings, form, glassmorphism
 - **Subcategory**: forms
 
 ## Technical Specifications
@@ -29,24 +28,31 @@ Glassmorphic profile settings form with avatar upload, bio, and notification pre
 - textarea
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Check } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
+import { Switch } from "@/components/ui/switch";
+import { Avatar } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { UploadCloud } from "lucide-react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -64,12 +70,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/components/forms/glass-account-settings.tsx`
+`@/components/components/forms/glass-profile-settings.tsx`
 
 ## Code Structure
 
@@ -140,5 +148,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

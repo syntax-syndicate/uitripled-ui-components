@@ -1,14 +1,13 @@
 # Testimonial Section
 
 ## Overview
-Carousel-style testimonial section with smooth transitions",
-    category: "page
+Carousel-style testimonial section with smooth transitions
 
 ## Component Details
 
 - **ID**: `testimonial-section`
 - **Category**: page
-- **Tags**: pricing, plans, cards, hover, shadcn
+- **Tags**: testimonial, carousel, reviews, cards, shadcn
 
 
 ## Technical Specifications
@@ -24,24 +23,26 @@ Carousel-style testimonial section with smooth transitions",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
-import { Check, Zap } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import {
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 ```
 
 
 ### Component Features
+- **State Management**: Uses React hooks (useState/useReducer) for component state
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -59,12 +60,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/pricing-section.tsx`
+`@/components/sections/testimonial-section.tsx`
 
 ## Code Structure
 
@@ -134,5 +137,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

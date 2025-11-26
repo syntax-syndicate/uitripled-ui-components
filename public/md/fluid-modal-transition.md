@@ -1,14 +1,13 @@
 # Fluid Modal Transition
 
 ## Overview
-Modal that expands smoothly from clicked trigger element using layoutId",
-    category: "components
+Modal that expands smoothly from clicked trigger element using layoutId
 
 ## Component Details
 
 - **ID**: `fluid-modal-transition`
-- **Category**: decorative
-- **Tags**: holographic, wall, cursor, glow, golden, hieroglyphs, pharaonic
+- **Category**: components
+- **Tags**: modal, transition, layout, expand, fluid
 - **Subcategory**: modal
 
 ## Technical Specifications
@@ -23,21 +22,35 @@ Modal that expands smoothly from clicked trigger element using layoutId",
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useState, MouseEvent, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
+
 - **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+trigger?: React.ReactNode
+title?: string
+children?: React.ReactNode
+```
 
 
 ## Usage Context
@@ -53,12 +66,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/holographic-wall.tsx`
+`@/components/motion-core/fluid-modal-transition.tsx`
 
 ## Code Structure
 
@@ -121,12 +136,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

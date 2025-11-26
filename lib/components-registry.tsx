@@ -108,6 +108,9 @@ import { GlassmorphismProductUpdateBlock } from "@/components/sections/glassmorp
 import { InteractiveLogsTable } from "@/components/sections/interactive-logs-table";
 import { CurrencyConverterCard } from "@/components/sections/currency-converter-card";
 import { N8nWorkflowBlock } from "@/components/sections/n8n-workflow-block";
+import { ResumeCard } from "@/components/components/resumes/resume-card";
+import { ProfessionalResume } from "@/components/components/resumes/professional-resume";
+import { MinimalResume } from "@/components/components/resumes/minimal-resume";
 
 // UI-TripleD Components
 import { MorphingActionButton } from "@/components/motion-core/morphing-action-button";
@@ -164,6 +167,19 @@ export const componentsRegistry: Component[] = [
     component: GlowyWavesHero,
     codePath: "@/components/sections/glowy-waves-hero.tsx",
     duration: "500ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
+    id: "resume-card",
+    name: "Interactive Resume Card",
+    description:
+      "Professional resume template with animated sections and interactive elements",
+    category: "resumes",
+    tags: ["resume", "cv", "profile", "card", "animated"],
+    component: ResumeCard,
+    codePath: "@/components/components/resumes/resume-card.tsx",
+    duration: "800ms",
     easing: "easeOut",
     display: true,
   },
@@ -304,6 +320,19 @@ export const componentsRegistry: Component[] = [
     display: true,
   },
   {
+    id: "professional-resume",
+    name: "Professional Resume",
+    description:
+      "Clean, formal resume template suitable for corporate applications",
+    category: "resumes",
+    tags: ["resume", "cv", "professional", "formal", "clean"],
+    component: ProfessionalResume,
+    codePath: "@/components/components/resumes/professional-resume.tsx",
+    duration: "500ms",
+    easing: "easeOut",
+    display: true,
+  },
+  {
     id: "browse-folder",
     name: "Browse Folder",
     description: "Folder browser with animated tabs and content",
@@ -374,6 +403,19 @@ export const componentsRegistry: Component[] = [
     codePath: "@/components/micro/buttons/magnetic-button.tsx",
     duration: "200ms",
     easing: "spring",
+    display: true,
+  },
+  {
+    id: "minimal-resume",
+    name: "Minimal Resume",
+    description:
+      "Vercel-inspired minimal resume with clean typography and grid layout",
+    category: "resumes",
+    tags: ["resume", "cv", "minimal", "clean", "vercel", "grid"],
+    component: MinimalResume,
+    codePath: "@/components/components/resumes/minimal-resume.tsx",
+    duration: "400ms",
+    easing: "easeOut",
     display: true,
   },
   {
@@ -1876,7 +1918,7 @@ export const componentsRegistry: Component[] = [
     name: "Currency Converter Card",
     description:
       "Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback",
-    category: "blocks",
+    category: "components",
     tags: ["finance", "currency", "converter", "card", "dashboard", "shadcn"],
     component: CurrencyConverterCard,
     codePath: "@/components/sections/currency-converter-card.tsx",
@@ -1916,7 +1958,14 @@ export const componentsRegistry: Component[] = [
     description:
       "Interactive Kanban board with drag-and-drop, glassmorphism styling, and task management features",
     category: "blocks",
-    tags: ["kanban", "board", "drag-drop", "task", "management", "glassmorphism"],
+    tags: [
+      "kanban",
+      "board",
+      "drag-drop",
+      "task",
+      "management",
+      "glassmorphism",
+    ],
     component: KanbanBoard,
     codePath: "@/components/components/kanban/kanban-board.tsx",
     duration: "N/A",

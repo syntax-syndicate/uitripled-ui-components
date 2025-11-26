@@ -1,14 +1,13 @@
 # AI Response Typing Stream
 
 ## Overview
-Character-by-character typing animation with natural pauses and thinking states",
-    category: "components
+Character-by-character typing animation with natural pauses and thinking states
 
 ## Component Details
 
 - **ID**: `ai-response-typing`
-- **Category**: microinteractions
-- **Tags**: ai, unlock, premium, activation, particles, ripple
+- **Category**: components
+- **Tags**: ai, typing, stream, chatbot, response, animation, text
 
 
 ## Technical Specifications
@@ -22,21 +21,35 @@ Character-by-character typing animation with natural pauses and thinking states"
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
+
 - **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+text?: string
+speed?: number
+showCursor?: boolean
+onComplete?: () => void
+thinkingState?: "idle" | "thinking" | "typing"
+```
 
 
 ## Usage Context
@@ -52,12 +65,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/ai-unlock-animation.tsx`
+`@/components/motion-core/ai-response-typing.tsx`
 
 ## Code Structure
 
@@ -120,13 +135,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Button interactions
-- Toggle switches
-- Icon animations
-- Hover effects
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

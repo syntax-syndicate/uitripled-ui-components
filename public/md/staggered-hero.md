@@ -1,14 +1,13 @@
 # Staggered Text Hero
 
 ## Overview
-Hero section with staggered text reveal",
-    category: "page
+Hero section with staggered text reveal
 
 ## Component Details
 
 - **ID**: `staggered-hero`
 - **Category**: page
-- **Tags**: about, page, team, values
+- **Tags**: hero, text, stagger
 - **Subcategory**: hero
 
 ## Technical Specifications
@@ -19,15 +18,12 @@ Hero section with staggered text reveal",
 
 
 - **Framer Motion**: Yes (for animations and motion effects)
-- **shadcn/ui**: Yes (UI component primitives)
+
+
 
 ### Key Imports
 ```typescript
-import type { Variants } from "framer-motion";
-import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
+import { motion, type Variants } from "framer-motion";
 ```
 
 
@@ -35,6 +31,7 @@ import {
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -52,12 +49,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/page/about/about-us-page.tsx`
+`@/components/page/hero/staggered-text.tsx`
 
 ## Code Structure
 
@@ -113,7 +111,7 @@ This component is suitable for:
 ### Implementation Considerations
 When integrating this component, consider:
 1. **Dependencies**: Ensure all required dependencies are installed (framer-motion)
-2. **Setup**: Initialize shadcn/ui if not already done
+2. **Setup**: No additional setup required
 3. **Props**: Review the props interface for customization options
 4. **Styling**: Verify your Tailwind configuration matches the component's requirements
 5. **Accessibility**: Test with keyboard navigation and screen readers
@@ -127,5 +125,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

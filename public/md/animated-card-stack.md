@@ -1,14 +1,13 @@
 # Animated Card Stack
 
 ## Overview
-Stacked cards that expand on hover",
-    category: "components
+Stacked cards that expand on hover
 
 ## Component Details
 
 - **ID**: `animated-card-stack`
 - **Category**: components
-- **Tags**: card, 3d, flip, payment, credit
+- **Tags**: card, stack, hover, shadcn
 - **Subcategory**: cards
 
 ## Technical Specifications
@@ -21,30 +20,24 @@ Stacked cards that expand on hover",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
+import { motion, useReducedMotion } from "framer-motion";
 import {
-import { useState, useMemo } from "react";
-import { CreditCard as CreditCardIcon } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
+
 
 - **Animations**: Contains motion animations powered by Framer Motion
-- **Props**: Accepts custom props for configuration and customization
 
-### Props Interface
-```typescript
-cardNumber?: string;
-cardholderName?: string;
-expiryDate?: string;
-cvv?: string;
-```
+
+
 
 
 ## Usage Context
@@ -60,12 +53,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/components/cards/credit-card.tsx`
+`@/components/components/cards/animated-card-stack.tsx`
 
 ## Code Structure
 
@@ -136,5 +131,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -2,12 +2,12 @@
 
 > Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.
 
-**Last Updated:** 2025-11-25T07:46:17.421Z
+**Last Updated:** 2025-11-26T03:54:42.779Z
 
 ## Table of Contents
 
-- Components (55 items)
-- Blocks (39 items)
+- Components (59 items)
+- Blocks (38 items)
 - Pages (14 items)
 - UI Elements (26 items)
 
@@ -43,6 +43,7 @@
 - [Command Palette](https://ui.tripled.work/components/command-palette): Command palette with search and keyboard navigation
 - [Context Menu](https://ui.tripled.work/components/context-menu): Right-click context menu with nested items animation
 - [Context Menu Bubble](https://ui.tripled.work/components/context-menu-bubble): Right-click reveals circular expanding radial menu with icons
+- [Currency Converter Card](https://ui.tripled.work/components/currency-converter-card): Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback
 - [Drag-to-Confirm Slider](https://ui.tripled.work/components/drag-to-confirm-slider): Slider that activates action only when fully dragged to end
 - [Expanding Search Dock](https://ui.tripled.work/components/expanding-search-dock): Minimal search icon that expands into full input with blur
 - [Glassmorphism Statistics Card](https://ui.tripled.work/components/glassmorphism-statistics-card): Interactive statistics card with hover reveal and smooth transitions
@@ -98,6 +99,10 @@
 
 - [Animated Tabs](https://ui.tripled.work/components/animated-tabs): Tabs with sliding indicator animation
 
+- [Interactive Resume Card](https://ui.tripled.work/components/resume-card): Professional resume template with animated sections and interactive elements
+- [Minimal Resume](https://ui.tripled.work/components/minimal-resume): Vercel-inspired minimal resume with clean typography and grid layout
+- [Professional Resume](https://ui.tripled.work/components/professional-resume): Clean, formal resume template suitable for corporate applications
+
 ### Blocks
 
 - [About Us](https://ui.tripled.work/components/about-us-section): About us section with value cards, icons, and animated reveal effects
@@ -107,7 +112,6 @@
 - [Contact Form](https://ui.tripled.work/components/contact-form-section): Contact form section with animated inputs, validation, and form handling
 - [CTA Block](https://ui.tripled.work/components/cta-block): Call-to-action section with gradient overlay, animated buttons, and status indicator
 - [CTA Hero Block](https://ui.tripled.work/components/cta-hero-block): Engaging hero section with email signup, video preview, and social proof
-- [Currency Converter Card](https://ui.tripled.work/components/currency-converter-card): Finance conversion widget with animated inputs, simulated exchange updates, and contextual feedback
 - [Dashboard](https://ui.tripled.work/components/dashboard): Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal
 - [FAQ Accordion](https://ui.tripled.work/components/faq-accordion-block): Expandable FAQ section with smooth accordion animations
 - [Feature Cards Grid](https://ui.tripled.work/components/feature-cards-block): Three feature cards with icons, hover effects, and glassmorphism styling

@@ -6,8 +6,8 @@ A circular FAB that morphs into a rectangular action panel using layoutId
 ## Component Details
 
 - **ID**: `morphing-action-button`
-- **Category**: micro
-
+- **Category**: microinteractions
+- **Tags**: fab, morph, layout, button, action
 
 
 ## Technical Specifications
@@ -22,6 +22,7 @@ A circular FAB that morphs into a rectangular action panel using layoutId
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useState } from "react";
@@ -33,9 +34,17 @@ import { Plus, X } from "lucide-react";
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+actions?: ActionItem[]
+duration?: number
+```
 
 
 ## Usage Context
@@ -52,11 +61,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/motion-core/morphing-action-button.tsx`
+`@/components/motion-core/morphing-action-button.tsx`
 
 ## Code Structure
 
@@ -119,12 +129,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Button interactions
+- Toggle switches
+- Icon animations
+- Hover effects
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

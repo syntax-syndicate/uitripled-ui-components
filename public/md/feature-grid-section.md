@@ -1,14 +1,13 @@
 # Feature Grid Section
 
 ## Overview
-Animated feature grid with staggered card animations and icon reveals",
-    category: "page
+Animated feature grid with staggered card animations and icon reveals
 
 ## Component Details
 
 - **ID**: `feature-grid-section`
 - **Category**: page
-- **Tags**: faq, accordion, questions, expand, shadcn
+- **Tags**: features, grid, cards, stagger, shadcn
 
 
 ## Technical Specifications
@@ -23,21 +22,25 @@ Animated feature grid with staggered card animations and icon reveals",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useId, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, HelpCircle } from "lucide-react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { motion, type Variants } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import { Code, Zap, Shield, Globe, Lock, Sparkles } from "lucide-react";
+import {
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
+
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -55,12 +58,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/faq-section.tsx`
+`@/components/sections/feature-grid-section.tsx`
 
 ## Code Structure
 
@@ -130,5 +135,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

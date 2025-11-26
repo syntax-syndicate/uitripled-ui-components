@@ -1,14 +1,13 @@
 # Animated Counter
 
 ## Overview
-Number counter that animates up from zero",
-    category: "data
+Number counter that animates up from zero
 
 ## Component Details
 
 - **ID**: `counter-up`
-- **Category**: decorative
-- **Tags**: text, typewriter, reveal
+- **Category**: data
+- **Tags**: counter, number, progress
 - **Subcategory**: progress
 
 ## Technical Specifications
@@ -22,16 +21,21 @@ Number counter that animates up from zero",
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
-import { motion, useReducedMotion } from "framer-motion";
+import {
+import { useEffect, useState } from "react";
 ```
 
 
 ### Component Features
+- **State Management**: Uses React hooks (useState/useReducer) for component state
 
+- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -50,11 +54,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/decorative/text/typewriter.tsx`
+`@/components/data/progress/counter-up.tsx`
 
 ## Code Structure
 
@@ -124,5 +129,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -1,14 +1,13 @@
 # Glassmorphism Statistics Card
 
 ## Overview
-Interactive statistics card with hover reveal and smooth transitions",
-    category: "components
+Interactive statistics card with hover reveal and smooth transitions
 
 ## Component Details
 
 - **ID**: `glassmorphism-statistics-card`
-- **Category**: blocks
-- **Tags**: kanban, board, drag-drop, task, management, glassmorphism
+- **Category**: components
+- **Tags**: card, statistics, stats, hover, shadcn, glassmorphism
 
 
 ## Technical Specifications
@@ -23,37 +22,27 @@ Interactive statistics card with hover reveal and smooth transitions",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import React, { useState, useMemo } from "react";
-import {
-import {
-import { CSS } from "@dnd-kit/utilities";
-import { motion, AnimatePresence } from "framer-motion";
-import {
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-import { Input } from "@/components/ui/input";
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { Bike, TrendingUp, Award } from "lucide-react";
+import { useState } from "react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
-- **Animations**: Contains motion animations powered by Framer Motion
-- **Props**: Accepts custom props for configuration and customization
 
-### Props Interface
-```typescript
-column: Column;
-tasks: Task[];
-isOverlay?: boolean;
-```
+- **Animations**: Contains motion animations powered by Framer Motion
+
+
+
 
 
 ## Usage Context
@@ -69,12 +58,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/components/kanban/kanban-board.tsx`
+`@/components/sections/glassmorphism-statistics-card.tsx`
 
 ## Code Structure
 
@@ -137,13 +128,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Landing page sections
-- Portfolio showcases
-- Marketing pages
-- Content sections
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

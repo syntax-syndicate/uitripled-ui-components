@@ -1,14 +1,13 @@
 # Dashboard
 
 ## Overview
-Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal",
-    category: "blocks
+Interactive stock portfolio dashboard with status cards, data table, and detailed stock information modal
 
 ## Component Details
 
 - **ID**: `dashboard`
-- **Category**: page
-- **Tags**: toast, notification, alert, shadcn
+- **Category**: blocks
+- **Tags**: dashboard, stocks, table, portfolio, data, modal, shadcn
 
 
 ## Technical Specifications
@@ -24,22 +23,29 @@ Interactive stock portfolio dashboard with status cards, data table, and detaile
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import type React from "react";
+import { motion, type Variants } from "framer-motion";
+import {
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { CheckCircle2, X } from "lucide-react";
+import {
+import { useState } from "react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
+- **Props**: Accepts custom props for configuration and customization
 
 
 
@@ -57,12 +63,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/page/notifications/toast-notification.tsx`
+`@/components/components/stocks-dashboard/dashboard.tsx`
 
 ## Code Structure
 
@@ -125,12 +133,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Landing page sections
+- Portfolio showcases
+- Marketing pages
+- Content sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -1,14 +1,13 @@
 # Glassmorphism Logo Showcase
 
 ## Overview
-Glassmorphism partner grid with floating motion, brand hints, and collaborative call-to-action",
-    category: "blocks
+Glassmorphism partner grid with floating motion, brand hints, and collaborative call-to-action
 
 ## Component Details
 
 - **ID**: `glassmorphism-logo-showcase-block`
 - **Category**: blocks
-- **Tags**: portfolio, profile, glassmorphism, social, personal, shadcn
+- **Tags**: logos, partners, brand, glassmorphism, shadcn
 
 
 ## Technical Specifications
@@ -23,15 +22,16 @@ Glassmorphism partner grid with floating motion, brand hints, and collaborative 
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion, Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import type { LucideIcon } from "lucide-react";
-import {
+import { Infinity, Send } from "lucide-react";
 ```
 
 
@@ -39,6 +39,7 @@ import {
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -56,12 +57,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/glassmorphism-portfolio-block.tsx`
+`@/components/sections/glassmorphism-logo-showcase-block.tsx`
 
 ## Code Structure
 
@@ -132,5 +135,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

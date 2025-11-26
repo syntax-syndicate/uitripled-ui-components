@@ -7,7 +7,7 @@ Background pattern that reacts to mouse movement and click ripples
 
 - **ID**: `reactive-background-grid`
 - **Category**: decorative
-
+- **Tags**: grid, background, reactive, ripple, interactive
 - **Subcategory**: background
 
 ## Technical Specifications
@@ -21,6 +21,7 @@ Background pattern that reacts to mouse movement and click ripples
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useState, MouseEvent } from "react";
@@ -31,9 +32,17 @@ import { motion, AnimatePresence } from "framer-motion";
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+dots?: boolean
+density?: number
+```
 
 
 ## Usage Context
@@ -50,11 +59,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/motion-core/reactive-background-grid.tsx`
+`@/components/motion-core/reactive-background-grid.tsx`
 
 ## Code Structure
 
@@ -124,5 +134,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -1,14 +1,13 @@
 # Interactive Timeline
 
 ## Overview
-Vertical timeline where elements animate and connect with lines on scroll",
-    category: "components
+Vertical timeline where elements animate and connect with lines on scroll
 
 ## Component Details
 
 - **ID**: `interactive-timeline`
-- **Category**: decorative
-- **Tags**: tags, cloud, float, drift, interactive
+- **Category**: components
+- **Tags**: timeline, scroll, connect, animate
 
 
 ## Technical Specifications
@@ -22,21 +21,29 @@ Vertical timeline where elements animate and connect with lines on scroll",
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 ```
 
 
 ### Component Features
-- **State Management**: Uses React hooks (useState/useReducer) for component state
-- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+items?: TimelineItem[]
+```
 
 
 ## Usage Context
@@ -52,12 +59,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/dynamic-tag-cloud.tsx`
+`@/components/motion-core/interactive-timeline.tsx`
 
 ## Code Structure
 
@@ -120,12 +129,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

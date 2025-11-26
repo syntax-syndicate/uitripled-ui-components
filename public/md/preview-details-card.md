@@ -1,14 +1,13 @@
 # Preview Details Card
 
 ## Overview
-Link card that reveals a smooth detail preview box on hover",
-    category: "microinteractions
+Link card that reveals a smooth detail preview box on hover
 
 ## Component Details
 
 - **ID**: `preview-details-card`
 - **Category**: microinteractions
-- **Tags**: badge, icon, spin, shadcn
+- **Tags**: link, hover, preview, card, minimal
 - **Subcategory**: links
 
 ## Technical Specifications
@@ -21,20 +20,23 @@ Link card that reveals a smooth detail preview box on hover",
 
 
 - **Framer Motion**: Yes (for animations and motion effects)
-- **shadcn/ui**: Yes (UI component primitives)
+
+
 
 ### Key Imports
 ```typescript
-import { motion, useReducedMotion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { Sparkles } from "lucide-react";
+import { useId, useMemo, useState } from "react";
+import {
+import { ArrowUpRight, Sparkles } from "lucide-react";
 ```
 
 
 ### Component Features
+- **State Management**: Uses React hooks (useState/useReducer) for component state
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -52,12 +54,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/micro/badges/animated-badge.tsx`
+`@/components/micro/links/preview-details-card.tsx`
 
 ## Code Structure
 
@@ -113,7 +116,7 @@ This component is suitable for:
 ### Implementation Considerations
 When integrating this component, consider:
 1. **Dependencies**: Ensure all required dependencies are installed (framer-motion, lucide-react, react)
-2. **Setup**: Initialize shadcn/ui if not already done
+2. **Setup**: No additional setup required
 3. **Props**: Review the props interface for customization options
 4. **Styling**: Verify your Tailwind configuration matches the component's requirements
 5. **Accessibility**: Test with keyboard navigation and screen readers
@@ -128,5 +131,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

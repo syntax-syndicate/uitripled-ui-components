@@ -16,6 +16,10 @@ const PUBLIC_MD_DIR = path.join(__dirname, "../public/md");
 function generateComponentMarkdown() {
   try {
     // Read registry.json
+    if (!fs.existsSync(REGISTRY_JSON_PATH)) {
+      throw new Error(`Registry file not found: ${REGISTRY_JSON_PATH}`);
+    }
+
     const registryContent = fs.readFileSync(REGISTRY_JSON_PATH, "utf-8");
     const registry = JSON.parse(registryContent);
 
@@ -24,31 +28,51 @@ function generateComponentMarkdown() {
     }
 
     // Also read components-registry.tsx to get additional metadata like tags
-    const componentsRegistryContent = fs.readFileSync(
-      COMPONENTS_REGISTRY_PATH,
-      "utf-8"
-    );
+    let componentMetadataMap = new Map();
 
-    // Create a map of component name to additional metadata from TSX
-    const componentMetadataMap = new Map();
-    const metadataRegex =
-      /id:\s*"([^"]+)",[\s\S]*?name:\s*"([^"]+)",[\s\S]*?description:\s*"([^"]*(?:"[^"]*")*[^"]*)",[\s\S]*?category:\s*"([^"]+)",[\s\S]*?tags:\s*\[([^\]]*)\],[\s\S]*?codePath:\s*"([^"]+)"/g;
+    if (fs.existsSync(COMPONENTS_REGISTRY_PATH)) {
+      const componentsRegistryContent = fs.readFileSync(
+        COMPONENTS_REGISTRY_PATH,
+        "utf-8"
+      );
 
-    let match;
-    while ((match = metadataRegex.exec(componentsRegistryContent)) !== null) {
-      const [, id, name, description, category, tagsStr, codePath] = match;
-      const tags = tagsStr
-        .split(",")
-        .map((t) => t.trim().replace(/"/g, ""))
-        .filter((t) => t);
+      // Extract component objects more reliably
+      // Look for component definitions in the registry array
+      const componentBlockRegex = /\{[\s\S]*?id:\s*["']([^"']+)["'][\s\S]*?\}/g;
 
-      componentMetadataMap.set(id, {
-        name,
-        description,
-        category,
-        tags,
-        codePath,
-      });
+      let match;
+      while (
+        (match = componentBlockRegex.exec(componentsRegistryContent)) !== null
+      ) {
+        const block = match[0];
+        const id = match[1];
+
+        // Extract individual fields from the block
+        const nameMatch = block.match(/name:\s*["']([^"']+)["']/);
+        const descMatch = block.match(
+          /description:\s*["']((?:[^"'\\]|\\.)*)["']/
+        );
+        const categoryMatch = block.match(/category:\s*["']([^"']+)["']/);
+        const codePathMatch = block.match(/codePath:\s*["']([^"']+)["']/);
+
+        // Extract tags array
+        const tagsMatch = block.match(/tags:\s*\[(.*?)\]/s);
+        let tags = [];
+        if (tagsMatch) {
+          tags = tagsMatch[1]
+            .split(",")
+            .map((t) => t.trim().replace(/["']/g, ""))
+            .filter((t) => t);
+        }
+
+        componentMetadataMap.set(id, {
+          name: nameMatch ? nameMatch[1] : id,
+          description: descMatch ? descMatch[1].replace(/\\"/g, '"') : "",
+          category: categoryMatch ? categoryMatch[1] : "",
+          tags: tags,
+          codePath: codePathMatch ? codePathMatch[1] : "",
+        });
+      }
     }
 
     // Create public/md directory if it doesn't exist
@@ -70,12 +94,24 @@ function generateComponentMarkdown() {
         const componentName_display =
           metadata?.name || item.title || componentName;
         const componentDescription =
-          metadata?.description || item.description || "";
-        const componentCategory = metadata?.category || item.category || "";
+          metadata?.description ||
+          item.description ||
+          "No description available";
+        const componentCategory =
+          metadata?.category || item.category || "uncategorized";
         const componentTags = metadata?.tags || [];
-        const componentCodePath =
-          metadata?.codePath ||
-          (item.files && item.files[0] ? item.files[0].path : "");
+
+        // Determine component file path
+        let componentCodePath = metadata?.codePath || "";
+        if (!componentCodePath && item.files && item.files[0]) {
+          componentCodePath = item.files[0].path || item.files[0];
+        }
+
+        if (!componentCodePath) {
+          console.warn(`No code path found for component: ${componentName}`);
+          errorCount++;
+          continue;
+        }
 
         // Read the component file
         let componentFilePath = componentCodePath;
@@ -97,14 +133,13 @@ function generateComponentMarkdown() {
         const imports = componentCode.match(/^import\s+.*$/gm) || [];
         const usesFramerMotion =
           componentCode.includes("framer-motion") ||
-          componentCode.includes('from "framer-motion"') ||
           (item.dependencies && item.dependencies.includes("framer-motion"));
         const usesShadcn =
           componentTags.includes("shadcn") ||
           componentCode.includes("@/components/ui/") ||
           (item.registryDependencies && item.registryDependencies.length > 0);
         const hasProps = componentCode.match(
-          /interface\s+\w+Props|type\s+\w+Props|export\s+(?:function|const)\s+\w+\s*\([^)]*\{/
+          /interface\s+\w+Props|type\s+\w+Props/
         );
         const hasState =
           componentCode.includes("useState") ||
@@ -118,16 +153,17 @@ function generateComponentMarkdown() {
           componentCode.includes("transition") ||
           usesFramerMotion;
 
-        // Extract prop types/interfaces
-        const propInterfaceMatch = componentCode.match(
-          /(?:interface|type)\s+(\w+Props)\s*\{([^}]+)\}/
-        );
-        const props = propInterfaceMatch
-          ? propInterfaceMatch[2]
-              .split("\n")
-              .map((l) => l.trim())
-              .filter((l) => l && !l.startsWith("//"))
-          : [];
+        // Extract prop types/interfaces more reliably
+        const propInterfaceRegex =
+          /(?:interface|type)\s+(\w+Props)\s*[={]\s*\{([^}]*(?:\{[^}]*\}[^}]*)*)\}/s;
+        const propInterfaceMatch = componentCode.match(propInterfaceRegex);
+        let props = [];
+        if (propInterfaceMatch) {
+          props = propInterfaceMatch[2]
+            .split(/[;\n]/)
+            .map((l) => l.trim())
+            .filter((l) => l && !l.startsWith("//") && !l.startsWith("/*"));
+        }
 
         // Get dependencies
         const dependencies = item.dependencies || [];
@@ -151,18 +187,18 @@ ${item.subcategory ? `- **Subcategory**: ${item.subcategory}` : ""}
 ### Dependencies
 ${dependencies.length > 0 ? `**NPM Dependencies**:\n${dependencies.map((dep) => `- ${dep}`).join("\n")}\n` : ""}
 ${registryDependencies.length > 0 ? `**shadcn/ui Components**:\n${registryDependencies.map((dep) => `- ${dep}`).join("\n")}\n` : ""}
-${usesFramerMotion ? "- **Framer Motion**: Yes (for animations and motion effects)" : ""}
-${usesShadcn ? "- **shadcn/ui**: Yes (UI component primitives)" : ""}
+${usesFramerMotion ? "- **Framer Motion**: Yes (for animations and motion effects)\n" : ""}
+${usesShadcn ? "- **shadcn/ui**: Yes (UI component primitives)\n" : ""}
 
 ${imports.length > 0 ? `### Key Imports\n\`\`\`typescript\n${imports.slice(0, 15).join("\n")}${imports.length > 15 ? "\n// ... more imports" : ""}\n\`\`\`\n` : ""}
 
 ### Component Features
-${hasState ? "- **State Management**: Uses React hooks (useState/useReducer) for component state" : ""}
-${hasEffects ? "- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management" : ""}
-${hasAnimations ? "- **Animations**: Contains motion animations powered by Framer Motion" : ""}
-${hasProps ? "- **Props**: Accepts custom props for configuration and customization" : ""}
+${hasState ? "- **State Management**: Uses React hooks (useState/useReducer) for component state\n" : ""}
+${hasEffects ? "- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management\n" : ""}
+${hasAnimations ? "- **Animations**: Contains motion animations powered by Framer Motion\n" : ""}
+${hasProps ? "- **Props**: Accepts custom props for configuration and customization\n" : ""}
 
-${props.length > 0 ? `### Props Interface\n\`\`\`typescript\n${props.slice(0, 8).join("\n")}${props.length > 8 ? "\n// ... more props" : ""}\n\`\`\`\n` : ""}
+${props.length > 0 ? `### Props Interface\n\`\`\`typescript\n${props.slice(0, 10).join("\n")}${props.length > 10 ? "\n// ... more props" : ""}\n\`\`\`\n` : ""}
 
 ## Usage Context
 
@@ -177,8 +213,8 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-${usesShadcn ? "**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies." : ""}
-${usesFramerMotion ? "**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion" : ""}
+${usesShadcn ? "**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run \`npx shadcn-ui@latest init\` and install the required components listed in registryDependencies.\n" : ""}
+${usesFramerMotion ? "**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: \`npm install framer-motion\`\n" : ""}
 
 ## File Location
 
@@ -227,7 +263,7 @@ This component is suitable for:
 
 ### Implementation Considerations
 When integrating this component, consider:
-1. **Dependencies**: Ensure all required dependencies are installed (${dependencies.length > 0 ? dependencies.join(", ") : "none"})
+1. **Dependencies**: Ensure all required dependencies are installed${dependencies.length > 0 ? ` (${dependencies.join(", ")})` : ""}
 2. **Setup**: ${usesShadcn ? "Initialize shadcn/ui if not already done" : "No additional setup required"}
 3. **Props**: Review the props interface for customization options
 4. **Styling**: Verify your Tailwind configuration matches the component's requirements
@@ -240,18 +276,19 @@ ${componentCategory === "blocks" ? "- Landing page sections\n- Portfolio showcas
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via \`npx shadcn-ui@latest add [component-name]\`
 - For TypeScript errors, ensure all types are properly imported
 `;
 
         // Write markdown file
         const outputPath = path.join(PUBLIC_MD_DIR, `${componentName}.md`);
         fs.writeFileSync(outputPath, markdown, "utf-8");
+        console.log(`✓ Generated: ${componentName}.md`);
         successCount++;
       } catch (error) {
         console.error(
-          `Error processing component ${item.name || "unknown"}:`,
-          error
+          `✗ Error processing component ${item.name || "unknown"}:`,
+          error.message
         );
         errorCount++;
       }
@@ -263,7 +300,7 @@ ${componentCategory === "blocks" ? "- Landing page sections\n- Portfolio showcas
     }
     console.log(`📁 Output directory: ${PUBLIC_MD_DIR}`);
   } catch (error) {
-    console.error("Error generating markdown files:", error);
+    console.error("❌ Error generating markdown files:", error.message);
     process.exit(1);
   }
 }

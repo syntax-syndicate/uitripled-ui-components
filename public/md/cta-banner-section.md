@@ -1,14 +1,13 @@
 # CTA Banner Section
 
 ## Overview
-Animated call-to-action banner with gradient background and button animations",
-    category: "page
+Animated call-to-action banner with gradient background and button animations
 
 ## Component Details
 
 - **ID**: `cta-banner-section`
-- **Category**: components
-- **Tags**: projects, portfolio, cards, hover, gallery, shadcn
+- **Category**: page
+- **Tags**: cta, banner, call-to-action, buttons, gradient, shadcn
 
 
 ## Technical Specifications
@@ -24,14 +23,17 @@ Animated call-to-action banner with gradient background and button animations",
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import {
+import { useId, useMemo, useRef } from "react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 ```
 
 
@@ -39,6 +41,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -56,12 +59,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/projects-block.tsx`
+`@/components/sections/cta-banner-section.tsx`
 
 ## Code Structure
 
@@ -124,13 +129,12 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Interactive UI elements
-- Form components
-- Navigation elements
-- Data display components
+- General UI components
+- Interactive elements
+- Animated sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -6,8 +6,8 @@ Three feature cards with icons, hover effects, and glassmorphism styling
 ## Component Details
 
 - **ID**: `feature-cards-block`
-- **Category**: sections
-
+- **Category**: blocks
+- **Tags**: features, cards, grid, icons, hover, glassmorphism, shadcn
 
 
 ## Technical Specifications
@@ -22,6 +22,7 @@ Three feature cards with icons, hover effects, and glassmorphism styling
 
 - **shadcn/ui**: Yes (UI component primitives)
 
+
 ### Key Imports
 ```typescript
 import { Card } from "@/components/ui/card";
@@ -33,6 +34,7 @@ import { Zap, Shield, Sparkles } from "lucide-react";
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -50,12 +52,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
 
 
 ## File Location
 
-`components/sections/feature-cards-block.tsx`
+`@/components/sections/feature-cards-block.tsx`
 
 ## Code Structure
 
@@ -118,12 +121,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Landing page sections
+- Portfolio showcases
+- Marketing pages
+- Content sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

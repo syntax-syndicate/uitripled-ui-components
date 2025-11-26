@@ -6,8 +6,8 @@ Music streaming block with glassmorphism player, curated highlights, and animate
 ## Component Details
 
 - **ID**: `glassmorphism-listen-app-block`
-- **Category**: sections
-
+- **Category**: blocks
+- **Tags**: music, app, glassmorphism, player, audio, shadcn
 
 
 ## Technical Specifications
@@ -25,6 +25,7 @@ Music streaming block with glassmorphism player, curated highlights, and animate
 
 - **shadcn/ui**: Yes (UI component primitives)
 
+
 ### Key Imports
 ```typescript
 import { useState } from "react";
@@ -38,7 +39,9 @@ import {
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -56,12 +59,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
 
 
 ## File Location
 
-`components/sections/glassmorphism-listen-app-block.tsx`
+`@/components/sections/glassmorphism-listen-app-block.tsx`
 
 ## Code Structure
 
@@ -124,12 +128,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Landing page sections
+- Portfolio showcases
+- Marketing pages
+- Content sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

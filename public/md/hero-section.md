@@ -1,14 +1,13 @@
 # Hero Section
 
 ## Overview
-Hero section with staggered text and button reveal",
-    category: "page
+Hero section with staggered text and button reveal
 
 ## Component Details
 
 - **ID**: `hero-section`
 - **Category**: page
-- **Tags**: scroll, reveal, intersection, fade
+- **Tags**: hero, landing, stagger, reveal
 - **Subcategory**: hero
 
 ## Technical Specifications
@@ -22,13 +21,15 @@ Hero section with staggered text and button reveal",
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { useId, useMemo, useRef } from "react";
-import {
-import { Zap, Shield, Rocket } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
 ```
 
 
@@ -36,6 +37,7 @@ import { Zap, Shield, Rocket } from "lucide-react";
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -53,12 +55,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/scroll-reveal.tsx`
+`@/components/sections/hero-section.tsx`
 
 ## Code Structure
 
@@ -128,5 +132,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

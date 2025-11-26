@@ -1,14 +1,13 @@
 # Dynamic Spotlight CTA
 
 ## Overview
-Floating spotlight follows cursor to reveal gradient CTA text with premium effects",
-    category: "page
+Floating spotlight follows cursor to reveal gradient CTA text with premium effects
 
 ## Component Details
 
 - **ID**: `dynamic-spotlight-cta`
-- **Category**: components
-- **Tags**: input, ai, glow, typing, search, smart, feedback
+- **Category**: page
+- **Tags**: cta, spotlight, cursor, gradient, banner, premium, paywall
 
 
 ## Technical Specifications
@@ -22,21 +21,30 @@ Floating spotlight follows cursor to reveal gradient CTA text with premium effec
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
-import { useEffect, useMemo, useRef, useState } from "react";
-import {
-import { useTheme } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
+import { useMemo, useState, MouseEvent } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
-- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+text?: string
+intensity?: number
+radius?: number
+showBlur?: boolean
+```
 
 
 ## Usage Context
@@ -53,11 +61,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/ai-glow-input.tsx`
+`@/components/motion-core/dynamic-spotlight-cta.tsx`
 
 ## Code Structure
 
@@ -120,13 +129,12 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Interactive UI elements
-- Form components
-- Navigation elements
-- Data display components
+- General UI components
+- Interactive elements
+- Animated sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

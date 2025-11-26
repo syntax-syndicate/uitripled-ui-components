@@ -7,7 +7,7 @@ Interactive cash flow bar chart with keyboard focus, tooltips, and screen reader
 
 - **ID**: `cash-flow-chart`
 - **Category**: data
-
+- **Tags**: chart, bar, cashflow, finance, accessible
 - **Subcategory**: charts
 
 ## Technical Specifications
@@ -21,6 +21,7 @@ Interactive cash flow bar chart with keyboard focus, tooltips, and screen reader
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useMemo, useState } from "react";
@@ -32,7 +33,9 @@ import { cn } from "@/lib/utils";
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -51,11 +54,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/data/charts/cash-flow-chart.tsx`
+`@/components/data/charts/cash-flow-chart.tsx`
 
 ## Code Structure
 
@@ -125,5 +129,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

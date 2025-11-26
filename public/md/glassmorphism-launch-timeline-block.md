@@ -1,14 +1,13 @@
 # Glassmorphism Launch Timeline
 
 ## Overview
-Frictionless launch roadmap with staggered motion, glassmorphism milestones, and paired CTA actions",
-    category: "blocks
+Frictionless launch roadmap with staggered motion, glassmorphism milestones, and paired CTA actions
 
 ## Component Details
 
 - **ID**: `glassmorphism-launch-timeline-block`
 - **Category**: blocks
-- **Tags**: metrics, stats, dashboard, glassmorphism, shadcn
+- **Tags**: timeline, launch, roadmap, glassmorphism, shadcn
 
 
 ## Technical Specifications
@@ -23,15 +22,16 @@ Frictionless launch roadmap with staggered motion, glassmorphism milestones, and
 - button
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
 import { motion, type Variants } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { ArrowUpRight, Users, Zap } from "lucide-react";
+import { CalendarDays, Compass, Flag, Rocket, Sparkles } from "lucide-react";
 ```
 
 
@@ -39,6 +39,7 @@ import { ArrowUpRight, Users, Zap } from "lucide-react";
 
 
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -56,12 +57,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/glassmorphism-minimal-metrics-block.tsx`
+`@/components/sections/glassmorphism-launch-timeline-block.tsx`
 
 ## Code Structure
 
@@ -132,5 +135,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

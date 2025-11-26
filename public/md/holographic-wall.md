@@ -7,7 +7,7 @@ Black wall with Pharaonic hieroglyphs and golden cursor light reflection
 
 - **ID**: `holographic-wall`
 - **Category**: decorative
-
+- **Tags**: holographic, wall, cursor, glow, golden, hieroglyphs, pharaonic
 
 
 ## Technical Specifications
@@ -21,6 +21,7 @@ Black wall with Pharaonic hieroglyphs and golden cursor light reflection
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
 import { useState, MouseEvent, useEffect } from "react";
@@ -30,10 +31,19 @@ import { motion } from "framer-motion";
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
+
 - **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+intensity?: number
+radius?: number
+```
 
 
 ## Usage Context
@@ -50,11 +60,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/motion-core/holographic-wall.tsx`
+`@/components/motion-core/holographic-wall.tsx`
 
 ## Code Structure
 
@@ -124,5 +135,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -4,7 +4,8 @@ export type ComponentCategory =
   | "page"
   | "data"
   | "decorative"
-  | "blocks";
+  | "blocks"
+  | "resumes";
 
 export type Component = {
   id: string;
@@ -28,6 +29,7 @@ export const categoryNames: Record<ComponentCategory, string> = {
   data: "Data Animations",
   decorative: "Decorative",
   blocks: "Blocks",
+  resumes: "Resumes",
 };
 
 export const categoryDescriptions: Record<ComponentCategory, string> = {
@@ -38,4 +40,5 @@ export const categoryDescriptions: Record<ComponentCategory, string> = {
   data: "Bring your data to life with counters, progress bars, and lists",
   decorative: "Beautiful text and background effects",
   blocks: "Reusable block sections for landing pages and portfolios",
+  resumes: "Professional resume templates with interactive elements",
 };

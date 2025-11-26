@@ -6,8 +6,8 @@ Animated testimonials grid with staggered cards, star ratings, and hover effects
 ## Component Details
 
 - **ID**: `testimonials-block`
-- **Category**: sections
-
+- **Category**: blocks
+- **Tags**: testimonials, reviews, cards, stagger, ratings, shadcn
 
 
 ## Technical Specifications
@@ -21,7 +21,9 @@ Animated testimonials grid with staggered cards, star ratings, and hover effects
 - card
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
@@ -39,6 +41,7 @@ import { Star, Quote } from "lucide-react";
 
 
 
+
 ## Usage Context
 
 This component is part of the UI TripleD component library, a collection of production-ready motion components built with Framer Motion, shadcn/ui, and Tailwind CSS.
@@ -52,12 +55,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/sections/testimonials-block.tsx`
+`@/components/sections/testimonials-block.tsx`
 
 ## Code Structure
 
@@ -120,12 +125,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- General UI components
-- Interactive elements
-- Animated sections
+- Landing page sections
+- Portfolio showcases
+- Marketing pages
+- Content sections
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

@@ -7,7 +7,7 @@ Section that animates into view on scroll with intersection observer
 
 - **ID**: `scroll-reveal`
 - **Category**: page
-
+- **Tags**: scroll, reveal, intersection, fade
 
 
 ## Technical Specifications
@@ -20,6 +20,7 @@ Section that animates into view on scroll with intersection observer
 
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 
 
 ### Key Imports
@@ -38,6 +39,7 @@ import { Zap, Shield, Rocket } from "lucide-react";
 
 
 
+
 ## Usage Context
 
 This component is part of the UI TripleD component library, a collection of production-ready motion components built with Framer Motion, shadcn/ui, and Tailwind CSS.
@@ -52,11 +54,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`components/sections/scroll-reveal.tsx`
+`@/components/sections/scroll-reveal.tsx`
 
 ## Code Structure
 
@@ -126,5 +129,5 @@ When integrating this component, consider:
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

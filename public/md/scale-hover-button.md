@@ -1,14 +1,13 @@
 # Scale Hover Button
 
 ## Overview
-A button that scales up smoothly on hover",
-    category: "microinteractions
+A button that scales up smoothly on hover
 
 ## Component Details
 
 - **ID**: `scale-hover-button`
-- **Category**: blocks
-- **Tags**: hero, landing, glowy, waves
+- **Category**: microinteractions
+- **Tags**: button, hover, scale
 - **Subcategory**: buttons
 
 ## Technical Specifications
@@ -19,21 +18,20 @@ A button that scales up smoothly on hover",
 
 
 - **Framer Motion**: Yes (for animations and motion effects)
-- **shadcn/ui**: Yes (UI component primitives)
+
+
 
 ### Key Imports
 ```typescript
-import { useEffect, useRef } from "react";
-import { motion, type Variants } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 ```
 
 
 ### Component Features
 
-- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -51,12 +49,13 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/sections/glowy-waves-hero.tsx`
+`@/components/micro/buttons/scale-hover.tsx`
 
 ## Code Structure
 
@@ -112,20 +111,20 @@ This component is suitable for:
 ### Implementation Considerations
 When integrating this component, consider:
 1. **Dependencies**: Ensure all required dependencies are installed (framer-motion)
-2. **Setup**: Initialize shadcn/ui if not already done
+2. **Setup**: No additional setup required
 3. **Props**: Review the props interface for customization options
 4. **Styling**: Verify your Tailwind configuration matches the component's requirements
 5. **Accessibility**: Test with keyboard navigation and screen readers
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Landing page sections
-- Portfolio showcases
-- Marketing pages
-- Content sections
+- Button interactions
+- Toggle switches
+- Icon animations
+- Hover effects
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

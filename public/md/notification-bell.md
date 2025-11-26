@@ -1,14 +1,13 @@
 # Notification Bell
 
 ## Overview
-Bell icon that gently swings when new notification appears",
-    category: "microinteractions
+Bell icon that gently swings when new notification appears
 
 ## Component Details
 
 - **ID**: `notification-bell`
-- **Category**: components
-- **Tags**: slider, drag, confirm, interactive
+- **Category**: microinteractions
+- **Tags**: notification, bell, swing, oscillation
 
 
 ## Technical Specifications
@@ -23,20 +22,31 @@ Bell icon that gently swings when new notification appears",
 - **Framer Motion**: Yes (for animations and motion effects)
 
 
+
 ### Key Imports
 ```typescript
-import { useState } from "react";
-import { motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
-import { Check } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion, type Variants } from "framer-motion";
+import { Bell } from "lucide-react";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 - **Props**: Accepts custom props for configuration and customization
 
+
+### Props Interface
+```typescript
+hasNotifications?: boolean
+count?: number
+onRing?: () => void
+```
 
 
 ## Usage Context
@@ -53,11 +63,12 @@ This component is part of the UI TripleD component library, a collection of prod
 ## Integration Notes
 
 
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/motion-core/drag-to-confirm-slider.tsx`
+`@/components/motion-core/notification-bell.tsx`
 
 ## Code Structure
 
@@ -120,13 +131,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Interactive UI elements
-- Form components
-- Navigation elements
-- Data display components
+- Button interactions
+- Toggle switches
+- Icon animations
+- Hover effects
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported

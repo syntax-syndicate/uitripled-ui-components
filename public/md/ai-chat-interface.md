@@ -1,14 +1,13 @@
 # AI Chat Interface
 
 ## Overview
-Chat input with attachments, model selector, and accessible controls",
-    category: "components
+Chat input with attachments, model selector, and accessible controls
 
 ## Component Details
 
 - **ID**: `ai-chat-interface`
-- **Category**: blocks
-- **Tags**: dashboard, stocks, table, portfolio, data, modal, shadcn
+- **Category**: components
+- **Tags**: chat, ai, input, attachments, shadcn
 - **Subcategory**: chat
 
 ## Technical Specifications
@@ -24,23 +23,27 @@ Chat input with attachments, model selector, and accessible controls",
 - textarea
 
 - **Framer Motion**: Yes (for animations and motion effects)
+
 - **shadcn/ui**: Yes (UI component primitives)
+
 
 ### Key Imports
 ```typescript
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import {
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-import { Badge } from "@/components/ui/badge";
 ```
 
 
 ### Component Features
 - **State Management**: Uses React hooks (useState/useReducer) for component state
 
+- **Side Effects**: Uses useEffect/useLayoutEffect for lifecycle management
+
 - **Animations**: Contains motion animations powered by Framer Motion
+
 
 
 
@@ -58,12 +61,14 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Integration Notes
 
-**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run npx shadcn-ui@latest init and install the required components listed in registryDependencies.
-**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: npm install framer-motion
+**shadcn/ui Setup Required**: This component requires shadcn/ui to be initialized in your project. Run `npx shadcn-ui@latest init` and install the required components listed in registryDependencies.
+
+**Framer Motion Required**: This component uses Framer Motion for animations. Ensure framer-motion is installed: `npm install framer-motion`
+
 
 ## File Location
 
-`@/components/components/stocks-dashboard/stocks-dashboard.tsx`
+`@/components/components/chat/ai-chat-interface.tsx`
 
 ## Code Structure
 
@@ -126,13 +131,13 @@ When integrating this component, consider:
 6. **Performance**: Monitor performance impact, especially if using multiple instances
 
 ### Common Use Cases
-- Landing page sections
-- Portfolio showcases
-- Marketing pages
-- Content sections
+- Interactive UI elements
+- Form components
+- Navigation elements
+- Data display components
 
 ### Troubleshooting
 - If animations don't work, verify Framer Motion is installed
 - If styles look incorrect, check Tailwind configuration
-- If shadcn components are missing, install them via npx shadcn-ui@latest add [component-name]
+- If shadcn components are missing, install them via `npx shadcn-ui@latest add [component-name]`
 - For TypeScript errors, ensure all types are properly imported
