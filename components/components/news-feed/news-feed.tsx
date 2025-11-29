@@ -254,7 +254,7 @@ export function NewsFeed() {
   });
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 space-y-8 min-h-[600px]">
+    <div className="w-full mx-auto space-y-8 min-h-[600px]">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="space-y-1">
