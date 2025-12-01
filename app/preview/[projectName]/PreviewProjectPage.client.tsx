@@ -410,7 +410,7 @@ export default function PreviewProjectPageClient() {
       )}
 
       {/* Preview */}
-      <div className="container mx-auto px-0 py-8">
+      <div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
