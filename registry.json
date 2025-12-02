@@ -1320,7 +1320,9 @@
       "title": "Floating Chat Widget",
       "description": "Floating chat widget with AI agent selection dropdown and animations",
       "registryDependencies": [
-        "button"
+        "button",
+        "select",
+        "avatar"
       ],
       "dependencies": [
         "framer-motion",
