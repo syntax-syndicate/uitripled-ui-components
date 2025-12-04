@@ -137,7 +137,7 @@ export function AnimationsSidebar({
   };
 
   return (
-    <div className="flex h-full flex-col bg-background">
+    <div className="flex h-full flex-col bg-background overflow-hidden">
       {/* Search */}
       <div className="border-b border-border p-4">
         <div className="relative">
@@ -157,7 +157,7 @@ export function AnimationsSidebar({
 
       {/* Categories List */}
       <ScrollArea className="flex-1">
-        <div className="p-2">
+        <div className="p-2 pb-8">
           {categories.map((category) => {
             const animations = animationsByCategory[category];
             const isExpanded = expandedCategories.has(category);
