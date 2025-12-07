@@ -3122,6 +3122,28 @@
       "subcategory": null
     },
     {
+      "name": "synced-lyric-captions",
+      "type": "registry:component",
+      "title": "Synced Lyric Captions",
+      "description": "Bottom-to-top timed captions with play/pause controls and optional audio sync for songs or voiceovers.",
+      "registryDependencies": [
+        "button"
+      ],
+      "dependencies": [
+        "framer-motion",
+        "lucide-react",
+        "react"
+      ],
+      "files": [
+        {
+          "path": "components/motion-core/synced-lyric-captions.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "category": "components",
+      "subcategory": null
+    },
+    {
       "name": "team-section-block",
       "type": "registry:block",
       "title": "Team Section Block",

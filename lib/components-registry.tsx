@@ -146,6 +146,7 @@ import { HolographicWall } from "@/components/motion-core/holographic-wall";
 import { DynamicSpotlightCTA } from "@/components/motion-core/dynamic-spotlight-cta";
 import { AIGlowInput } from "@/components/motion-core/ai-glow-input";
 import { AIResponseTyping } from "@/components/motion-core/ai-response-typing";
+import { SyncedLyricCaptions } from "@/components/motion-core/synced-lyric-captions";
 import { AIUnlockAnimation } from "@/components/motion-core/ai-unlock-animation";
 import { KanbanBoard } from "@/components/components/kanban/kanban-board";
 
@@ -1793,6 +1794,27 @@ export const componentsRegistry: Component[] = [
     codePath: "@/components/motion-core/ai-response-typing.tsx",
     duration: "30ms",
     easing: "linear",
+    display: true,
+  },
+  {
+    id: "synced-lyric-captions",
+    name: "Synced Lyric Captions",
+    description:
+      "Bottom-to-top timed captions with play/pause controls and optional audio sync for songs or voiceovers.",
+    category: "components",
+    tags: [
+      "lyrics",
+      "captions",
+      "audio",
+      "script",
+      "timeline",
+      "framer-motion",
+      "text",
+    ],
+    component: SyncedLyricCaptions,
+    codePath: "@/components/motion-core/synced-lyric-captions.tsx",
+    duration: "variable",
+    easing: "easeOut",
     display: true,
   },
   {

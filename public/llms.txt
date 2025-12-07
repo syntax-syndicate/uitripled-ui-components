@@ -2,11 +2,11 @@
 
 > Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.
 
-**Last Updated:** 2025-12-03T21:44:00.808Z
+**Last Updated:** 2025-12-07T22:03:46.191Z
 
 ## Table of Contents
 
-- Components (77 items)
+- Components (78 items)
 - Blocks (38 items)
 - Pages (15 items)
 - UI Elements (26 items)
@@ -65,6 +65,7 @@
 - [Projects Block](https://ui.tripled.work/components/projects-block): Animated project card with hover effects, image zoom, and link buttons
 - [Smart Hover Card](https://ui.tripled.work/components/smart-hover-card): Card that detects cursor direction and reveals content from that side
 - [Stacked Card Carousel](https://ui.tripled.work/components/stacked-card-carousel): Three stacked cards that shift and tilt dynamically on hover
+- [Synced Lyric Captions](https://ui.tripled.work/components/synced-lyric-captions): Bottom-to-top timed captions with play/pause controls and optional audio sync for songs or voiceovers.
 - [Volume Component](https://ui.tripled.work/components/volume-component): A smooth, draggable volume slider component with framer-motion animations and shadcn styling.
 - [Weather Dashboard](https://ui.tripled.work/components/weather-dashboard): Immersive weather dashboard with hourly charting, weekly outlook, and live air-quality alerts
 - [Web Performance Page](https://ui.tripled.work/components/web-performance-page): Real-time analysis of web vitals and performance metrics
