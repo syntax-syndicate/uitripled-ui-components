@@ -14,6 +14,7 @@ const TweetsLinks = [
   "https://x.com/DavidBensonX/status/1994338699429970153?s=20",
   "https://x.com/ajaypatel_aj/status/1994751849480790247?s=20",
   "https://x.com/gillarohith/status/1995534816029409714?s=20",
+  "https://x.com/kapish_dima/status/1997930667414626743?s=20",
 ];
 
 // List of verified users
@@ -25,6 +26,7 @@ const VERIFIED_USERS = [
   "orcdev",
   "motiondotdev",
   "gillarohith",
+  "kapish_dima",
 ];
 
 interface Tweet {
