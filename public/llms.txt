@@ -2,11 +2,11 @@
 
 > Production-ready UI components, blocks, and pages built on top of shadcn/ui and Framer Motion.
 
-**Last Updated:** 2025-12-07T22:03:46.191Z
+**Last Updated:** 2025-12-13T17:09:24.989Z
 
 ## Table of Contents
 
-- Components (78 items)
+- Components (90 items)
 - Blocks (38 items)
 - Pages (15 items)
 - UI Elements (26 items)
@@ -101,7 +101,6 @@
 ##### Modal
 
 - [Animated Dialog](https://ui.tripled.work/components/animated-dialog): Modal dialog with backdrop fade and spring animation
-- [Bottom Modal](https://ui.tripled.work/components/bottom-modal): Cute bottom-centered modal with smooth slide-up animation and glassmorphism design
 - [Fade & Slide Modal](https://ui.tripled.work/components/fade-slide-modal): Modal with fade backdrop and slide-up animation
 - [Fluid Modal Transition](https://ui.tripled.work/components/fluid-modal-transition): Modal that expands smoothly from clicked trigger element using layoutId
 
@@ -115,6 +114,20 @@
 - [Smart Tabs](https://ui.tripled.work/components/smart-tabs): Animated tabs with sliding pill indicator and smooth content transitions
 
 - [Wizard Form](https://ui.tripled.work/components/wizard-form): Multi-step wizard form with animated transitions, validation, and progress tracking
+
+- [Bottom Modal](https://ui.tripled.work/components/bottom-modal): Cute bottom-centered modal with smooth slide-up animation and glassmorphism design
+- [Native Badge](https://ui.tripled.work/components/native-badge): Animated badge component with glass, glow, and outline variants for native feel.
+- [Native Button](https://ui.tripled.work/components/native-button): Glassmorphism-inspired button component based on shadcn/ui with smooth animations and modern styling
+- [Native Counter Up](https://ui.tripled.work/components/native-counter-up): Animated number counter with smooth easing and accessibility support.
+- [Native Dialog](https://ui.tripled.work/components/native-dialog): A glassmorphism-styled dialog component with backdrop blur and smooth animations, inspired by native OS modals.
+- [Native Flip Text](https://ui.tripled.work/components/native-flip-text): Text that flips through words with a 3D blur transition.
+- [Native Magnetic](https://ui.tripled.work/components/native-magnetic): Magnetic wrapper that applies a cursor-following effect to any content.
+- [Native Morphing Button](https://ui.tripled.work/components/native-morphing-button): Floating action button that morphs into a menu of actions.
+- [Native Notification Bell](https://ui.tripled.work/components/native-notification-bell): Animated notification bell with badge and ringing effect.
+- [Native Tabs](https://ui.tripled.work/components/native-tabs): A sleek tabs component with a smooth sliding background indicator using Framer Motion layout animations.
+- [Native Tooltip](https://ui.tripled.work/components/native-tooltip): A glassmorphism-styled tooltip with smooth spring animations using Framer Motion.
+- [Native Typewriter](https://ui.tripled.work/components/native-typewriter): Typewriter effect with speed control, looping, and blinking cursor.
+- [Social Login Button](https://ui.tripled.work/components/social-login-button): A set of animated social login buttons for major platforms (Github, Google, X, etc.) with various effects.
 
 - [Interactive Resume Card](https://ui.tripled.work/components/resume-card): Professional resume template with animated sections and interactive elements
 - [Minimal Resume](https://ui.tripled.work/components/minimal-resume): Vercel-inspired minimal resume with clean typography and grid layout
