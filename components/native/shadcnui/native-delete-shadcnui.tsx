@@ -120,7 +120,7 @@ export function NativeDelete({
             size="default"
             className={cn(
               sizeVariants[size],
-              "shadow-md hover:shadow-lg transition-shadow text-primary-foreground",
+              "shadow-md hover:shadow-lg transition-shadow",
               disabled && "opacity-50 cursor-not-allowed"
             )}
             onClick={isExpanded ? handleConfirm : handleDeleteClick}

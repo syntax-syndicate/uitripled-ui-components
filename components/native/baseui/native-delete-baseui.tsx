@@ -119,7 +119,7 @@ export function NativeDelete({
             nativeButton
             className={cn(
               sizeVariants[size],
-              "inline-flex items-center justify-center rounded-md bg-destructive text-primary-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg transition-shadow",
+              "inline-flex items-center justify-center rounded-md bg-destructive text-white hover:bg-destructive/90 shadow-md hover:shadow-lg transition-shadow",
               disabled && "opacity-50 cursor-not-allowed"
             )}
             onClick={isExpanded ? handleConfirm : handleDeleteClick}
