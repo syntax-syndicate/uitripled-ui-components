@@ -209,43 +209,35 @@ function HeroFlip() {
     return () => clearInterval(interval);
   }, []);
 
-  const current = libs[index];
-
   return (
-    <div className="inline-flex items-center justify-center overflow-hidden h-6 w-auto align-bottom">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={current.name}
-          initial={{ y: 10, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -10, opacity: 0 }}
-          transition={{
-            duration: 0.25,
-            ease: "easeOut",
-          }}
-          className="flex items-center gap-2 justify-center w-[110px]"
+    <div className="inline-flex items-center justify-center h-6 w-[110px] align-bottom">
+      {libs.map((lib, i) => (
+        <div
+          key={lib.name}
+          className="absolute flex items-center gap-2 justify-center transition-opacity duration-300"
+          style={{ opacity: i === index ? 1 : 0 }}
         >
           <div className="relative w-6 h-6 flex items-center justify-center">
             <Image
-              src={current.logoLight}
-              alt={current.name}
+              src={lib.logoLight}
+              alt={lib.name}
               width={18}
               height={18}
               className="block dark:hidden"
             />
             <Image
-              src={current.logoDark}
-              alt={current.name}
+              src={lib.logoDark}
+              alt={lib.name}
               width={18}
               height={18}
               className="hidden dark:block"
             />
           </div>
           <span className="font-bold text-lg tracking-normal normal-case text-foreground">
-            {current.name}
+            {lib.name}
           </span>
-        </motion.div>
-      </AnimatePresence>
+        </div>
+      ))}
     </div>
   );
 }
