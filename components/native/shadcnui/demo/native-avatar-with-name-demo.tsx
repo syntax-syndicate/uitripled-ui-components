@@ -82,42 +82,5 @@ export function NativeAvatarWithNameNoImage() {
 }
 
 export function NativeAvatarWithNameDemo() {
-  return (
-    <div className="flex flex-col gap-8 w-full">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Default (Bottom)
-          </h3>
-          <NativeAvatarWithNameDefault />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Top</h3>
-          <NativeAvatarWithNameTop />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Left</h3>
-          <NativeAvatarWithNameLeft />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Right</h3>
-          <NativeAvatarWithNameRight />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Small</h3>
-          <NativeAvatarWithNameSmall />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Large</h3>
-          <NativeAvatarWithNameLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            No Image
-          </h3>
-          <NativeAvatarWithNameNoImage />
-        </div>
-      </div>
-    </div>
-  );
+  return <NativeAvatarWithNameDefault />;
 }

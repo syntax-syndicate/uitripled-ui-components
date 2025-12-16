@@ -55,36 +55,5 @@ export function NativeAvatarExpandNoImage() {
 }
 
 export function NativeAvatarExpandDemo() {
-  return (
-    <div className="flex flex-col gap-8 w-full">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Default
-          </h3>
-          <NativeAvatarExpandDefault />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Small</h3>
-          <NativeAvatarExpandSmall />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Large</h3>
-          <NativeAvatarExpandLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Extra Large
-          </h3>
-          <NativeAvatarExpandExtraLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            No Image
-          </h3>
-          <NativeAvatarExpandNoImage />
-        </div>
-      </div>
-    </div>
-  );
+  return <NativeAvatarExpandDefault />;
 }

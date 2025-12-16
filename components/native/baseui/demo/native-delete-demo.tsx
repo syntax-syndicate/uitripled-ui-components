@@ -122,42 +122,5 @@ export function NativeDeleteDisabled() {
 }
 
 export function NativeDeleteDemo() {
-  return (
-    <div className="flex flex-col gap-8 w-full">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Default
-          </h3>
-          <NativeDeleteDefault />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Small</h3>
-          <NativeDeleteSmall />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Large</h3>
-          <NativeDeleteLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Custom Text
-          </h3>
-          <NativeDeleteCustomText />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            No Icon
-          </h3>
-          <NativeDeleteNoIcon />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Disabled
-          </h3>
-          <NativeDeleteDisabled />
-        </div>
-      </div>
-    </div>
-  );
+  return <NativeDeleteDefault />;
 }

@@ -115,42 +115,5 @@ export function NativeImageCheckboxGrid() {
 }
 
 export function NativeImageCheckboxDemo() {
-  return (
-    <div className="flex flex-col gap-8 w-full">
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Default
-          </h3>
-          <NativeImageCheckboxDefault />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Small</h3>
-          <NativeImageCheckboxSmall />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">Large</h3>
-          <NativeImageCheckboxLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Extra Large
-          </h3>
-          <NativeImageCheckboxExtraLarge />
-        </div>
-        <div className="space-y-2">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Selected
-          </h3>
-          <NativeImageCheckboxSelected />
-        </div>
-        <div className="space-y-2 col-span-full">
-          <h3 className="font-semibold text-muted-foreground text-sm">
-            Grid Example
-          </h3>
-          <NativeImageCheckboxGrid />
-        </div>
-      </div>
-    </div>
-  );
+  return <NativeImageCheckboxDefault />;
 }
