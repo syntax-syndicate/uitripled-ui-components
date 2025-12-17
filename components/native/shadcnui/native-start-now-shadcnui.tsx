@@ -3,7 +3,7 @@
 import { NativeButton } from "@/components/native/shadcnui/native-button-shadcnui";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Loader2, Sparkles } from "lucide-react";
+import { ArrowRight, Loader2, Rocket } from "lucide-react";
 import { ReactNode, useState } from "react";
 
 export interface NativeStartNowProps {
@@ -35,10 +35,10 @@ export interface NativeStartNowProps {
    * Show sparkle animation on hover
    * Default: true
    */
-  showSparkles?: boolean;
+  showRocket?: boolean;
   /**
-   * Icon to use for sparkles and success state
-   * Default: Sparkles icon
+   * Icon to use for Rocket and success state
+   * Default: Rocket icon
    */
   icon?: ReactNode;
   /**
@@ -81,7 +81,7 @@ export function NativeStartNow({
   loadingLabel = "Starting...",
   successLabel = "Let's Go!",
   size = "md",
-  showSparkles = true,
+  showRocket = true,
   icon,
   className,
   disabled = false,
@@ -140,7 +140,7 @@ export function NativeStartNow({
     >
       {/* Sparkle particles */}
       <AnimatePresence>
-        {showSparkles && isHovered && status === "idle" && (
+        {showRocket && isHovered && status === "idle" && (
           <>
             {[...Array(6)].map((_, i) => (
               <motion.div
@@ -168,7 +168,7 @@ export function NativeStartNow({
               >
                 <div className="h-3 w-3 text-primary fill-primary">
                   {icon || (
-                    <Sparkles className="h-3 w-3 text-primary fill-primary" />
+                    <Rocket className="h-3 w-3 text-primary fill-primary" />
                   )}
                 </div>
               </motion.div>
@@ -286,7 +286,7 @@ export function NativeStartNow({
                 )}
               >
                 {icon || (
-                  <Sparkles
+                  <Rocket
                     className={cn(
                       iconSizeVariants[size === "md" ? "md" : size],
                       "fill-current"
