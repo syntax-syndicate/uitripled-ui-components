@@ -19,8 +19,14 @@ import { CurrencyConverterCard } from "@/components/sections/shadcnui/currency-c
 import { ProjectsBlock } from "@/components/sections/shadcnui/projects-block";
 import { TweetsSlider } from "@/components/sections/tweets-slider";
 import { Button } from "@/components/ui/button";
-import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { motion } from "framer-motion";
+import { ArrowRight, Plus, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
@@ -34,12 +40,19 @@ function StarButtonFallback() {
   );
 }
 
+
+const SPONSORS = [
+  {
+    username: "DavidHDev",
+  },
+];
+
 export default function HomePageContent() {
   return (
     <div className="min-h-screen bg-background">
       {/* Top centered actions */}
       <section className="bg-background/80">
-        <div className="container relative mx-auto flex flex-col items-center gap-4 px-4 pt-32 pb-24">
+        <div className="container relative mx-auto flex flex-col items-center gap-4 px-4 pt-32 pb-20">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-primary/20 blur-[160px]"
@@ -103,6 +116,63 @@ export default function HomePageContent() {
             <Suspense fallback={<StarButtonFallback />}>
               <GithubStarButton />
             </Suspense>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            className="mt-12 flex flex-col items-center gap-3"
+          >
+            <span className="text-xs font-medium text-muted-foreground/80">
+              Sponsored by
+            </span>
+            <div className="flex items-center gap-3">
+              <TooltipProvider delayDuration={0}>
+                {SPONSORS.map((sponsor, index) => (
+                  <Tooltip key={sponsor.username}>
+                    <TooltipTrigger asChild>
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                          delay: 0.1 + index * 0.1,
+                        }}
+                      >
+                        <Link
+                          href={`https://github.com/${sponsor.username}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="relative block h-10 w-10 overflow-hidden rounded-full border border-border transition-transform hover:scale-105"
+                        >
+                          <Image
+                            src={`https://github.com/${sponsor.username}.png`}
+                            alt={sponsor.username}
+                            fill
+                            className="object-cover"
+                          />
+                        </Link>
+                      </motion.div>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{sponsor.username}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                ))}
+              </TooltipProvider>
+
+              <Link
+                href="https://github.com/sponsors/moumen-soliman"
+                target="_blank"
+                rel="noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-all hover:bg-muted shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:shadow-[0_0_25px_rgba(255,255,255,0.5)] border-white/20"
+              >
+                <Plus className="h-4 w-4 text-foreground" strokeWidth={3} />
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
