@@ -283,7 +283,7 @@ export function ShaderControls({
   ].includes(activeShader);
 
   return (
-    <div className="w-full md:w-80 lg:w-96 flex-shrink-0 border-b md:border-b-0 md:border-r border-border p-6 overflow-y-auto bg-muted/10">
+    <div className="w-full md:w-80 lg:w-96 flex-shrink-0 border-b md:border-b-0 md:border-r border-border p-6 overflow-y-auto bg-muted/10 h-auto md:h-full max-h-[50vh] md:max-h-none">
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
           <h1 className="text-2xl font-bold">Shader Builder</h1>

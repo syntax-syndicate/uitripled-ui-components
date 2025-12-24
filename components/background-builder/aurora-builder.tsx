@@ -289,7 +289,7 @@ export default function AuroraBackground({ children }: { children?: React.ReactN
   return (
     <div className="flex h-screen w-full flex-col md:flex-row bg-background text-foreground overflow-hidden">
       {/* Sidebar Controls */}
-      <div className="w-full md:w-80 lg:w-96 flex-shrink-0 border-b md:border-b-0 md:border-r border-border flex flex-col bg-muted/10 z-20 shadow-xl h-full">
+      <div className="w-full md:w-80 lg:w-96 flex-shrink-0 border-b md:border-b-0 md:border-r border-border flex flex-col bg-muted/10 z-20 shadow-xl h-auto md:h-full max-h-[50vh] md:max-h-none overflow-y-auto">
         <div className="p-6 pb-2">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-2xl font-bold flex items-center gap-2">

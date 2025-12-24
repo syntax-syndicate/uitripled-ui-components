@@ -14,7 +14,7 @@ export function ShaderPreview(props: ShaderPreviewProps) {
   const [magnifierEnabled, setMagnifierEnabled] = useState(false);
 
   return (
-    <div className="flex-1 relative overflow-hidden bg-checkered group">
+    <div className="flex-1 relative overflow-hidden bg-checkered group min-h-[50vh] md:min-h-0">
       <div className="absolute inset-0 flex items-center justify-center">
         <ShaderRenderer {...props} />
       </div>

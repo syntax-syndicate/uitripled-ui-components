@@ -59,7 +59,7 @@ export function ShaderBuilder() {
   const [spiralBg, setSpiralBg] = useState("#000000");
 
   return (
-    <div className="flex h-screen w-full flex-col md:flex-row bg-background text-foreground">
+    <div className="flex h-screen w-full flex-col md:flex-row bg-background text-foreground overflow-hidden">
       <ShaderControls
         activeShader={activeShader}
         setActiveShader={setActiveShader}

@@ -132,7 +132,7 @@ export function PreviewCanvas(props: PreviewCanvasProps) {
 
   return (
     <div
-      className="flex-1 relative overflow-hidden cursor-crosshair group"
+      className="flex-1 relative overflow-hidden cursor-crosshair group min-h-[50vh] md:min-h-0"
       onMouseMove={props.onMouseMove}
     >
       <PreviewContent {...props} />
