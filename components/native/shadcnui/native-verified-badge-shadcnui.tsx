@@ -185,6 +185,10 @@ export function VerifiedBadgeOutline({
       stroke: "stroke-emerald-500",
       text: "text-emerald-500",
     },
+    black: {
+      stroke: "stroke-black",
+      text: "text-black",
+    },
   };
 
   const { stroke, text } = colorClasses[variant];
