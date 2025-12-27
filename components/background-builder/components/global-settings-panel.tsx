@@ -96,7 +96,7 @@ export function GlobalSettingsPanel({
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 max-h-[280px] overflow-y-auto pr-1">
+        <div className="grid grid-cols-2 gap-2 pr-1">
           {filteredPresets.map(([key, preset]) => (
             <button
               key={key}
