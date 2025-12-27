@@ -1,5 +1,5 @@
 import { ColorSchemeSync } from "@/components/color-scheme-sync";
-import { Footer } from "@/components/footer";
+import { ConditionalFooter } from "@/components/conditional-footer";
 import { Header } from "@/components/header";
 import { StarUsSideReminder } from "@/components/star-us-side-reminder";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -100,7 +100,7 @@ export default function RootLayout({
             <NuqsAdapter>
               <Header />
               <main className="min-h-screen">{children}</main>
-              <Footer />
+              <ConditionalFooter />
               <StarUsSideReminder />
             </NuqsAdapter>
           </UILibraryProvider>
