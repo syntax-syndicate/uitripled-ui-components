@@ -40,6 +40,11 @@ const SPONSORS = [
     username: "DavidHDev",
   },
   {
+    username: "shadcn/studio",
+    url: "https://shadcnstudio.com?utm_source=uitripled&utm_medium=referral&utm_campaign=sponsors",
+    logo: "https://ts-assets.b-cdn.net/ss-assets/logo/logo.png",
+  },
+  {
     username: "shadcraft",
     url: "https://shadcraft.com?utm_source=uitripled&utm_medium=referral&utm_campaign=sponsors",
   },
@@ -147,7 +152,10 @@ export default function HomePageContent() {
                     className="flex items-center gap-2"
                   >
                     <NativeAvatarWithName
-                      src={`https://github.com/${sponsor.username}.png`}
+                      src={
+                        sponsor.logo ||
+                        `https://github.com/${sponsor.username}.png`
+                      }
                       name={sponsor.username}
                       size="sm"
                       direction="top"

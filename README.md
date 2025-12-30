@@ -46,6 +46,13 @@
 <table align="center">
   <tr>
     <td align="center">
+      <a href="https://shadcnstudio.com">
+        <img width="70" height="70" alt="shadcn/studio" src="https://ts-assets.b-cdn.net/ss-assets/logo/logo.png" style="border-radius: 100%;" />
+      </a>
+      <br />
+      <strong><a href="https://shadcnstudio.com">shadcn/studio</a></strong>
+    </td>
+    <td align="center">
       <a href="https://shadcraft.com">
         <img width="70" height="70" alt="Shadcraft" src="https://github.com/shadcraft.png" style="border-radius: 100%;" />
       </a>
