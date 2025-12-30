@@ -41,7 +41,7 @@
 - [shadcn/ui](https://ui.shadcn.com)
 - [Radix UI](https://www.radix-ui.com)
 
-## Sponsored
+## Sponsored by
 
 <table align="center">
   <tr>
