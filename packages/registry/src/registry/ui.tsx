@@ -522,7 +522,7 @@ export const uiComponents: Component[] = [
     codePath: "@uitripled/react-shadcn/src/components/page/about/about-us-page.tsx",
     duration: "600ms",
     easing: "easeOut",
-    display: true,
+    display: false, //temporary
   },
   {
     id: "minimal-resume",
