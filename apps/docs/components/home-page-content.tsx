@@ -18,7 +18,7 @@ import { AnimatedProfileMenu } from "@/components/navigation/animated-profile-me
 import { BrowseFolder } from "@/components/sections/browse-folder";
 import { CurrencyConverterCard } from "@/components/sections/currency-converter-card";
 import { ProjectsBlock } from "@/components/sections/projects-block";
-// import { TweetsSlider } from "@/components/sections/tweets-slider";
+import { TweetsSlider } from "@/components/sections/tweets-slider";
 import { Button } from "@uitripled/react-shadcn/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Plus, Star } from "lucide-react";
@@ -212,7 +212,7 @@ export default function HomePageContent() {
           </div>
         }
       >
-        {/* <TweetsSlider /> */}
+        <TweetsSlider />
       </Suspense>
 
       {/* Components gallery in a bento-style grid */}

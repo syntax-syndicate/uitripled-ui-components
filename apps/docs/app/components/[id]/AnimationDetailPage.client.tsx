@@ -26,6 +26,7 @@ import {
   ArrowLeft,
   ArrowRight,
   Check,
+  ChevronDown,
   Copy,
   FileText,
   Info,
@@ -83,6 +84,7 @@ export default function AnimationDetailPageClient({
 
   const Component = component.component;
   const requiresShadcn = component.tags.includes("shadcn");
+  const [installMethod, setInstallMethod] = React.useState<"uitripled" | "shadcn">("shadcn");
   const codeLineCount = React.useMemo(() => code.split("\n").length, [code]);
   const showLongCodeNote = codeLineCount > 400;
 
@@ -679,196 +681,221 @@ export default function AnimationDetailPageClient({
             </TabsList>
 
             <TabsContent value="view" className="space-y-6">
-              <div className="space-y-8">
-                {/* Preview & Usage Section */}
-                <div className="space-y-4">
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <h2 className="text-lg font-semibold">Preview</h2>
-                    <div className="flex items-center gap-2">
-                      {/* {component.category === "native" && (
-                        <Select
-                          value={selectedLibrary}
-                          onValueChange={(value) =>
-                            setSelectedLibrary(value as UILibrary)
-                          }
-                        >
-                          <SelectTrigger className="w-[140px]">
-                            <SelectValue placeholder="Select library" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {(Object.keys(uiLibraryLabels) as UILibrary[]).map((lib) => (
-                              <SelectItem key={lib} value={lib}>
-                                {uiLibraryLabels[lib]}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      )} */}
-                      {relatedComponents && relatedComponents.length > 0 && (
-                        <Select
-                          value={selectedVariantId}
-                          onValueChange={setSelectedVariantId}
-                        >
-                          <SelectTrigger className="w-[180px]">
-                            <SelectValue placeholder="Select variant" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {relatedComponents.map((variant) => (
-                              <SelectItem key={variant.id} value={variant.id}>
-                                {variant.name}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      )}
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        onClick={() => {
-                          if (
-                            relatedComponents &&
-                            relatedComponents.length > 0
-                          ) {
-                            handleVariantRefresh(selectedVariantId);
-                          } else {
-                            handleRefresh();
-                          }
-                        }}
-                        className="gap-1.5"
-                      >
-                        <RefreshCw className="h-3 w-3" />
-                        Refresh
-                      </Button>
-                    </div>
-                  </div>
-
-                  <div className="relative min-h-[320px] py-6 md:min-h-[500px] border border-border rounded-lg flex items-center justify-center bg-background/50">
-                    {isLoadingComponent ? (
-                      <div className="flex flex-col items-center justify-center gap-4 p-8">
-                        <p className="text-sm text-muted-foreground">
-                          Loading component...
-                        </p>
-                      </div>
-                    ) : !isAvailableInSelectedLibrary ? (
-                      <div className="flex flex-col items-center justify-center gap-4 p-8 text-center">
-                        <div className="rounded-full bg-muted p-4">
-                          <AlertTriangle className="h-8 w-8 text-muted-foreground" />
+              <div className="space-y-12">
+                {/* Preview Section */}
+                <div className="group relative">
+                  <div className="flex flex-col gap-4">
+                    <div className="flex flex-wrap items-center justify-between gap-4">
+                      <div className="flex items-center gap-2">
+                        <div className="flex items-center overflow-hidden rounded-md border border-border bg-muted/50 transition-all hover:ring-1 hover:ring-border">
+                          <Select
+                            value={installMethod}
+                            onValueChange={(v: "uitripled" | "shadcn") => setInstallMethod(v)}
+                          >
+                            <SelectTrigger className="h-7 w-fit border-none bg-transparent px-2 text-[10px] font-medium transition-colors hover:bg-muted focus:ring-0 focus:ring-offset-0">
+                               <SelectValue />
+                            </SelectTrigger>
+                            <SelectContent align="start" className="min-w-[100px]">
+                              <SelectItem value="uitripled" className="text-xs">uitripled</SelectItem>
+                              <SelectItem value="shadcn" className="text-xs">shadcn</SelectItem>
+                            </SelectContent>
+                          </Select>
+                          <div className="h-3 w-[1px] bg-border" />
+                          <button
+                            onClick={() =>
+                              handleCopyInstall(
+                                installMethod === "uitripled"
+                                  ? `npx uitripled add ${installId}`
+                                  : `npx shadcn@latest add @uitripled/${installId}`,
+                                "npx"
+                              )
+                            }
+                            className="flex items-center gap-2 px-2.5 py-1 font-mono text-[10px] transition-colors hover:bg-muted"
+                            title="Copy install command"
+                          >
+                            <span className="text-muted-foreground/70">
+                              {installMethod === "uitripled" ? "add" : "add @uitripled/"}
+                            </span>
+                            <span className="font-bold text-foreground">
+                              {installId}
+                            </span>
+                            <div className="ml-1 border-l border-border pl-2">
+                              {copiedInstall === "npx" ? (
+                                <Check className="h-3 w-3 text-emerald-500" />
+                              ) : (
+                                <Copy className="h-3 w-3 opacity-50" />
+                              )}
+                            </div>
+                          </button>
                         </div>
-                        <div className="space-y-2">
-                          <h3 className="text-lg font-semibold">
-                            Not Available in {uiLibraryLabels[selectedLibrary]}
-                          </h3>
-                          <p className="text-sm text-muted-foreground max-w-md">
-                            This component is not implemented in{" "}
-                            {uiLibraryLabels[selectedLibrary]}.
-                            {availableLibraries.length > 0 && (
-                              <>
-                                {" "}
-                                Available in:{" "}
-                                {availableLibraries
-                                  .map((lib) => uiLibraryLabels[lib])
-                                  .join(", ")}
-                                .
-                              </>
-                            )}
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        {relatedComponents && relatedComponents.length > 0 && (
+                          <Select
+                            value={selectedVariantId}
+                            onValueChange={setSelectedVariantId}
+                          >
+                            <SelectTrigger className="h-8 w-[140px] text-xs transition-colors hover:bg-muted/50">
+                              <SelectValue placeholder="Variant" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {relatedComponents.map((variant) => (
+                                <SelectItem key={variant.id} value={variant.id}>
+                                  {variant.name}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                        )}
+                        <Button
+                          variant="outline"
+                          size="icon"
+                          onClick={() => {
+                            if (
+                              relatedComponents &&
+                              relatedComponents.length > 0
+                            ) {
+                              handleVariantRefresh(selectedVariantId);
+                            } else {
+                              handleRefresh();
+                            }
+                          }}
+                          className="h-8 w-8 text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground"
+                          title="Refresh preview"
+                        >
+                          <RefreshCw className="h-3.5 w-3.5" />
+                          <span className="sr-only">Refresh preview</span>
+                        </Button>
+                      </div>
+                    </div>
+
+                    <div className="relative flex min-h-[350px] items-center justify-center overflow-hidden rounded-xl border border-border bg-background/50 py-6 md:min-h-[500px]">
+                      <div className="absolute inset-0 z-0 bg-grid-white/[0.02] [mask-image:radial-gradient(ellipse_at_center,black_70%,transparent_100%)]" />
+                      {isLoadingComponent ? (
+                        <div className="flex flex-col items-center justify-center gap-4 p-8">
+                          <p className="text-sm text-muted-foreground">
+                            Loading component...
                           </p>
                         </div>
-                        <div className="flex gap-2 flex-wrap justify-center">
-                          {availableLibraries.map((lib) => (
-                            <Button
-                              key={lib}
-                              variant="outline"
-                              size="sm"
-                              onClick={() => setSelectedLibrary(lib)}
-                            >
-                              Switch to {uiLibraryLabels[lib]}
-                            </Button>
-                          ))}
+                      ) : !isAvailableInSelectedLibrary ? (
+                        <div className="flex flex-col items-center justify-center gap-4 p-8 text-center">
+                          <div className="rounded-full bg-muted p-4">
+                            <AlertTriangle className="h-8 w-8 text-muted-foreground" />
+                          </div>
+                          <div className="space-y-2">
+                            <h3 className="text-lg font-semibold">
+                              Not Available in {uiLibraryLabels[selectedLibrary]}
+                            </h3>
+                            <p className="text-sm text-muted-foreground max-w-md">
+                              This component is not implemented in{" "}
+                              {uiLibraryLabels[selectedLibrary]}.
+                              {availableLibraries.length > 0 && (
+                                <>
+                                  {" "}
+                                  Available in:{" "}
+                                  {availableLibraries
+                                    .map((lib) => uiLibraryLabels[lib])
+                                    .join(", ")}
+                                  .
+                                </>
+                              )}
+                            </p>
+                          </div>
+                          <div className="flex gap-2 flex-wrap justify-center">
+                            {availableLibraries.map((lib) => (
+                              <Button
+                                key={lib}
+                                variant="outline"
+                                size="sm"
+                                onClick={() => setSelectedLibrary(lib)}
+                              >
+                                Switch to {uiLibraryLabels[lib]}
+                              </Button>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    ) : relatedComponents && relatedComponents.length > 0 ? (
-                      (() => {
-                        const selectedVariant =
-                          relatedComponents.find(
-                            (v) => v.id === selectedVariantId
-                          ) || relatedComponents[0];
-                        if (!selectedVariant) return null;
-                        // Use dynamically loaded variant component if available, otherwise use original
-                        const ActiveComponent =
-                          dynamicVariants[selectedVariant.id] ||
-                          selectedVariant.component;
-                        return (
-                          <motion.div
-                            key={
-                              selectedVariant.id +
-                              selectedLibrary +
-                              (variantRefreshKeys[selectedVariant.id] || 0)
-                            }
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.2 }}
-                            className="flex items-center justify-center w-full h-full p-8"
-                          >
-                            <ActiveComponent />
-                          </motion.div>
-                        );
-                      })()
-                    ) : (
-                      <motion.div
-                        key={`${refreshKey}-${selectedLibrary}`}
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.2 }}
-                        className="flex items-center justify-center w-full h-full p-8"
-                      >
-                        <ActiveComponent />
-                      </motion.div>
-                    )}
+                      ) : relatedComponents && relatedComponents.length > 0 ? (
+                        (() => {
+                          const selectedVariant =
+                            relatedComponents.find(
+                              (v) => v.id === selectedVariantId
+                            ) || relatedComponents[0];
+                          if (!selectedVariant) return null;
+                          const ActiveComponent =
+                            dynamicVariants[selectedVariant.id] ||
+                            selectedVariant.component;
+                          return (
+                            <motion.div
+                              key={
+                                selectedVariant.id +
+                                selectedLibrary +
+                                (variantRefreshKeys[selectedVariant.id] || 0)
+                              }
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ duration: 0.2 }}
+                              className="flex items-center justify-center w-full h-full p-8"
+                            >
+                              <ActiveComponent />
+                            </motion.div>
+                          );
+                        })()
+                      ) : (
+                        <motion.div
+                          key={`${refreshKey}-${selectedLibrary}`}
+                          initial={{ opacity: 0, scale: 0.95 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.2 }}
+                          className="flex items-center justify-center w-full h-full p-8"
+                        >
+                          <ActiveComponent />
+                        </motion.div>
+                      )}
+                    </div>
                   </div>
-
-                  {isAvailableInSelectedLibrary &&
-                    relatedComponents &&
-                    relatedComponents.length > 0 && (
-                      <div className="space-y-3">
-                        <h3 className="text-sm font-medium">Usage</h3>
-                        <CodeBlock
-                          code={(() => {
-                            // If we have a library-specific demo code and we are on the default variant (or just general usage), use it
-                            // For native components with "default" variant, this overrides the registry code
-                            if (
-                              component.category === "native" &&
-                              selectedVariantId === "default"
-                            ) {
-                              if (
-                                selectedLibrary === "baseui" &&
-                                baseuiDemoCode
-                              )
-                                return baseuiDemoCode;
-                              if (
-                                selectedLibrary === "shadcnui" &&
-                                shadcnuiDemoCode
-                              )
-                                return shadcnuiDemoCode;
-                              if (
-                                selectedLibrary === "carbon" &&
-                                carbonDemoCode
-                              )
-                                return carbonDemoCode;
-                            }
-
-                            // Fallback to existing logic
-                            return relatedComponents &&
-                              relatedComponents.length > 0 &&
-                              variantCodes
-                              ? variantCodes[selectedVariantId] || displayCode
-                              : displayCode;
-                          })()}
-                        />
-                      </div>
-                    )}
                 </div>
 
-                {showLongCodeNote && (
+                {/* Usage & Source Section */}
+                <div className="space-y-12">
+                  <div className="space-y-3">
+                    <h2 className="text-lg font-semibold">Usage</h2>
+                    <CodeBlock
+                      code={(() => {
+                        if (
+                          component.category === "native" &&
+                          selectedVariantId === "default"
+                        ) {
+                          if (selectedLibrary === "baseui" && baseuiDemoCode)
+                            return baseuiDemoCode;
+                          if (selectedLibrary === "shadcnui" && shadcnuiDemoCode)
+                            return shadcnuiDemoCode;
+                          if (selectedLibrary === "carbon" && carbonDemoCode)
+                            return carbonDemoCode;
+                        }
+                        return relatedComponents &&
+                          relatedComponents.length > 0 &&
+                          variantCodes
+                          ? variantCodes[selectedVariantId] || displayCode
+                          : displayCode;
+                      })()}
+                    />
+                  </div>
+
+                  {(component.category === "native" || (relatedComponents && relatedComponents.length > 0)) && (
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <h2 className="text-lg font-semibold">Manual Installation</h2>
+                        <span className="text-xs text-muted-foreground">
+                          Source code for {component.name}
+                        </span>
+                      </div>
+                      <CodeBlock code={displayCode} />
+                    </div>
+                  )}
+                </div>
+
+                {showLongCodeNote && (component.category === "native" || (relatedComponents && relatedComponents.length > 0)) && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -889,173 +916,6 @@ export default function AnimationDetailPageClient({
                       </p>
                     </div>
                   </motion.div>
-                )}
-
-                {/* Installation Section - Unified */}
-                {isAvailableInSelectedLibrary && (
-                  <div>
-                    <div className="mb-4 flex items-center justify-between">
-                      <h2 className="text-lg font-semibold">Installation</h2>
-                    </div>
-
-                    <Tabs defaultValue="cli" className="w-full">
-                      <TabsList className="w-full justify-start border-b rounded-none bg-transparent p-0 h-auto">
-                        <TabsTrigger
-                          value="cli"
-                          className="rounded-none border-b-2 border-transparent cursor-pointer data-[state=active]:border-primary data-[state=active]:bg-transparent px-4 py-2"
-                        >
-                          CLI
-                        </TabsTrigger>
-                        <TabsTrigger
-                          value="manual"
-                          className="rounded-none border-b-2 border-transparent cursor-pointer data-[state=active]:border-primary data-[state=active]:bg-transparent px-4 py-2"
-                        >
-                          Manual
-                        </TabsTrigger>
-                      </TabsList>
-
-                      <TabsContent value="cli" className="mt-6 md:max-w-2xl">
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.1 }}
-                        >
-                          <Tabs defaultValue="shadcn" className="w-full">
-                            <TabsList className="grid w-full grid-cols-2">
-                              <TabsTrigger value="shadcn" className="gap-2">
-                                <img
-                                  src="/logos/shadcnui_dark.svg"
-                                  alt="shadcn"
-                                  className="h-4 w-4 dark:hidden"
-                                />
-                                <img
-                                  src="/logos/shadcnui_white.svg"
-                                  alt="shadcn"
-                                  className="hidden h-4 w-4 dark:block"
-                                />
-                                shadcn
-                              </TabsTrigger>
-                              <TabsTrigger value="uitripled" className="gap-2">
-                                <img
-                                  src="/logos/logo-black.svg"
-                                  alt="uitripled"
-                                  className="h-6 w-6 dark:hidden"
-                                />
-                                <img
-                                  src="/logos/logo.svg"
-                                  alt="uitripled"
-                                  className="hidden h-6 w-6 dark:block"
-                                />
-                                uitripled
-                              </TabsTrigger>
-                            </TabsList>
-                            <TabsContent value="uitripled" className="mt-4">
-                              <div className="relative rounded-lg border border-border bg-card">
-                                <div className="flex items-center justify-between border-b border-border px-4 py-2.5">
-                                  <span className="text-xs font-medium text-muted-foreground">
-                                    Terminal
-                                  </span>
-                                  <button
-                                    onClick={() =>
-                                      handleCopyInstall(
-                                        `npx uitripled add ${installId}`,
-                                        "uitripled"
-                                      )
-                                    }
-                                    className="flex items-center gap-1.5 rounded border border-border bg-muted px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-ring hover:text-foreground"
-                                  >
-                                    <AnimatePresence mode="wait">
-                                      {copiedInstall === "uitripled" ? (
-                                        <motion.div
-                                          key="check"
-                                          initial={{ scale: 0 }}
-                                          animate={{ scale: 1 }}
-                                          exit={{ scale: 0 }}
-                                          className="flex items-center gap-1.5"
-                                        >
-                                          <Check className="h-3 w-3" />
-                                          Copied
-                                        </motion.div>
-                                      ) : (
-                                        <motion.div
-                                          key="copy"
-                                          initial={{ scale: 0 }}
-                                          animate={{ scale: 1 }}
-                                          exit={{ scale: 0 }}
-                                          className="flex items-center gap-1.5"
-                                        >
-                                          <Copy className="h-3 w-3" />
-                                          Copy
-                                        </motion.div>
-                                      )}
-                                    </AnimatePresence>
-                                  </button>
-                                </div>
-                                <div className="overflow-x-auto bg-card p-4">
-                                  <code className="text-sm text-foreground">
-                                    npx uitripled add {installId}
-                                  </code>
-                                </div>
-                              </div>
-                            </TabsContent>
-                            <TabsContent value="shadcn" className="mt-4">
-                              <div className="relative rounded-lg border border-border bg-card">
-                                <div className="flex items-center justify-between border-b border-border px-4 py-2.5">
-                                  <span className="text-xs font-medium text-muted-foreground">
-                                    Terminal
-                                  </span>
-                                  <button
-                                    onClick={() =>
-                                      handleCopyInstall(
-                                        `npx shadcn@latest add @uitripled/${installId}`,
-                                        "shadcn"
-                                      )
-                                    }
-                                    className="flex items-center gap-1.5 rounded border border-border bg-muted px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:border-ring hover:text-foreground"
-                                  >
-                                    <AnimatePresence mode="wait">
-                                      {copiedInstall === "shadcn" ? (
-                                        <motion.div
-                                          key="check"
-                                          initial={{ scale: 0 }}
-                                          animate={{ scale: 1 }}
-                                          exit={{ scale: 0 }}
-                                          className="flex items-center gap-1.5"
-                                        >
-                                          <Check className="h-3 w-3" />
-                                          Copied
-                                        </motion.div>
-                                      ) : (
-                                        <motion.div
-                                          key="copy"
-                                          initial={{ scale: 0 }}
-                                          animate={{ scale: 1 }}
-                                          exit={{ scale: 0 }}
-                                          className="flex items-center gap-1.5"
-                                        >
-                                          <Copy className="h-3 w-3" />
-                                          Copy
-                                        </motion.div>
-                                      )}
-                                    </AnimatePresence>
-                                  </button>
-                                </div>
-                                <div className="overflow-x-auto bg-card p-4">
-                                  <code className="text-sm text-foreground">
-                                    npx shadcn@latest add @uitripled/{installId}
-                                  </code>
-                                </div>
-                              </div>
-                            </TabsContent>
-                          </Tabs>
-                        </motion.div>
-                      </TabsContent>
-
-                      <TabsContent value="manual" className="mt-6">
-                        <CodeBlock code={displayCode} />
-                      </TabsContent>
-                    </Tabs>
-                  </div>
                 )}
               </div>
             </TabsContent>
