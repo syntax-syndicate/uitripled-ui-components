@@ -35,7 +35,7 @@
 ## Turbo Monorepo
 
 - Managed with Turborepo and pnpm workspaces
-- Run tasks via `turbo run <script>` (e.g., `pnpm dev --filter=uitripled` for the docs app)
+- Run tasks via `turbo run <script>` (e.g., `pnpm dev --filter=uitripled-docs` for the docs app)
 - Node.js 18+ is required
 
 ## Tech Stack
