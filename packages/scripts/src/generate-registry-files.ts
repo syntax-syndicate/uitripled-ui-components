@@ -16,8 +16,11 @@ function resolvePackagePath(importPath: string) {
   if (importPath.startsWith("@uitripled/")) {
     const parts = importPath.split("/");
     const packageName = parts[1]; // e.g. react-shadcn
-    const rest = parts.slice(2).join("/"); // e.g. components/native/...
-    return path.join(PACKAGES_DIR, packageName, "src", rest);
+    let rest = parts.slice(2).join("/"); // e.g. src/components/... or components/...
+    if (!rest.startsWith("src/")) {
+      rest = "src/" + rest;
+    }
+    return path.join(PACKAGES_DIR, packageName, rest);
   }
   return null;
 }

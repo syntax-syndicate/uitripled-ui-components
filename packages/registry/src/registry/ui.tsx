@@ -298,6 +298,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "glowy-waves-hero",
@@ -338,6 +339,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "easeOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "elastic-switch",
@@ -350,6 +352,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "heart-favorite",
@@ -362,6 +365,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "fade-slide-modal",
@@ -374,6 +378,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "staggered-dropdown",
@@ -386,6 +391,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "easeOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "hover-expand-card",
@@ -444,6 +450,7 @@ export const uiComponents: Component[] = [
     duration: "8000ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "liquid-cursor",
@@ -456,6 +463,7 @@ export const uiComponents: Component[] = [
     duration: "N/A",
     easing: "N/A",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "weather-dashboard",
@@ -469,6 +477,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "professional-resume",
@@ -510,6 +519,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "about-us-page",
@@ -523,6 +533,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "easeOut",
     display: false, //temporary
+    availableIn: ["shadcnui"],
   },
   {
     id: "minimal-resume",
@@ -565,6 +576,7 @@ export const uiComponents: Component[] = [
     duration: "2000ms",
     easing: "linear",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "preview-details-card",
@@ -577,6 +589,7 @@ export const uiComponents: Component[] = [
     duration: "280ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-card-stack",
@@ -618,6 +631,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "floating-label-input",
@@ -630,6 +644,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-tabs",
@@ -642,6 +657,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-list",
@@ -654,6 +670,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "chat-app",
@@ -666,6 +683,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false,
+    availableIn: ["shadcnui"],
   },
   {
     id: "messenger",
@@ -679,6 +697,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "ai-chat-interface",
@@ -692,6 +711,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "stocks-dashboard",
@@ -713,6 +733,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "dashboard",
@@ -734,6 +755,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "toast-notification",
@@ -746,6 +768,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-progress",
@@ -758,6 +781,7 @@ export const uiComponents: Component[] = [
     duration: "2000ms",
     easing: "easeOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "cash-flow-chart",
@@ -784,6 +808,7 @@ export const uiComponents: Component[] = [
     duration: "10000ms",
     easing: "linear",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "news-feed",
@@ -797,6 +822,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "comment-thread",
@@ -809,6 +835,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "profile-page",
@@ -821,6 +848,7 @@ export const uiComponents: Component[] = [
     duration: "500ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "web-performance-page",
@@ -833,6 +861,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "course-content-page",
@@ -854,6 +883,7 @@ export const uiComponents: Component[] = [
     duration: "500ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "blog-typography",
@@ -875,6 +905,7 @@ export const uiComponents: Component[] = [
     duration: "500ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "password-input",
@@ -887,6 +918,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-dialog",
@@ -899,6 +931,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false,
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-tooltip",
@@ -911,6 +944,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-navbar",
@@ -923,6 +957,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-profile-menu",
@@ -936,6 +971,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-sidebar",
@@ -948,6 +984,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-accordion",
@@ -960,6 +997,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeInOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "draggable-list",
@@ -972,6 +1010,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "hero-section",
@@ -1011,6 +1050,7 @@ export const uiComponents: Component[] = [
     duration: "8000ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "avatar-group",
@@ -1023,6 +1063,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-checkbox",
@@ -1035,6 +1076,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-radio",
@@ -1047,6 +1089,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-pagination",
@@ -1059,6 +1102,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-select",
@@ -1071,6 +1115,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-sign-in-card",
@@ -1084,6 +1129,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-sign-up-card",
@@ -1097,6 +1143,7 @@ export const uiComponents: Component[] = [
     duration: "650ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-forgot-password-card",
@@ -1110,6 +1157,7 @@ export const uiComponents: Component[] = [
     duration: "500ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-verification-code-card",
@@ -1123,6 +1171,7 @@ export const uiComponents: Component[] = [
     duration: "550ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-profile-settings-card",
@@ -1136,6 +1185,7 @@ export const uiComponents: Component[] = [
     duration: "700ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "glass-account-settings-card",
@@ -1149,6 +1199,7 @@ export const uiComponents: Component[] = [
     duration: "650ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "command-palette",
@@ -1161,6 +1212,7 @@ export const uiComponents: Component[] = [
     duration: "200ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "multiple-accounts",
@@ -1174,6 +1226,7 @@ export const uiComponents: Component[] = [
     duration: "350ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "mac-searchbar",
@@ -1194,6 +1247,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "context-menu",
@@ -1206,6 +1260,7 @@ export const uiComponents: Component[] = [
     duration: "150ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "simple-calendar",
@@ -1218,6 +1273,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "wizard-form",
@@ -1238,6 +1294,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "stats-section",
@@ -1472,6 +1529,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false,
+    availableIn: ["shadcnui"],
   },
   {
     id: "scroll-progress-tracker",
@@ -1485,6 +1543,7 @@ export const uiComponents: Component[] = [
     duration: "continuous",
     easing: "spring",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "stacked-card-carousel",
@@ -1497,6 +1556,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "spotlight-section",
@@ -1510,6 +1570,7 @@ export const uiComponents: Component[] = [
     duration: "continuous",
     easing: "spring",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "auto-revealing-heading",
@@ -1523,6 +1584,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "interactive-timeline",
@@ -1536,6 +1598,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "dynamic-tag-cloud",
@@ -1549,6 +1612,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "ai-loading-skeleton",
@@ -1562,6 +1626,7 @@ export const uiComponents: Component[] = [
     duration: "1500ms",
     easing: "linear",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "animated-quote-block",
@@ -1574,6 +1639,7 @@ export const uiComponents: Component[] = [
     duration: "2000ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "context-menu-bubble",
@@ -1587,6 +1653,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "magnetic-avatar-group",
@@ -1599,6 +1666,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "drag-to-confirm-slider",
@@ -1611,6 +1679,7 @@ export const uiComponents: Component[] = [
     duration: "400ms",
     easing: "spring",
     display: false, // need fixes
+    availableIn: ["shadcnui"],
   },
   {
     id: "expanding-search-dock",
@@ -1623,6 +1692,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "mood-gradient-button",
@@ -1636,6 +1706,7 @@ export const uiComponents: Component[] = [
     duration: "continuous",
     easing: "easeInOut",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "floating-info-panel",
@@ -1649,6 +1720,7 @@ export const uiComponents: Component[] = [
     duration: "4000ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "reactive-background-grid",
@@ -1662,6 +1734,7 @@ export const uiComponents: Component[] = [
     duration: "600ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "fluid-modal-transition",
@@ -1675,6 +1748,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "holographic-wall",
@@ -1696,6 +1770,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "dynamic-spotlight-cta",
@@ -1717,6 +1792,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "ai-glow-input",
@@ -1730,6 +1806,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: false, // People think its useless
+    availableIn: ["shadcnui"],
   },
   {
     id: "ai-response-typing",
@@ -1751,6 +1828,7 @@ export const uiComponents: Component[] = [
     duration: "30ms",
     easing: "linear",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "synced-lyric-captions",
@@ -1772,6 +1850,7 @@ export const uiComponents: Component[] = [
     duration: "variable",
     easing: "easeOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "ai-unlock-animation",
@@ -1785,6 +1864,7 @@ export const uiComponents: Component[] = [
     duration: "3000ms",
     easing: "easeInOut",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "team-section-block",
@@ -2228,6 +2308,7 @@ export const uiComponents: Component[] = [
     duration: "N/A",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "floating-chat-widget",
@@ -2241,6 +2322,7 @@ export const uiComponents: Component[] = [
     duration: "300ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "volume-component",
@@ -2254,6 +2336,7 @@ export const uiComponents: Component[] = [
     duration: "N/A",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
   {
     id: "cards-slider",
@@ -2274,5 +2357,6 @@ export const uiComponents: Component[] = [
     duration: "500ms",
     easing: "spring",
     display: true,
+    availableIn: ["shadcnui"],
   },
 ];

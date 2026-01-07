@@ -106,20 +106,32 @@ function generateRegistryFiles() {
             if (filePath.startsWith("@uitripled/react-baseui")) {
               filePath = path.join(
                 __dirname,
-                "../../../packages/components/react-baseui/src",
-                filePath.replace("@uitripled/react-baseui/", "")
+                "../../../packages/components/react-baseui",
+                (() => {
+                  let relative = filePath.replace("@uitripled/react-baseui/", "");
+                  if (!relative.startsWith("src/")) relative = "src/" + relative;
+                  return relative;
+                })()
               );
             } else if (filePath.startsWith("@uitripled/react-shadcn")) {
               filePath = path.join(
                 __dirname,
-                "../../../packages/components/react-shadcn/src",
-                filePath.replace("@uitripled/react-shadcn/", "")
+                "../../../packages/components/react-shadcn",
+                (() => {
+                  let relative = filePath.replace("@uitripled/react-shadcn/", "");
+                  if (!relative.startsWith("src/")) relative = "src/" + relative;
+                  return relative;
+                })()
               );
             } else if (filePath.startsWith("@uitripled/react-carbon")) {
               filePath = path.join(
                 __dirname,
-                "../../../packages/components/react-carbon/src",
-                filePath.replace("@uitripled/react-carbon/", "")
+                "../../../packages/components/react-carbon",
+                (() => {
+                  let relative = filePath.replace("@uitripled/react-carbon/", "");
+                  if (!relative.startsWith("src/")) relative = "src/" + relative;
+                  return relative;
+                })()
               );
             } else {
               filePath = path.join(__dirname, "..", file.path);

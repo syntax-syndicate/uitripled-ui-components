@@ -2,6 +2,7 @@
 
 import { CodeBlock } from "@/components/code-block";
 import { LiveEditor } from "@/components/live-editor";
+import { OpenInV0Button } from "@/components/open-in-v0-button";
 import { useUILibrary } from "@/components/ui-library-provider";
 import { getComponentById } from "@/lib/components-registry";
 import { categoryNames, uiLibraryLabels, type UILibrary } from "@/types";
@@ -710,7 +711,7 @@ export default function AnimationDetailPageClient({
                                 "npx"
                               )
                             }
-                            className="flex items-center gap-2 px-2.5 py-1 font-mono text-[10px] transition-colors hover:bg-muted"
+                            className="flex items-center gap-1 rounded-md px-2.5 py-1 font-mono text-[10px] transition-colors"
                             title="Copy install command"
                           >
                             <span className="text-muted-foreground/70">
@@ -720,14 +721,33 @@ export default function AnimationDetailPageClient({
                               {installId}
                             </span>
                             <div className="ml-1 border-l border-border pl-2">
-                              {copiedInstall === "npx" ? (
-                                <Check className="h-3 w-3 text-emerald-500" />
-                              ) : (
-                                <Copy className="h-3 w-3 opacity-50" />
-                              )}
+                              <AnimatePresence mode="wait" initial={false}>
+                                {copiedInstall === "npx" ? (
+                                  <motion.span
+                                    key="check"
+                                    initial={{ opacity: 0, filter: "blur(2px)", scale: 0.5 }}
+                                    animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
+                                    exit={{ opacity: 0, filter: "blur(2px)", scale: 0.5 }}
+                                    transition={{ duration: 0.1 }}
+                                  >
+                                    <Check className="h-3 w-3 text-emerald-500" />
+                                  </motion.span>
+                                ) : (
+                                  <motion.span
+                                    key="copy"
+                                    initial={{ opacity: 0, filter: "blur(2px)", scale: 0.5 }}
+                                    animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
+                                    exit={{ opacity: 0, filter: "blur(2px)", scale: 0.5 }}
+                                    transition={{ duration: 0.1 }}
+                                  >
+                                    <Copy className="cursor-pointer h-3 w-3 opacity-50" />
+                                  </motion.span>
+                                )}
+                              </AnimatePresence>
                             </div>
                           </button>
                         </div>
+                        <OpenInV0Button name={installId} className="h-7 rounded-md px-3 text-[10px]" />
                       </div>
 
                       <div className="flex items-center gap-2">

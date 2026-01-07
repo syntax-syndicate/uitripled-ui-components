@@ -56,6 +56,9 @@ function resolvePackagePath(importPath: string) {
     const parts = importPath.split("/");
     const packageName = parts[1]; // e.g. react-shadcn
     const rest = parts.slice(2).join("/"); // e.g. components/native/...
+    if (rest.startsWith("src/")) {
+        return path.join(PACKAGES_DIR, packageName, rest);
+    }
     return path.join(PACKAGES_DIR, packageName, "src", rest);
   }
   // Fallback for legacy local paths (if any)
@@ -249,6 +252,12 @@ function convertToBaseuiPath(componentPath: string, componentId: string) {
 
   // Replace suffix in filename if it exists
   baseuiPath = baseuiPath.replace("-shadcnui", "-baseui");
+
+  // Replace directory "shadcnui" with "baseui"
+  baseuiPath = baseuiPath.replace("/shadcnui/", "/baseui/");
+
+  // Remove double components if present (Shadcn uses src/components/components, BaseUI uses src/components)
+  baseuiPath = baseuiPath.replace("/components/components/", "/components/");
 
   // Ensure filename ends with -baseui if it's a component file
   // Check if filename (without path) ends with -baseui.tsx or -baseui
@@ -487,8 +496,6 @@ function generateVariantEntries(componentData: any) {
   } else {
     // Generate entry for each UI library variant
     for (const lib of availableIn) {
-      // Skip carbon unless we decide to support it fully in paths (currently logic supports shadcnui/baseui)
-      if (lib === 'carbon') continue; // TODO: Add carbon support in convertToCarbonPath
 
       const entry = createRegistryEntry(componentData, lib);
 
