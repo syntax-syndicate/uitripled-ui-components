@@ -734,7 +734,7 @@ export default function AnimationDetailPageClient({
                               {installMethod === "uitripled" ? "add" : "add @uitripled/"}
                             </span>
                             <span className="font-bold text-foreground">
-                              {installId}
+                              {installId.length > 4 ? `${installId.slice(0, 4)}...` : installId}
                             </span>
                             <div className="ml-1 border-l border-border pl-2">
                               <AnimatePresence mode="wait" initial={false}>
