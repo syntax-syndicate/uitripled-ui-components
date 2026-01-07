@@ -5,7 +5,7 @@ import { NativeProfileNotch } from "../native-profile-notch-baseui";
 export function NativeProfileNotchDefault() {
   return (
     <div className="h-[500px] w-full flex items-center justify-center   rounded-xl relative">
-      <div className="absolute inset-0 bg-grid-black/[0.02] dark:bg-grid-white/[0.02]" />
+
       <NativeProfileNotch
         imageSrc="https://iimydr2b8o.ufs.sh/f/Zqn6AViLMoTtoUjLg4dAryGEidskK72wBCQA6DNcZH4Xh5b8"
         name="Base UI"
@@ -37,7 +37,7 @@ export function NativeProfileNotchDefault() {
 export function NativeProfileNotchOverlay() {
   return (
     <div className="h-[500px] w-full flex items-center justify-center   rounded-xl relative">
-      <div className="absolute inset-0 bg-grid-black/[0.02] dark:bg-grid-white/[0.02]" />
+
 
       {/* Background content to demonstrate overlay behavior */}
       <div className="flex flex-col gap-4 max-w-sm text-center z-0 px-4">
