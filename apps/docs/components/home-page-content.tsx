@@ -278,11 +278,6 @@ function HeroFlip() {
       logoLight: "/logos/baseui_white.svg",
       logoDark: "/logos/baseui_dark.svg",
     },
-    {
-      name: "React",
-      logoLight: "/logos/react-logo_dark.svg",
-      logoDark: "/logos/react-logo_white.svg",
-    },
   ];
 
   useEffect(() => {
