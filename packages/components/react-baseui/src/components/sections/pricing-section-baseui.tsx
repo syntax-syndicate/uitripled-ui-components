@@ -2,7 +2,7 @@
 
 import { Button } from "@base-ui/react/button";
 import { motion, useInView } from "framer-motion";
-import { Check, Zap } from "lucide-react";
+import { Check } from "lucide-react";
 import { useRef } from "react";
 
 const plans = [
@@ -51,116 +51,114 @@ const plans = [
 
 export function PricingSectionBaseui() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <div ref={ref} className="w-full px-4 py-16">
+    <section
+      ref={ref}
+      className="w-full px-4 py-12 sm:py-16 md:py-20 lg:py-24"
+      aria-labelledby="pricing-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12 sm:mb-14 md:mb-16 text-center"
         >
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl">
-            Simple, Transparent Pricing
+          <h2
+            id="pricing-heading"
+            className="mb-3 sm:mb-4 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
+          >
+            Simple, transparent pricing
           </h2>
-          <p className="text-sm text-[var(--foreground)]/70 sm:text-base md:text-lg">
-            Choose the perfect plan for your needs
+          <p className="text-base sm:text-lg text-[var(--foreground)]/60 max-w-2xl mx-auto px-4">
+            Choose the plan that's right for you
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
-              initial={{ opacity: 0, y: 50, scale: 0.9 }}
-              animate={
-                isInView
-                  ? { opacity: 1, y: 0, scale: 1 }
-                  : { opacity: 0, y: 50, scale: 0.9 }
-              }
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              whileHover={{ y: -8, scale: 1.02 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="flex"
             >
               <div
-                className={`relative h-full rounded-lg border bg-card text-card-foreground shadow-sm transition-all ${
-                  plan.popular ? "border-accent shadow-lg" : "border-border"
+                className={`relative flex h-full w-full flex-col overflow-hidden rounded-xl border transition-all duration-200 ${
+                  plan.popular
+                    ? "border-foreground shadow-lg dark:border-foreground"
+                    : "border-border hover:border-foreground/50 hover:shadow-md"
+                } bg-card text-card-foreground`}
+                role="article"
+                aria-label={`${plan.name} plan${
+                  plan.popular ? ", most popular" : ""
                 }`}
               >
                 {plan.popular && (
-                  <motion.div
-                    initial={{ scale: 0, rotate: -180 }}
-                    animate={
-                      isInView
-                        ? { scale: 1, rotate: 0 }
-                        : { scale: 0, rotate: -180 }
-                    }
-                    transition={{ delay: index * 0.15 + 0.3, type: "spring" }}
-                    className="absolute -top-4 left-1/2 -translate-x-1/2"
-                  >
-                    <span className="inline-flex items-center gap-1 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground">
-                      <Zap className="h-3 w-3" />
+                  <div className="absolute right-3 top-3 sm:right-4 sm:top-4">
+                    <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-foreground text-background hover:bg-foreground/90 text-xs sm:text-sm">
                       Popular
                     </span>
-                  </motion.div>
+                  </div>
                 )}
 
-                <div className="flex flex-col space-y-1.5 p-6">
-                  <h3 className="text-2xl font-semibold leading-none tracking-tight">
+                <div className="pb-6 pt-6 sm:pb-8 sm:pt-8 px-4 sm:px-6">
+                  <h3 className="text-lg sm:text-xl font-medium">
                     {plan.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {plan.description}
-                  </p>
-                  <div className="mt-4 flex items-baseline gap-1">
-                    <span className="text-4xl font-bold">{plan.price}</span>
-                    <span className="text-[var(--foreground)]/60">
+                  <div className="mt-3 sm:mt-4 flex items-baseline gap-1">
+                    <span className="text-3xl sm:text-4xl font-bold tracking-tight">
+                      {plan.price}
+                    </span>
+                    <span className="text-sm sm:text-base text-muted-foreground">
                       {plan.period}
                     </span>
                   </div>
+                  <p className="mt-2 text-sm sm:text-base text-muted-foreground">
+                    {plan.description}
+                  </p>
                 </div>
 
-                <div className="p-6 pt-0">
-                  <ul className="mb-6 space-y-3">
-                    {plan.features.map((feature, featureIndex) => (
-                      <motion.li
+                <div className="flex flex-1 flex-col justify-between gap-6 sm:gap-8 pb-6 sm:pb-8 px-4 sm:px-6">
+                  <ul
+                    className="space-y-2.5 sm:space-y-3"
+                    role="list"
+                    aria-label={`${plan.name} plan features`}
+                  >
+                    {plan.features.map((feature) => (
+                      <li
                         key={feature}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={
-                          isInView
-                            ? { opacity: 1, x: 0 }
-                            : { opacity: 0, x: -20 }
-                        }
-                        transition={{
-                          delay: index * 0.15 + featureIndex * 0.1 + 0.5,
-                        }}
-                        className="flex items-center gap-2 text-sm"
+                        className="flex items-center gap-2 sm:gap-3 text-sm text-muted-foreground"
                       >
-                        <motion.div
-                          initial={{ scale: 0 }}
-                          animate={isInView ? { scale: 1 } : { scale: 0 }}
-                          transition={{
-                            delay: index * 0.15 + featureIndex * 0.1 + 0.6,
-                            type: "spring",
-                          }}
-                          className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-accent/10"
+                        <div
+                          className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
+                          aria-hidden="true"
                         >
-                          <Check className="h-3 w-3 text-accent" />
-                        </motion.div>
-                        <span>{feature}</span>
-                      </motion.li>
+                          <Check className="h-3 w-3" />
+                        </div>
+                        <span className="text-foreground">{feature}</span>
+                      </li>
                     ))}
                   </ul>
 
                   <Button
-                    className={`inline-flex h-10 w-full items-center justify-center rounded-md px-4 py-2 text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${
+                    className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 w-full ${
                       plan.popular
-                        ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                        : "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+                        ? "bg-foreground text-background hover:bg-foreground/90"
+                        : "bg-background text-foreground border border-input hover:bg-accent hover:text-accent-foreground"
                     }`}
+                    aria-label={`${
+                      plan.name === "Enterprise"
+                        ? "Contact sales for"
+                        : "Get started with"
+                    } ${plan.name} plan at ${plan.price} per month`}
                   >
-                    Get Started
+                    {plan.name === "Enterprise"
+                      ? "Contact Sales"
+                      : "Get Started"}
                   </Button>
                 </div>
               </div>
@@ -168,6 +166,6 @@ export function PricingSectionBaseui() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
