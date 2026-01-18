@@ -15,7 +15,7 @@ export type PageSeoConfig = {
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
 const DEFAULT_OG_IMAGE =
-  "https://iimydr2b8o.ufs.sh/f/Zqn6AViLMoTtAc2cc4nrC37b1yitXR5Fm2HP6TVsYEDNGcjO";
+  "https://iimydr2b8o.ufs.sh/f/Zqn6AViLMoTtrDdNxsib920zRingEy8GoSLBITJVjwbtYFxm";
 
 export const siteConfig = {
   name: "UI TripleD",
