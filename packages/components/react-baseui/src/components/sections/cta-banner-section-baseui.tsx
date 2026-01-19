@@ -170,7 +170,7 @@ export function CTABannerSectionBaseui({
                     transition={{ duration: 0.2 }}
                     className="w-full sm:w-auto"
                   >
-                    <Button className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-6 py-5 text-background shadow-lg transition-all hover:shadow-xl sm:w-auto sm:px-8 sm:py-6">
+                    <Button className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-background shadow-lg transition-all hover:shadow-xl sm:w-auto sm:px-6 sm:py-3">
                       <span className="text-xs font-semibold uppercase tracking-[0.1em] sm:text-sm">
                         Get Started
                       </span>
@@ -199,7 +199,7 @@ export function CTABannerSectionBaseui({
                     transition={{ duration: 0.2 }}
                     className="w-full sm:w-auto"
                   >
-                    <Button className="inline-flex w-full items-center justify-center rounded-full border border-border/40 bg-background/60 px-6 py-5 text-foreground/70 backdrop-blur transition-all hover:border-border/60 hover:bg-background/70 hover:text-foreground sm:w-auto sm:px-8 sm:py-6">
+                    <Button className="inline-flex w-full items-center justify-center rounded-full border border-border/40 bg-background/60 px-5 py-2.5 text-foreground/70 backdrop-blur transition-all hover:border-border/60 hover:bg-background/70 hover:text-foreground sm:w-auto sm:px-6 sm:py-3">
                       <span className="text-xs font-semibold uppercase tracking-[0.1em] sm:text-sm">
                         View Docs
                       </span>
