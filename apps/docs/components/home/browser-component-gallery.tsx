@@ -91,25 +91,25 @@ import { useRef, useState } from "react";
 
 const components = [
   { name: "Button", path: "native-button", Icon: MousePointerClick, Shadcn: NativeButtonShadcn, Base: NativeButtonBase },
+  { name: "Delete", path: "native-delete", Icon: Trash2, Shadcn: NativeDeleteShadcn, Base: NativeDeleteBase },
   { name: "Dashboard", path: "dashboard", Icon: LayoutDashboard, Shadcn: DashboardShadcn, Base: DashboardBase },
   { name: "Avatar Expand", path: "native-avatar-expand", Icon: User, Shadcn: NativeAvatarExpandShadcn, Base: NativeAvatarExpandBase },
   { name: "Magnetic Button", path: "native-magnetic-button", Icon: Magnet, Shadcn: NativeMagneticShadcn, Base: NativeMagneticBase },
   { name: "Avatar With Name", path: "native-avatar-with-name", Icon: User, Shadcn: NativeAvatarWithNameShadcn, Base: NativeAvatarWithNameBase },
   { name: "Profile Notch", path: "native-profile-notch", Icon: Smartphone, Shadcn: NativeProfileNotchShadcn, Base: NativeProfileNotchBase },
-  { name: "Morphing Button", path: "native-morphing-button", Icon: RefreshCw, Shadcn: NativeMorphingButtonShadcn, Base: NativeMorphingButtonBase },
   { name: "Hero Block", path: "hero-block", Icon: LayoutTemplate, Shadcn: HeroBlockShadcn, Base: HeroBlockBase },
   { name: "Hover Card", path: "native-hover-card", Icon: CreditCard, Shadcn: NativeHoverCardShadcn, Base: NativeHoverCardBase },
   { name: "Likes Counter", path: "native-likes-counter", Icon: Heart, Shadcn: NativeLikesCounterShadcn, Base: NativeLikesCounterBase },
   { name: "Social Login", path: "native-social-login", Icon: LogIn, Shadcn: SocialLoginButtonShadcn, Base: SocialLoginButtonBase },
-  { name: "Tabs", path: "native-tabs", Icon: LayoutList, Shadcn: NativeTabsShadcn, Base: NativeTabsBase },
-  { name: "Tooltip", path: "native-tooltip", Icon: MessageCircle, Shadcn: NativeTooltipShadcn, Base: NativeTooltipBase },
   { name: "Typewriter", path: "native-typewriter", Icon: Type, Shadcn: NativeTypewriterShadcn, Base: NativeTypewriterBase },
-  { name: "Delete", path: "native-delete", Icon: Trash2, Shadcn: NativeDeleteShadcn, Base: NativeDeleteBase },
   { name: "Nested List", path: "native-nested-list", Icon: FolderTree, Shadcn: NativeNestedListShadcn, Base: NativeNestedListBase },
   { name: "Liquid Button", path: "native-liquid-button", Icon: Droplets, Shadcn: NativeLiquidButtonShadcn, Base: NativeLiquidButtonBase },
   { name: "Verified Badge", path: "native-verified-badge", Icon: BadgeCheck, Shadcn: NativeVerifiedBadgeShadcn, Base: NativeVerifiedBadgeBase },
   { name: "Cards Slider", path: "cards-slider", Icon: GalleryHorizontal, Shadcn: CardsSliderShadcn },
   { name: "CTA Block", path: "cta-block", Icon: Megaphone, Shadcn: CTABlockShadcn, Base: CTABlockBase },
+  { name: "Morphing Button", path: "native-morphing-button", Icon: RefreshCw, Shadcn: NativeMorphingButtonShadcn, Base: NativeMorphingButtonBase },
+  { name: "Tabs", path: "native-tabs", Icon: LayoutList, Shadcn: NativeTabsShadcn, Base: NativeTabsBase },
+  { name: "Tooltip", path: "native-tooltip", Icon: MessageCircle, Shadcn: NativeTooltipShadcn, Base: NativeTooltipBase },
 ];
 
 const uiLibraries = [
