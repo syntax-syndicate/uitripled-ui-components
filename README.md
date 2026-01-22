@@ -76,6 +76,13 @@
       <strong><a href="https://shadcnblocks.com">Shadcnblocks.com</a></strong>
     </td>
     <td align="center">
+      <a href="https://openpanel.dev">
+        <img width="70" height="70" alt="OpenPanel" src="https://iimydr2b8o.ufs.sh/f/Zqn6AViLMoTtZSdcHpLMoTtqyenU7vkYSxEW4uPQlw3ps6NX" />
+      </a>
+      <br />
+      <strong><a href="https://openpanel.dev">OpenPanel</a></strong>
+    </td>
+    <td align="center">
       <a href="https://lucide-animated.com">
         <img width="70" height="70" alt="Lucide Animated" src="apps/docs/public/logos/sponsors/lucide-animated.svg" />
       </a>

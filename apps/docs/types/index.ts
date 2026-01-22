@@ -29,6 +29,7 @@ export type Component = {
   component: React.ComponentType<any>;
 
   baseuiComponent?: React.ComponentType<any>; // BaseUI version of the component
+  baseuiCodePath?: string; // Explicit path for BaseUI code
   variants?: Array<{
     id: string;
     name: string;

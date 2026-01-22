@@ -16,4 +16,5 @@ export type Component = {
   duration?: string;
   easing?: string;
   baseuiComponent?: React.ComponentType<any>;
+  baseuiCodePath?: string;
 };

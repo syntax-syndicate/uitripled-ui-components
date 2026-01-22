@@ -4,7 +4,7 @@ import { TweetCard } from "@/components/components/cards/tweet-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Linkedin, Lock } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const TweetsLinks = [
@@ -163,7 +163,7 @@ async function fetchTweetData(url: string): Promise<Tweet | null> {
  */
 function TweetSkeleton() {
   return (
-    <div className="w-[350px] shrink-0 overflow-hidden rounded-2xl border border-border/40 bg-background/60 p-6 backdrop-blur">
+    <div className="w-[300px] sm:w-[350px] shrink-0 rounded-xl border border-border bg-background p-5 shadow-sm">
       <div className="flex flex-row items-start gap-4 pb-2">
         {/* Avatar skeleton */}
         <motion.div
@@ -260,9 +260,7 @@ function LinkedInMessageCard({ message }: { message: LinkedInMessage }) {
   };
 
   return (
-    <div className="group relative w-[350px] shrink-0 overflow-hidden rounded-2xl border border-border/40 bg-background/60 p-6 backdrop-blur transition-all hover:border-border/60 hover:shadow-lg">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:from-blue-950/20 -z-10" />
-
+    <div className="group relative w-[300px] sm:w-[350px] shrink-0 rounded-xl border border-border bg-background p-5 shadow-sm transition-all hover:shadow-md hover:border-foreground/20">
       <div className="flex flex-row items-start gap-4 pb-2">
         <Avatar className="h-10 w-10 border border-border/50">
           <AvatarImage src={message.author.avatar} alt={message.author.name} />
@@ -357,95 +355,64 @@ export function TweetsSlider() {
         }
       `}</style>
 
-      <div className="relative rounded-xl overflow-hidden border border-border bg-background shadow-2xl">
-        {/* Browser Header */}
-        <div className="bg-muted/30 border-b border-border flex items-center gap-4 py-3 px-4 h-12">
-          {/* Traffic Lights */}
-          <div className="flex gap-1.5 shrink-0">
-            <div className="h-3 w-3 rounded-full bg-red-500/80 border border-black/5" />
-            <div className="h-3 w-3 rounded-full bg-yellow-500/80 border border-black/5" />
-            <div className="h-3 w-3 rounded-full bg-green-500/80 border border-black/5" />
-          </div>
-
-          {/* Address Bar */}
-          <div className="flex-1 flex items-center justify-center min-w-0 px-2">
-            <div className="flex items-center gap-2 bg-background/50 border border-border/40 rounded-md px-3 py-1.5 text-xs text-muted-foreground w-full max-w-sm shadow-sm justify-center">
-              <Lock className="w-3 h-3 text-muted-foreground/70 shrink-0" />
-              <span className="opacity-50">ui.tripled.work/</span>
-              <span className="text-foreground font-medium">community</span>
-            </div>
-          </div>
-
-          <div className="w-12 shrink-0" />
-        </div>
-
-        {/* Browser Content */}
-        <div className="bg-background/95 backdrop-blur-3xl p-8 relative overflow-hidden">
-          <div className="absolute inset-0 bg-grid-small-black/[0.05] dark:bg-grid-small-white/[0.05] -z-10" />
-
-          <div className="relative">
-            {/* Gradient overlays */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-background to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-background to-transparent" />
-
-            {/* Scrolling container */}
-            <div
-              className="flex"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              <div
-                className={`flex gap-6 ${isPaused ? "paused" : ""} animate-scroll`}
-                style={{ width: "max-content" }}
-              >
-                {isLoading ? (
-                  <>
-                    {/* Show multiple skeleton cards for better visual effect */}
-                    {[...Array(4)].map((_, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{
-                          delay: index * 0.1,
-                          duration: 0.3,
-                        }}
-                      >
-                        <TweetSkeleton />
-                      </motion.div>
-                    ))}
-                  </>
-                ) : content.length > 0 ? (
-                  <>
-                    {/* Duplicate content 3 times for seamless loop */}
-                    {[...content, ...content, ...content].map((item, index) => {
-                      if ("type" in item && item.type === "linkedin") {
-                        return (
-                          <LinkedInMessageCard
-                            key={`${item.id}-${index}`}
-                            message={item}
-                          />
-                        );
-                      } else {
-                        const tweet = item as Tweet;
-                        return (
-                          <TweetCard
-                            key={`${tweet.id}-${index}`}
-                            author={tweet.author}
-                            content={tweet.content}
-                            url={tweet.url}
-                          />
-                        );
-                      }
-                    })}
-                  </>
-                ) : (
-                  <div className="flex items-center justify-center w-full py-12">
-                    <p className="text-muted-foreground">No tweets available</p>
-                  </div>
-                )}
+      <div className="relative">
+        {/* Scrolling container */}
+        <div
+          className="flex"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          <div
+            className={`flex gap-6 ${isPaused ? "paused" : ""} animate-scroll`}
+            style={{ width: "max-content" }}
+          >
+            {isLoading ? (
+              <>
+                {/* Show multiple skeleton cards for better visual effect */}
+                {[...Array(4)].map((_, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      delay: index * 0.1,
+                      duration: 0.3,
+                    }}
+                  >
+                    <TweetSkeleton />
+                  </motion.div>
+                ))}
+              </>
+            ) : content.length > 0 ? (
+              <>
+                {/* Duplicate content 3 times for seamless loop */}
+                {[...content, ...content, ...content].map((item, index) => {
+                  if ("type" in item && item.type === "linkedin") {
+                    return (
+                      <LinkedInMessageCard
+                        key={`${item.id}-${index}`}
+                        message={item}
+                      />
+                    );
+                  } else {
+                    const tweet = item as Tweet;
+                    return (
+                      <TweetCard
+                        key={`${tweet.id}-${index}`}
+                        author={tweet.author}
+                        content={tweet.content}
+                        url={tweet.url}
+                        className="w-[300px] sm:w-[350px] h-[205px] shrink-0 rounded-xl border border-border bg-background p-5 shadow-sm transition-all hover:shadow-md hover:border-foreground/20 backdrop-blur-none"
+                      />
+                    );
+                  }
+                })}
+              </>
+            ) : (
+              <div className="flex items-center justify-center w-full py-12">
+                <p className="text-muted-foreground">No tweets available</p>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

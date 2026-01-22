@@ -31,7 +31,6 @@ export function NativeTypewriterMultiline() {
 
 export function NativeTypewriterLoop() {
   return (
-    <div className="flex items-center justify-center p-8 bg-black/5 dark:bg-white/5 rounded-xl border border-black/10 dark:border-white/10">
       <NativeTypewriter
         content={["Design.", "Develop.", "Ship.", "Repeat."]}
         loop
@@ -39,7 +38,6 @@ export function NativeTypewriterLoop() {
         className="text-2xl font-bold text-primary"
         cursor={false}
       />
-    </div>
   );
 }
 

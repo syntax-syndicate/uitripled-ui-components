@@ -1,3 +1,4 @@
+import { Button } from "@uitripled/react-shadcn/ui/button";
 import { Star } from "lucide-react";
 import { Suspense, use, useMemo } from "react";
 
@@ -12,10 +13,6 @@ function StarCount({ promise }: { promise: Promise<number> }) {
   return (
     <span className="font-medium tabular-nums">{count.toLocaleString()}</span>
   );
-}
-
-function StarCountSkeleton() {
-  return 302;
 }
 
 function fetchStarCount(): Promise<number> {
@@ -37,33 +34,35 @@ export function GithubStarButton() {
   const starCountPromise = useMemo(() => fetchStarCount(), []);
 
   return (
-    <div className="flex items-center justify-center bg-background">
+    <div className="flex items-center justify-center">
       <a
         href={`https://github.com/${GITHUB_REPO}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="group relative inline-flex h-11 items-center justify-center gap-2.5 rounded-md border border-border bg-background px-6 py-2.5 text-sm font-medium transition-all duration-300 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 active:scale-[0.98] min-w-[160px]"
-        style={{
-          boxShadow: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
-        }}
+        className="group relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full border border-border bg-background px-6 font-medium text-foreground transition-all duration-300 hover:bg-muted/50 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 active:scale-95"
       >
-        <span className="flex items-center gap-2.5">
-          <span className="transition-transform duration-300 group-hover:translate-x-[-2px]">
-            Give us a Star
-          </span>
+        <div className="flex items-center gap-2">
+           <Star className="h-4 w-4 fill-current text-foreground transition-transform group-hover:scale-110 group-hover:text-yellow-400 group-hover:fill-yellow-400" />
+           <span>Star on GitHub</span>
+        </div>
 
-          <Star
-            className="h-4 w-4 transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-12"
-            aria-hidden="true"
-          />
+        <div className="mx-2 h-4 w-[1px] bg-border" />
 
-          <span className="inline-flex items-center justify-center min-w-[3ch] h-5 px-2 rounded-full bg-muted/50 transition-all duration-300 group-hover:scale-105 group-hover:bg-muted">
-            <Suspense fallback={<StarCountSkeleton />}>
+        <div className="flex items-center gap-1 text-muted-foreground transition-colors group-hover:text-foreground">
+           <Suspense fallback={<span className="text-xs">...</span>}>
               <StarCount promise={starCountPromise} />
-            </Suspense>
-          </span>
-        </span>
+           </Suspense>
+        </div>
       </a>
     </div>
+  );
+}
+
+export function StarButtonFallback() {
+  return (
+    <Button variant="outline" size="lg" className="min-w-[160px] h-12 rounded-full" disabled>
+      <Star aria-hidden="true" className="mr-2 h-4 w-4" />
+      <span>340</span>
+    </Button>
   );
 }

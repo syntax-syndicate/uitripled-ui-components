@@ -37,7 +37,9 @@ import { Messenger } from "@uitripled/react-shadcn/src/components/components/cha
 import { FloatingLabelInput } from "@uitripled/react-shadcn/src/components/components/inputs/floating-label-input";
 import { AnimatedList } from "@uitripled/react-shadcn/src/components/components/lists/animated-list";
 import { NotificationCenter } from "@uitripled/react-shadcn/src/components/components/notifications/notification-center";
+import { DashboardPage } from "@uitripled/react-shadcn/src/components/components/stocks-dashboard/dashboard";
 import { StocksDashboard } from "@uitripled/react-shadcn/src/components/components/stocks-dashboard/stocks-dashboard";
+import { DashboardPage as StocksDashboardBaseUI } from "@uitripled/react-baseui/components/components/stocks-dashboard/dashboard";
 import { AnimatedTabs } from "@uitripled/react-shadcn/src/components/components/tabs/animated-tabs";
 import { WeatherDashboard } from "@uitripled/react-shadcn/src/components/components/weather/weather-dashboard";
 import { CashFlowChart } from "@uitripled/react-shadcn/src/components/data/charts/cash-flow-chart";
@@ -165,7 +167,6 @@ import { NewsFeed } from "@uitripled/react-shadcn/src/components/components/news
 import { ProfilePage } from "@uitripled/react-shadcn/src/components/components/profile/profile-page";
 import { CardsSlider } from "@uitripled/react-shadcn/src/components/components/sliders/cards-slider";
 import { VolumeComponent } from "@uitripled/react-shadcn/src/components/components/sliders/volume-component";
-import { DashboardPage } from "@uitripled/react-shadcn/src/components/components/stocks-dashboard/dashboard";
 import { LiquidCursor } from "@uitripled/react-shadcn/src/components/liquid-cursor";
 import { BrowseFolder } from "@uitripled/react-shadcn/src/components/sections/browse-folder";
 import { GlowyWavesHero } from "@uitripled/react-shadcn/src/components/sections/glowy-waves-hero";
@@ -729,6 +730,7 @@ export const uiComponents: Component[] = [
       "shadcn",
     ],
     component: StocksDashboard,
+    baseuiComponent: StocksDashboardBaseUI,
     codePath: "@uitripled/react-shadcn/src/components/components/stocks-dashboard/stocks-dashboard.tsx",
     duration: "400ms",
     easing: "spring",
@@ -752,10 +754,11 @@ export const uiComponents: Component[] = [
     ],
     component: DashboardPage,
     codePath: "@uitripled/react-shadcn/src/components/components/stocks-dashboard/dashboard.tsx",
+    baseuiCodePath: "@uitripled/react-baseui/src/components/components/stocks-dashboard/dashboard.tsx",
     duration: "400ms",
     easing: "spring",
     display: true,
-    availableIn: ["shadcnui"],
+    availableIn: ["shadcnui", "baseui"],
   },
   {
     id: "toast-notification",

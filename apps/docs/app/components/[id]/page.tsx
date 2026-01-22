@@ -167,25 +167,46 @@ export default async function AnimationDetailPage({ params }: PageParams) {
     component.availableIn &&
     component.availableIn.includes("baseui")
   ) {
-    // Try different paths based on component category and common subdirectories
-    const subDirs = ["sections", "cards/baseui", "resumes/baseui", "blocks"];
-    const possiblePaths = subDirs.map(
-      (dir) =>
-        `@uitripled/react-baseui/components/${dir}/${component.id}-baseui.tsx`
-    );
-
-    for (const baseuiPath of possiblePaths) {
+    // Try explicit baseui path first
+    if (component.baseuiCodePath) {
       try {
         const loadedBaseuiCode = await loadComponentCode({
           ...component,
-          codePath: baseuiPath,
+          codePath: component.baseuiCodePath,
         });
         if (loadedBaseuiCode) {
           baseuiCode = loadedBaseuiCode;
-          break;
         }
       } catch (error) {
-        // Path doesn't exist, try next one
+        console.error(
+          `Failed to load baseui code from explicit path: ${component.baseuiCodePath}`,
+          error
+        );
+      }
+    }
+
+    // If explicit path didn't work, try guessing
+    if (!baseuiCode) {
+      // Try different paths based on component category and common subdirectories
+      const subDirs = ["sections", "cards/baseui", "resumes/baseui", "blocks"];
+      const possiblePaths = subDirs.map(
+        (dir) =>
+          `@uitripled/react-baseui/components/${dir}/${component.id}-baseui.tsx`
+      );
+
+      for (const baseuiPath of possiblePaths) {
+        try {
+          const loadedBaseuiCode = await loadComponentCode({
+            ...component,
+            codePath: baseuiPath,
+          });
+          if (loadedBaseuiCode) {
+            baseuiCode = loadedBaseuiCode;
+            break;
+          }
+        } catch (error) {
+          // Path doesn't exist, try next one
+        }
       }
     }
 
