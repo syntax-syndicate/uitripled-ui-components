@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { DetailTaskCard } from "components/components/cards/baseui/detail-task-baseui.tsx";
+import { DetailTaskCard } from "@uitripled/react-baseui/src/components/cards/baseui/detail-task-baseui.tsx"
 
 export function DetailTaskCardDemo() {
-  return <DetailTaskCard />;
+  return (
+    <DetailTaskCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Detail Task Card` component uses the following components. Make sure you ha
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="detail-task-card-baseui" title="components/components/cards/baseui/detail-task-baseui.tsx" />
+<ComponentSource name="detail-task-card-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/detail-task-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Detail Task Card` component uses the following components. Make sure you ha
 ## Usage
 
 ```tsx showLineNumbers
-import { DetailTaskCard } from "components/components/cards/baseui/detail-task-baseui.tsx";
+import { DetailTaskCard } from "@uitripled/react-baseui/src/components/cards/baseui/detail-task-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { DetailTaskCard } from "components/components/cards/baseui/detail-task-b
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { DetailTaskCard } from "components/components/cards/baseui/detail-task-baseui.tsx";
+import { DetailTaskCard } from "@uitripled/react-baseui/src/components/cards/baseui/detail-task-baseui.tsx"
 
 export function BasicExample() {
-  return <DetailTaskCard />;
+  return (
+    <DetailTaskCard />
+  )
 }
 ```
 

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GalleryGridwithLightbox } from "@uitripled/react-baseui/components/sections/gallery-grid-block-baseui.tsx"
+import { GalleryGridwithLightbox } from "@uitripled/react-baseui/src/components/sections/gallery-grid-block-baseui.tsx"
 
 export function GalleryGridwithLightboxDemo() {
   return (
@@ -46,7 +46,7 @@ The `Gallery Grid with Lightbox` component uses the following components. Make s
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="gallery-grid-block-baseui" title="@uitripled/react-baseui/components/sections/gallery-grid-block-baseui.tsx" />
+<ComponentSource name="gallery-grid-block-baseui" title="@uitripled/react-baseui/src/components/sections/gallery-grid-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Gallery Grid with Lightbox` component uses the following components. Make s
 ## Usage
 
 ```tsx showLineNumbers
-import { GalleryGridwithLightbox } from "@uitripled/react-baseui/components/sections/gallery-grid-block-baseui.tsx"
+import { GalleryGridwithLightbox } from "@uitripled/react-baseui/src/components/sections/gallery-grid-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GalleryGridwithLightbox } from "@uitripled/react-baseui/components/sections/gallery-grid-block-baseui.tsx"
+import { GalleryGridwithLightbox } from "@uitripled/react-baseui/src/components/sections/gallery-grid-block-baseui.tsx"
 
 export function BasicExample() {
   return (

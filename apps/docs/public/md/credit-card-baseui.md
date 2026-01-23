@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { CreditCard } from "components/components/cards/baseui/credit-card-baseui.tsx";
+import { CreditCard } from "@uitripled/react-baseui/src/components/cards/baseui/credit-card-baseui.tsx"
 
 export function CreditCardDemo() {
-  return <CreditCard />;
+  return (
+    <CreditCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Credit Card` component uses the following components. Make sure you have th
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="credit-card-baseui" title="components/components/cards/baseui/credit-card-baseui.tsx" />
+<ComponentSource name="credit-card-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/credit-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Credit Card` component uses the following components. Make sure you have th
 ## Usage
 
 ```tsx showLineNumbers
-import { CreditCard } from "components/components/cards/baseui/credit-card-baseui.tsx";
+import { CreditCard } from "@uitripled/react-baseui/src/components/cards/baseui/credit-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { CreditCard } from "components/components/cards/baseui/credit-card-baseu
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { CreditCard } from "components/components/cards/baseui/credit-card-baseui.tsx";
+import { CreditCard } from "@uitripled/react-baseui/src/components/cards/baseui/credit-card-baseui.tsx"
 
 export function BasicExample() {
-  return <CreditCard />;
+  return (
+    <CreditCard />
+  )
 }
 ```
 

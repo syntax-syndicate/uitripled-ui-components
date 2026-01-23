@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NewsletterSignupBlock } from "@uitripled/react-baseui/components/sections/newsletter-signup-block-baseui.tsx"
+import { NewsletterSignupBlock } from "@uitripled/react-baseui/src/components/sections/newsletter-signup-block-baseui.tsx"
 
 export function NewsletterSignupBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Newsletter Signup Block` component uses the following components. Make sure
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="newsletter-signup-block-baseui" title="@uitripled/react-baseui/components/sections/newsletter-signup-block-baseui.tsx" />
+<ComponentSource name="newsletter-signup-block-baseui" title="@uitripled/react-baseui/src/components/sections/newsletter-signup-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Newsletter Signup Block` component uses the following components. Make sure
 ## Usage
 
 ```tsx showLineNumbers
-import { NewsletterSignupBlock } from "@uitripled/react-baseui/components/sections/newsletter-signup-block-baseui.tsx"
+import { NewsletterSignupBlock } from "@uitripled/react-baseui/src/components/sections/newsletter-signup-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NewsletterSignupBlock } from "@uitripled/react-baseui/components/sections/newsletter-signup-block-baseui.tsx"
+import { NewsletterSignupBlock } from "@uitripled/react-baseui/src/components/sections/newsletter-signup-block-baseui.tsx"
 
 export function BasicExample() {
   return (

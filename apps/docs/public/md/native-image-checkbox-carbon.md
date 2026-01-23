@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeImageCheckbox } from "@/components/native/carbon/native-image-checkbox-carbon.tsx";
+import { NativeImageCheckbox } from "@uitripled/react-carbon/src/components/native/native-image-checkbox-carbon.tsx"
 
 export function NativeImageCheckboxDemo() {
-  return <NativeImageCheckbox />;
+  return (
+    <NativeImageCheckbox />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-image-checkbox-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-image-checkbox-carbon" title="@/components/native/carbon/native-image-checkbox-carbon.tsx" />
+<ComponentSource name="native-image-checkbox-carbon" title="@uitripled/react-carbon/src/components/native/native-image-checkbox-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-image-checkbox-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeImageCheckbox } from "@/components/native/carbon/native-image-checkbox-carbon.tsx";
+import { NativeImageCheckbox } from "@uitripled/react-carbon/src/components/native/native-image-checkbox-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeImageCheckbox } from "@/components/native/carbon/native-image-che
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeImageCheckbox } from "@/components/native/carbon/native-image-checkbox-carbon.tsx";
+import { NativeImageCheckbox } from "@uitripled/react-carbon/src/components/native/native-image-checkbox-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeImageCheckbox />;
+  return (
+    <NativeImageCheckbox />
+  )
 }
 ```
 

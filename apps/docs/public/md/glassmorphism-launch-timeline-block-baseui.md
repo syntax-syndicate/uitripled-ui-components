@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
+import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/src/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
 
 export function GlassmorphismLaunchTimelineDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Launch Timeline` component uses the following components. Mak
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-launch-timeline-block-baseui" title="@uitripled/react-baseui/components/sections/glassmorphism-launch-timeline-block-baseui.tsx" />
+<ComponentSource name="glassmorphism-launch-timeline-block-baseui" title="@uitripled/react-baseui/src/components/sections/glassmorphism-launch-timeline-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Launch Timeline` component uses the following components. Mak
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
+import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/src/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
+import { GlassmorphismLaunchTimeline } from "@uitripled/react-baseui/src/components/sections/glassmorphism-launch-timeline-block-baseui.tsx"
 
 export function BasicExample() {
   return (

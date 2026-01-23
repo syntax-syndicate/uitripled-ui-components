@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeTabs } from "@uitripled/react-shadcn/components/native/native-tabs-shadcnui.tsx"
+import { NativeTabs } from "@uitripled/react-shadcn/src/components/native/native-tabs-shadcnui.tsx"
 
 export function NativeTabsDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-tabs-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-tabs-shadcnui" title="@uitripled/react-shadcn/components/native/native-tabs-shadcnui.tsx" />
+<ComponentSource name="native-tabs-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-tabs-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-tabs-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTabs } from "@uitripled/react-shadcn/components/native/native-tabs-shadcnui.tsx"
+import { NativeTabs } from "@uitripled/react-shadcn/src/components/native/native-tabs-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeTabs } from "@uitripled/react-shadcn/components/native/native-tabs-shadcnui.tsx"
+import { NativeTabs } from "@uitripled/react-shadcn/src/components/native/native-tabs-shadcnui.tsx"
 
 export function BasicExample() {
   return (

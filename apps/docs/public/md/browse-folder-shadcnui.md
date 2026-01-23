@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { BrowseFolder } from "@uitripled/react-shadcn/components/sections/browse-folder.tsx"
+import { BrowseFolder } from "@uitripled/react-shadcn/src/components/sections/browse-folder.tsx"
 
 export function BrowseFolderDemo() {
   return (
@@ -46,7 +46,7 @@ The `Browse Folder` component uses the following components. Make sure you have 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="browse-folder-shadcnui" title="@uitripled/react-shadcn/components/sections/browse-folder.tsx" />
+<ComponentSource name="browse-folder-shadcnui" title="@uitripled/react-shadcn/src/components/sections/browse-folder.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Browse Folder` component uses the following components. Make sure you have 
 ## Usage
 
 ```tsx showLineNumbers
-import { BrowseFolder } from "@uitripled/react-shadcn/components/sections/browse-folder.tsx"
+import { BrowseFolder } from "@uitripled/react-shadcn/src/components/sections/browse-folder.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { BrowseFolder } from "@uitripled/react-shadcn/components/sections/browse-folder.tsx"
+import { BrowseFolder } from "@uitripled/react-shadcn/src/components/sections/browse-folder.tsx"
 
 export function BasicExample() {
   return (

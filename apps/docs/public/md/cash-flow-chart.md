@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { AccessibleCashFlowChart } from "@/components/data/charts/cash-flow-chart.tsx";
+import { AccessibleCashFlowChart } from "@uitripled/react-shadcn/src/components/data/charts/cash-flow-chart.tsx"
 
 export function AccessibleCashFlowChartDemo() {
-  return <AccessibleCashFlowChart />;
+  return (
+    <AccessibleCashFlowChart />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/cash-flow-chart
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cash-flow-chart" title="@/components/data/charts/cash-flow-chart.tsx" />
+<ComponentSource name="cash-flow-chart" title="@uitripled/react-shadcn/src/components/data/charts/cash-flow-chart.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/cash-flow-chart
 ## Usage
 
 ```tsx showLineNumbers
-import { AccessibleCashFlowChart } from "@/components/data/charts/cash-flow-chart.tsx";
+import { AccessibleCashFlowChart } from "@uitripled/react-shadcn/src/components/data/charts/cash-flow-chart.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -61,12 +63,11 @@ import { AccessibleCashFlowChart } from "@/components/data/charts/cash-flow-char
 ## Component Details
 
 - **Category**: data
-- **Tags**: chart, bar, cashflow, finance, accessible
+
 
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -94,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { AccessibleCashFlowChart } from "@/components/data/charts/cash-flow-chart.tsx";
+import { AccessibleCashFlowChart } from "@uitripled/react-shadcn/src/components/data/charts/cash-flow-chart.tsx"
 
 export function BasicExample() {
-  return <AccessibleCashFlowChart />;
+  return (
+    <AccessibleCashFlowChart />
+  )
 }
 ```
 

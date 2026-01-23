@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CTABannerSection } from "@uitripled/react-baseui/components/sections/cta-banner-section-baseui.tsx"
+import { CTABannerSection } from "@uitripled/react-baseui/src/components/sections/cta-banner-section-baseui.tsx"
 
 export function CTABannerSectionDemo() {
   return (
@@ -46,7 +46,7 @@ The `CTA Banner Section` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cta-banner-section-baseui" title="@uitripled/react-baseui/components/sections/cta-banner-section-baseui.tsx" />
+<ComponentSource name="cta-banner-section-baseui" title="@uitripled/react-baseui/src/components/sections/cta-banner-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `CTA Banner Section` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { CTABannerSection } from "@uitripled/react-baseui/components/sections/cta-banner-section-baseui.tsx"
+import { CTABannerSection } from "@uitripled/react-baseui/src/components/sections/cta-banner-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CTABannerSection } from "@uitripled/react-baseui/components/sections/cta-banner-section-baseui.tsx"
+import { CTABannerSection } from "@uitripled/react-baseui/src/components/sections/cta-banner-section-baseui.tsx"
 
 export function BasicExample() {
   return (

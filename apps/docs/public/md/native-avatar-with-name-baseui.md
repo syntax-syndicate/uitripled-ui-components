@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeAvatarWithName } from "@uitripled/react-baseui/components/native/native-avatar-with-name-baseui.tsx"
+import { NativeAvatarWithName } from "@uitripled/react-baseui/src/components/native/native-avatar-with-name-baseui.tsx"
 
 export function NativeAvatarWithNameDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Avatar With Name` component uses the following components. Make sure
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-avatar-with-name-baseui" title="@uitripled/react-baseui/components/native/native-avatar-with-name-baseui.tsx" />
+<ComponentSource name="native-avatar-with-name-baseui" title="@uitripled/react-baseui/src/components/native/native-avatar-with-name-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Avatar With Name` component uses the following components. Make sure
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeAvatarWithName } from "@uitripled/react-baseui/components/native/native-avatar-with-name-baseui.tsx"
+import { NativeAvatarWithName } from "@uitripled/react-baseui/src/components/native/native-avatar-with-name-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeAvatarWithName } from "@uitripled/react-baseui/components/native/native-avatar-with-name-baseui.tsx"
+import { NativeAvatarWithName } from "@uitripled/react-baseui/src/components/native/native-avatar-with-name-baseui.tsx"
 
 export function BasicExample() {
   return (

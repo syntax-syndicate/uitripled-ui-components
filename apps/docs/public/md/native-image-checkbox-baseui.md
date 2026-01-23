@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeImageCheckbox } from "@uitripled/react-baseui/components/native/native-image-checkbox-baseui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-baseui/src/components/native/native-image-checkbox-baseui.tsx"
 
 export function NativeImageCheckboxDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Image Checkbox` component uses the following components. Make sure y
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-image-checkbox-baseui" title="@uitripled/react-baseui/components/native/native-image-checkbox-baseui.tsx" />
+<ComponentSource name="native-image-checkbox-baseui" title="@uitripled/react-baseui/src/components/native/native-image-checkbox-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Image Checkbox` component uses the following components. Make sure y
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeImageCheckbox } from "@uitripled/react-baseui/components/native/native-image-checkbox-baseui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-baseui/src/components/native/native-image-checkbox-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeImageCheckbox } from "@uitripled/react-baseui/components/native/native-image-checkbox-baseui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-baseui/src/components/native/native-image-checkbox-baseui.tsx"
 
 export function BasicExample() {
   return (

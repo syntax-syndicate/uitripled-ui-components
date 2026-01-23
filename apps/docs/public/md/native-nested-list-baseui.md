@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeNestedList } from "@uitripled/react-baseui/components/native/native-nested-list-baseui.tsx"
+import { NativeNestedList } from "@uitripled/react-baseui/src/components/native/native-nested-list-baseui.tsx"
 
 export function NativeNestedListDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Nested List` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-nested-list-baseui" title="@uitripled/react-baseui/components/native/native-nested-list-baseui.tsx" />
+<ComponentSource name="native-nested-list-baseui" title="@uitripled/react-baseui/src/components/native/native-nested-list-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Nested List` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeNestedList } from "@uitripled/react-baseui/components/native/native-nested-list-baseui.tsx"
+import { NativeNestedList } from "@uitripled/react-baseui/src/components/native/native-nested-list-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeNestedList } from "@uitripled/react-baseui/components/native/native-nested-list-baseui.tsx"
+import { NativeNestedList } from "@uitripled/react-baseui/src/components/native/native-nested-list-baseui.tsx"
 
 export function BasicExample() {
   return (

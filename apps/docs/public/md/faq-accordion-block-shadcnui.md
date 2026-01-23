@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FAQAccordion } from "@uitripled/react-shadcn/components/sections/faq-accordion-block.tsx"
+import { FAQAccordion } from "@uitripled/react-shadcn/src/components/sections/faq-accordion-block.tsx"
 
 export function FAQAccordionDemo() {
   return (
@@ -46,7 +46,7 @@ The `FAQ Accordion` component uses the following components. Make sure you have 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="faq-accordion-block-shadcnui" title="@uitripled/react-shadcn/components/sections/faq-accordion-block.tsx" />
+<ComponentSource name="faq-accordion-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/faq-accordion-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `FAQ Accordion` component uses the following components. Make sure you have 
 ## Usage
 
 ```tsx showLineNumbers
-import { FAQAccordion } from "@uitripled/react-shadcn/components/sections/faq-accordion-block.tsx"
+import { FAQAccordion } from "@uitripled/react-shadcn/src/components/sections/faq-accordion-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FAQAccordion } from "@uitripled/react-shadcn/components/sections/faq-accordion-block.tsx"
+import { FAQAccordion } from "@uitripled/react-shadcn/src/components/sections/faq-accordion-block.tsx"
 
 export function BasicExample() {
   return (

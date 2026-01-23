@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeTypewriter } from "@uitripled/react-baseui/components/native/native-typewriter-baseui.tsx"
+import { NativeTypewriter } from "@uitripled/react-baseui/src/components/native/native-typewriter-baseui.tsx"
 
 export function NativeTypewriterDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Typewriter` component uses the following components. Make sure you h
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-typewriter-baseui" title="@uitripled/react-baseui/components/native/native-typewriter-baseui.tsx" />
+<ComponentSource name="native-typewriter-baseui" title="@uitripled/react-baseui/src/components/native/native-typewriter-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Typewriter` component uses the following components. Make sure you h
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTypewriter } from "@uitripled/react-baseui/components/native/native-typewriter-baseui.tsx"
+import { NativeTypewriter } from "@uitripled/react-baseui/src/components/native/native-typewriter-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeTypewriter } from "@uitripled/react-baseui/components/native/native-typewriter-baseui.tsx"
+import { NativeTypewriter } from "@uitripled/react-baseui/src/components/native/native-typewriter-baseui.tsx"
 
 export function BasicExample() {
   return (

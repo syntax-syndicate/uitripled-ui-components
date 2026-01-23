@@ -139,7 +139,7 @@ function parseRegistryFile(content: string, fileName: string) {
     const registryContent = content.substring(startIndex, endIndex);
 
     // Parse entries
-    const entryPattern = /\{\s*id:\s*"([^"]+)"/g;
+    const entryPattern = /^\s{2}\{\s*\n\s{4}id:\s*"([^"]+)"/gm;
     const entryIndices = [];
 
     while ((match = entryPattern.exec(registryContent)) !== null) {

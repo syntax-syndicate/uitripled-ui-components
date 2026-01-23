@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeNotificationBell } from "@uitripled/react-baseui/components/native/native-notification-bell-baseui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-baseui/src/components/native/native-notification-bell-baseui.tsx"
 
 export function NativeNotificationBellDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Notification Bell` component uses the following components. Make sur
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-notification-bell-baseui" title="@uitripled/react-baseui/components/native/native-notification-bell-baseui.tsx" />
+<ComponentSource name="native-notification-bell-baseui" title="@uitripled/react-baseui/src/components/native/native-notification-bell-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Notification Bell` component uses the following components. Make sur
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeNotificationBell } from "@uitripled/react-baseui/components/native/native-notification-bell-baseui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-baseui/src/components/native/native-notification-bell-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeNotificationBell } from "@uitripled/react-baseui/components/native/native-notification-bell-baseui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-baseui/src/components/native/native-notification-bell-baseui.tsx"
 
 export function BasicExample() {
   return (

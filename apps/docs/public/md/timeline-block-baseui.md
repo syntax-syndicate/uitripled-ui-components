@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { TimelineBlock } from "@uitripled/react-baseui/components/sections/timeline-block-baseui.tsx"
+import { TimelineBlock } from "@uitripled/react-baseui/src/components/sections/timeline-block-baseui.tsx"
 
 export function TimelineBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Timeline Block` component uses the following components. Make sure you have
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="timeline-block-baseui" title="@uitripled/react-baseui/components/sections/timeline-block-baseui.tsx" />
+<ComponentSource name="timeline-block-baseui" title="@uitripled/react-baseui/src/components/sections/timeline-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Timeline Block` component uses the following components. Make sure you have
 ## Usage
 
 ```tsx showLineNumbers
-import { TimelineBlock } from "@uitripled/react-baseui/components/sections/timeline-block-baseui.tsx"
+import { TimelineBlock } from "@uitripled/react-baseui/src/components/sections/timeline-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { TimelineBlock } from "@uitripled/react-baseui/components/sections/timeline-block-baseui.tsx"
+import { TimelineBlock } from "@uitripled/react-baseui/src/components/sections/timeline-block-baseui.tsx"
 
 export function BasicExample() {
   return (

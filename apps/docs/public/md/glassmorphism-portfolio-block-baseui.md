@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismPortfolio } from "@uitripled/react-baseui/components/sections/glassmorphism-portfolio-block-baseui.tsx"
+import { GlassmorphismPortfolio } from "@uitripled/react-baseui/src/components/sections/glassmorphism-portfolio-block-baseui.tsx"
 
 export function GlassmorphismPortfolioDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Portfolio` component uses the following components. Make sure
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-portfolio-block-baseui" title="@uitripled/react-baseui/components/sections/glassmorphism-portfolio-block-baseui.tsx" />
+<ComponentSource name="glassmorphism-portfolio-block-baseui" title="@uitripled/react-baseui/src/components/sections/glassmorphism-portfolio-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Portfolio` component uses the following components. Make sure
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismPortfolio } from "@uitripled/react-baseui/components/sections/glassmorphism-portfolio-block-baseui.tsx"
+import { GlassmorphismPortfolio } from "@uitripled/react-baseui/src/components/sections/glassmorphism-portfolio-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismPortfolio } from "@uitripled/react-baseui/components/sections/glassmorphism-portfolio-block-baseui.tsx"
+import { GlassmorphismPortfolio } from "@uitripled/react-baseui/src/components/sections/glassmorphism-portfolio-block-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeTypewriter } from "@uitripled/react-carbon/components/native/native-typewriter-carbon.tsx"
+import { NativeTypewriter } from "@uitripled/react-carbon/src/components/native/native-typewriter-carbon.tsx"
 
 export function NativeTypewriterDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-typewriter
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-typewriter" title="@uitripled/react-carbon/components/native/native-typewriter-carbon.tsx" />
+<ComponentSource name="native-typewriter" title="@uitripled/react-carbon/src/components/native/native-typewriter-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-typewriter
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTypewriter } from "@uitripled/react-carbon/components/native/native-typewriter-carbon.tsx"
+import { NativeTypewriter } from "@uitripled/react-carbon/src/components/native/native-typewriter-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeTypewriter } from "@uitripled/react-carbon/components/native/native-typewriter-carbon.tsx"
+import { NativeTypewriter } from "@uitripled/react-carbon/src/components/native/native-typewriter-carbon.tsx"
 
 export function BasicExample() {
   return (

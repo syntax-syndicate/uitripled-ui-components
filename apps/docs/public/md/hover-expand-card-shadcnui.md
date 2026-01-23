@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { HoverExpandCard } from "components/components/cards/shadcnui/hover-expand.tsx";
+import { HoverExpandCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/hover-expand.tsx"
 
 export function HoverExpandCardDemo() {
-  return <HoverExpandCard />;
+  return (
+    <HoverExpandCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/hover-expand-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="hover-expand-card-shadcnui" title="components/components/cards/shadcnui/hover-expand.tsx" />
+<ComponentSource name="hover-expand-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/hover-expand.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/hover-expand-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { HoverExpandCard } from "components/components/cards/shadcnui/hover-expand.tsx";
+import { HoverExpandCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/hover-expand.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { HoverExpandCard } from "components/components/cards/shadcnui/hover-expa
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { HoverExpandCard } from "components/components/cards/shadcnui/hover-expand.tsx";
+import { HoverExpandCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/hover-expand.tsx"
 
 export function BasicExample() {
-  return <HoverExpandCard />;
+  return (
+    <HoverExpandCard />
+  )
 }
 ```
 

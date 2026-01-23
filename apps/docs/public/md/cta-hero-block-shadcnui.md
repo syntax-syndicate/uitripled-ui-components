@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CTAHeroBlock } from "@uitripled/react-shadcn/components/sections/cta-hero-block.tsx"
+import { CTAHeroBlock } from "@uitripled/react-shadcn/src/components/sections/cta-hero-block.tsx"
 
 export function CTAHeroBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `CTA Hero Block` component uses the following components. Make sure you have
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cta-hero-block-shadcnui" title="@uitripled/react-shadcn/components/sections/cta-hero-block.tsx" />
+<ComponentSource name="cta-hero-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/cta-hero-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `CTA Hero Block` component uses the following components. Make sure you have
 ## Usage
 
 ```tsx showLineNumbers
-import { CTAHeroBlock } from "@uitripled/react-shadcn/components/sections/cta-hero-block.tsx"
+import { CTAHeroBlock } from "@uitripled/react-shadcn/src/components/sections/cta-hero-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CTAHeroBlock } from "@uitripled/react-shadcn/components/sections/cta-hero-block.tsx"
+import { CTAHeroBlock } from "@uitripled/react-shadcn/src/components/sections/cta-hero-block.tsx"
 
 export function BasicExample() {
   return (

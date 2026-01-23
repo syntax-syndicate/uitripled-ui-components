@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { ProjectsBlock } from "@uitripled/react-baseui/components/sections/projects-block-baseui.tsx"
+import { ProjectsBlock } from "@uitripled/react-baseui/src/components/sections/projects-block-baseui.tsx"
 
 export function ProjectsBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Projects Block` component uses the following components. Make sure you have
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="projects-block-baseui" title="@uitripled/react-baseui/components/sections/projects-block-baseui.tsx" />
+<ComponentSource name="projects-block-baseui" title="@uitripled/react-baseui/src/components/sections/projects-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Projects Block` component uses the following components. Make sure you have
 ## Usage
 
 ```tsx showLineNumbers
-import { ProjectsBlock } from "@uitripled/react-baseui/components/sections/projects-block-baseui.tsx"
+import { ProjectsBlock } from "@uitripled/react-baseui/src/components/sections/projects-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { ProjectsBlock } from "@uitripled/react-baseui/components/sections/projects-block-baseui.tsx"
+import { ProjectsBlock } from "@uitripled/react-baseui/src/components/sections/projects-block-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { TeamSectionBlock } from "@uitripled/react-shadcn/components/sections/team-section-block.tsx"
+import { TeamSectionBlock } from "@uitripled/react-shadcn/src/components/sections/team-section-block.tsx"
 
 export function TeamSectionBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Team Section Block` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="team-section-block-shadcnui" title="@uitripled/react-shadcn/components/sections/team-section-block.tsx" />
+<ComponentSource name="team-section-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/team-section-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Team Section Block` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { TeamSectionBlock } from "@uitripled/react-shadcn/components/sections/team-section-block.tsx"
+import { TeamSectionBlock } from "@uitripled/react-shadcn/src/components/sections/team-section-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { TeamSectionBlock } from "@uitripled/react-shadcn/components/sections/team-section-block.tsx"
+import { TeamSectionBlock } from "@uitripled/react-shadcn/src/components/sections/team-section-block.tsx"
 
 export function BasicExample() {
   return (

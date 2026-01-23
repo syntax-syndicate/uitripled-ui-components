@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeBadge } from "@/components/native/carbon/native-badge-carbon.tsx";
+import { NativeBadge } from "@uitripled/react-carbon/src/components/native/native-badge-carbon.tsx"
 
 export function NativeBadgeDemo() {
-  return <NativeBadge />;
+  return (
+    <NativeBadge />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-badge-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-badge-carbon" title="@/components/native/carbon/native-badge-carbon.tsx" />
+<ComponentSource name="native-badge-carbon" title="@uitripled/react-carbon/src/components/native/native-badge-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-badge-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeBadge } from "@/components/native/carbon/native-badge-carbon.tsx";
+import { NativeBadge } from "@uitripled/react-carbon/src/components/native/native-badge-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeBadge } from "@/components/native/carbon/native-badge-carbon.tsx"
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeBadge } from "@/components/native/carbon/native-badge-carbon.tsx";
+import { NativeBadge } from "@uitripled/react-carbon/src/components/native/native-badge-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeBadge />;
+  return (
+    <NativeBadge />
+  )
 }
 ```
 

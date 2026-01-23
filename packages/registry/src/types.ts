@@ -13,6 +13,7 @@ export type Component = {
   tags: string[];
   display?: boolean;
   variants?: any[];
+  baseuiVariants?: any[];
   duration?: string;
   easing?: string;
   baseuiComponent?: React.ComponentType<any>;

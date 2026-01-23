@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FAQSection } from "@uitripled/react-baseui/components/sections/faq-section-baseui.tsx"
+import { FAQSection } from "@uitripled/react-baseui/src/components/sections/faq-section-baseui.tsx"
 
 export function FAQSectionDemo() {
   return (
@@ -46,7 +46,7 @@ The `FAQ Section` component uses the following components. Make sure you have th
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="faq-section-baseui" title="@uitripled/react-baseui/components/sections/faq-section-baseui.tsx" />
+<ComponentSource name="faq-section-baseui" title="@uitripled/react-baseui/src/components/sections/faq-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `FAQ Section` component uses the following components. Make sure you have th
 ## Usage
 
 ```tsx showLineNumbers
-import { FAQSection } from "@uitripled/react-baseui/components/sections/faq-section-baseui.tsx"
+import { FAQSection } from "@uitripled/react-baseui/src/components/sections/faq-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FAQSection } from "@uitripled/react-baseui/components/sections/faq-section-baseui.tsx"
+import { FAQSection } from "@uitripled/react-baseui/src/components/sections/faq-section-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { OurServices } from "@uitripled/react-baseui/components/sections/our-services-section-baseui.tsx"
+import { OurServices } from "@uitripled/react-baseui/src/components/sections/our-services-section-baseui.tsx"
 
 export function OurServicesDemo() {
   return (
@@ -46,7 +46,7 @@ The `Our Services` component uses the following components. Make sure you have t
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="our-services-section-baseui" title="@uitripled/react-baseui/components/sections/our-services-section-baseui.tsx" />
+<ComponentSource name="our-services-section-baseui" title="@uitripled/react-baseui/src/components/sections/our-services-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Our Services` component uses the following components. Make sure you have t
 ## Usage
 
 ```tsx showLineNumbers
-import { OurServices } from "@uitripled/react-baseui/components/sections/our-services-section-baseui.tsx"
+import { OurServices } from "@uitripled/react-baseui/src/components/sections/our-services-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { OurServices } from "@uitripled/react-baseui/components/sections/our-services-section-baseui.tsx"
+import { OurServices } from "@uitripled/react-baseui/src/components/sections/our-services-section-baseui.tsx"
 
 export function BasicExample() {
   return (

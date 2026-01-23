@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { InteractiveResumeCard } from "components/components/resumes/shadcnui/resume-card.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/resume-card.tsx"
 
 export function InteractiveResumeCardDemo() {
-  return <InteractiveResumeCard />;
+  return (
+    <InteractiveResumeCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/resume-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="resume-card-shadcnui" title="components/components/resumes/shadcnui/resume-card.tsx" />
+<ComponentSource name="resume-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/resumes/shadcnui/resume-card.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/resume-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { InteractiveResumeCard } from "components/components/resumes/shadcnui/resume-card.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/resume-card.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { InteractiveResumeCard } from "components/components/resumes/shadcnui/re
 
 - **Category**: resumes
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { InteractiveResumeCard } from "components/components/resumes/shadcnui/resume-card.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/resume-card.tsx"
 
 export function BasicExample() {
-  return <InteractiveResumeCard />;
+  return (
+    <InteractiveResumeCard />
+  )
 }
 ```
 

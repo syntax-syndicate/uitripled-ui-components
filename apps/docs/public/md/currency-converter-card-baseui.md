@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CurrencyConverterCard } from "@uitripled/react-baseui/components/sections/currency-converter-card-baseui.tsx"
+import { CurrencyConverterCard } from "@uitripled/react-baseui/src/components/sections/currency-converter-card-baseui.tsx"
 
 export function CurrencyConverterCardDemo() {
   return (
@@ -46,7 +46,7 @@ The `Currency Converter Card` component uses the following components. Make sure
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="currency-converter-card-baseui" title="@uitripled/react-baseui/components/sections/currency-converter-card-baseui.tsx" />
+<ComponentSource name="currency-converter-card-baseui" title="@uitripled/react-baseui/src/components/sections/currency-converter-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Currency Converter Card` component uses the following components. Make sure
 ## Usage
 
 ```tsx showLineNumbers
-import { CurrencyConverterCard } from "@uitripled/react-baseui/components/sections/currency-converter-card-baseui.tsx"
+import { CurrencyConverterCard } from "@uitripled/react-baseui/src/components/sections/currency-converter-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CurrencyConverterCard } from "@uitripled/react-baseui/components/sections/currency-converter-card-baseui.tsx"
+import { CurrencyConverterCard } from "@uitripled/react-baseui/src/components/sections/currency-converter-card-baseui.tsx"
 
 export function BasicExample() {
   return (

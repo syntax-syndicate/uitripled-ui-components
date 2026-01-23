@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { AnimatedCardStack } from "components/components/cards/baseui/animated-card-stack-baseui.tsx";
+import { AnimatedCardStack } from "@uitripled/react-baseui/src/components/cards/baseui/animated-card-stack-baseui.tsx"
 
 export function AnimatedCardStackDemo() {
-  return <AnimatedCardStack />;
+  return (
+    <AnimatedCardStack />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Animated Card Stack` component uses the following components. Make sure you
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="animated-card-stack-baseui" title="components/components/cards/baseui/animated-card-stack-baseui.tsx" />
+<ComponentSource name="animated-card-stack-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/animated-card-stack-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Animated Card Stack` component uses the following components. Make sure you
 ## Usage
 
 ```tsx showLineNumbers
-import { AnimatedCardStack } from "components/components/cards/baseui/animated-card-stack-baseui.tsx";
+import { AnimatedCardStack } from "@uitripled/react-baseui/src/components/cards/baseui/animated-card-stack-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { AnimatedCardStack } from "components/components/cards/baseui/animated-c
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { AnimatedCardStack } from "components/components/cards/baseui/animated-card-stack-baseui.tsx";
+import { AnimatedCardStack } from "@uitripled/react-baseui/src/components/cards/baseui/animated-card-stack-baseui.tsx"
 
 export function BasicExample() {
-  return <AnimatedCardStack />;
+  return (
+    <AnimatedCardStack />
+  )
 }
 ```
 

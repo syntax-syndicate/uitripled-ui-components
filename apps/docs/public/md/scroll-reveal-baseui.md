@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { ScrollReveal } from "@uitripled/react-baseui/components/sections/scroll-reveal-baseui.tsx"
+import { ScrollReveal } from "@uitripled/react-baseui/src/components/sections/scroll-reveal-baseui.tsx"
 
 export function ScrollRevealDemo() {
   return (
@@ -46,7 +46,7 @@ The `Scroll Reveal` component uses the following components. Make sure you have 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="scroll-reveal-baseui" title="@uitripled/react-baseui/components/sections/scroll-reveal-baseui.tsx" />
+<ComponentSource name="scroll-reveal-baseui" title="@uitripled/react-baseui/src/components/sections/scroll-reveal-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Scroll Reveal` component uses the following components. Make sure you have 
 ## Usage
 
 ```tsx showLineNumbers
-import { ScrollReveal } from "@uitripled/react-baseui/components/sections/scroll-reveal-baseui.tsx"
+import { ScrollReveal } from "@uitripled/react-baseui/src/components/sections/scroll-reveal-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { ScrollReveal } from "@uitripled/react-baseui/components/sections/scroll-reveal-baseui.tsx"
+import { ScrollReveal } from "@uitripled/react-baseui/src/components/sections/scroll-reveal-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { StatsCounterBlock } from "@uitripled/react-baseui/components/sections/stats-counter-block-baseui.tsx"
+import { StatsCounterBlock } from "@uitripled/react-baseui/src/components/sections/stats-counter-block-baseui.tsx"
 
 export function StatsCounterBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Stats Counter Block` component uses the following components. Make sure you
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="stats-counter-block-baseui" title="@uitripled/react-baseui/components/sections/stats-counter-block-baseui.tsx" />
+<ComponentSource name="stats-counter-block-baseui" title="@uitripled/react-baseui/src/components/sections/stats-counter-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Stats Counter Block` component uses the following components. Make sure you
 ## Usage
 
 ```tsx showLineNumbers
-import { StatsCounterBlock } from "@uitripled/react-baseui/components/sections/stats-counter-block-baseui.tsx"
+import { StatsCounterBlock } from "@uitripled/react-baseui/src/components/sections/stats-counter-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { StatsCounterBlock } from "@uitripled/react-baseui/components/sections/stats-counter-block-baseui.tsx"
+import { StatsCounterBlock } from "@uitripled/react-baseui/src/components/sections/stats-counter-block-baseui.tsx"
 
 export function BasicExample() {
   return (

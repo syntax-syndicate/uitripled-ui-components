@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { TestimonialSection } from "@uitripled/react-shadcn/components/sections/testimonial-section.tsx"
+import { TestimonialSection } from "@uitripled/react-shadcn/src/components/sections/testimonial-section.tsx"
 
 export function TestimonialSectionDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/testimonial-section-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="testimonial-section-shadcnui" title="@uitripled/react-shadcn/components/sections/testimonial-section.tsx" />
+<ComponentSource name="testimonial-section-shadcnui" title="@uitripled/react-shadcn/src/components/sections/testimonial-section.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/testimonial-section-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { TestimonialSection } from "@uitripled/react-shadcn/components/sections/testimonial-section.tsx"
+import { TestimonialSection } from "@uitripled/react-shadcn/src/components/sections/testimonial-section.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { TestimonialSection } from "@uitripled/react-shadcn/components/sections/testimonial-section.tsx"
+import { TestimonialSection } from "@uitripled/react-shadcn/src/components/sections/testimonial-section.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { N8NWorkflowBlock } from "@uitripled/react-shadcn/components/sections/n8n-workflow-block.tsx"
+import { N8NWorkflowBlock } from "@uitripled/react-shadcn/src/components/sections/n8n-workflow-block.tsx"
 
 export function N8NWorkflowBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `N8N Workflow Block` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="n8n-workflow-block-shadcnui" title="@uitripled/react-shadcn/components/sections/n8n-workflow-block.tsx" />
+<ComponentSource name="n8n-workflow-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/n8n-workflow-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `N8N Workflow Block` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { N8NWorkflowBlock } from "@uitripled/react-shadcn/components/sections/n8n-workflow-block.tsx"
+import { N8NWorkflowBlock } from "@uitripled/react-shadcn/src/components/sections/n8n-workflow-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { N8NWorkflowBlock } from "@uitripled/react-shadcn/components/sections/n8n-workflow-block.tsx"
+import { N8NWorkflowBlock } from "@uitripled/react-shadcn/src/components/sections/n8n-workflow-block.tsx"
 
 export function BasicExample() {
   return (

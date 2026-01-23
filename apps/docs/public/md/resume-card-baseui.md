@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { InteractiveResumeCard } from "components/components/resumes/baseui/resume-card-baseui.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-baseui/src/components/resumes/baseui/resume-card-baseui.tsx"
 
 export function InteractiveResumeCardDemo() {
-  return <InteractiveResumeCard />;
+  return (
+    <InteractiveResumeCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Interactive Resume Card` component uses the following components. Make sure
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="resume-card-baseui" title="components/components/resumes/baseui/resume-card-baseui.tsx" />
+<ComponentSource name="resume-card-baseui" title="@uitripled/react-baseui/src/components/resumes/baseui/resume-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Interactive Resume Card` component uses the following components. Make sure
 ## Usage
 
 ```tsx showLineNumbers
-import { InteractiveResumeCard } from "components/components/resumes/baseui/resume-card-baseui.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-baseui/src/components/resumes/baseui/resume-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { InteractiveResumeCard } from "components/components/resumes/baseui/resu
 
 - **Category**: resumes
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { InteractiveResumeCard } from "components/components/resumes/baseui/resume-card-baseui.tsx";
+import { InteractiveResumeCard } from "@uitripled/react-baseui/src/components/resumes/baseui/resume-card-baseui.tsx"
 
 export function BasicExample() {
-  return <InteractiveResumeCard />;
+  return (
+    <InteractiveResumeCard />
+  )
 }
 ```
 

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CinemaTicket } from "@uitripled/react-shadcn/components/sections/cinema-ticket.tsx"
+import { CinemaTicket } from "@uitripled/react-shadcn/src/components/sections/cinema-ticket.tsx"
 
 export function CinemaTicketDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/cinema-ticket-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cinema-ticket-shadcnui" title="@uitripled/react-shadcn/components/sections/cinema-ticket.tsx" />
+<ComponentSource name="cinema-ticket-shadcnui" title="@uitripled/react-shadcn/src/components/sections/cinema-ticket.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/cinema-ticket-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { CinemaTicket } from "@uitripled/react-shadcn/components/sections/cinema-ticket.tsx"
+import { CinemaTicket } from "@uitripled/react-shadcn/src/components/sections/cinema-ticket.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CinemaTicket } from "@uitripled/react-shadcn/components/sections/cinema-ticket.tsx"
+import { CinemaTicket } from "@uitripled/react-shadcn/src/components/sections/cinema-ticket.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { BlogBlock } from "@uitripled/react-shadcn/components/sections/blog-block.tsx"
+import { BlogBlock } from "@uitripled/react-shadcn/src/components/sections/blog-block.tsx"
 
 export function BlogBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Blog Block` component uses the following components. Make sure you have the
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="blog-block-shadcnui" title="@uitripled/react-shadcn/components/sections/blog-block.tsx" />
+<ComponentSource name="blog-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/blog-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Blog Block` component uses the following components. Make sure you have the
 ## Usage
 
 ```tsx showLineNumbers
-import { BlogBlock } from "@uitripled/react-shadcn/components/sections/blog-block.tsx"
+import { BlogBlock } from "@uitripled/react-shadcn/src/components/sections/blog-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { BlogBlock } from "@uitripled/react-shadcn/components/sections/blog-block.tsx"
+import { BlogBlock } from "@uitripled/react-shadcn/src/components/sections/blog-block.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeCounterUp } from "@uitripled/react-carbon/components/native/native-counter-up-carbon.tsx"
+import { NativeCounterUp } from "@uitripled/react-carbon/src/components/native/native-counter-up-carbon.tsx"
 
 export function NativeCounterUpDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-counter-up
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-counter-up" title="@uitripled/react-carbon/components/native/native-counter-up-carbon.tsx" />
+<ComponentSource name="native-counter-up" title="@uitripled/react-carbon/src/components/native/native-counter-up-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-counter-up
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeCounterUp } from "@uitripled/react-carbon/components/native/native-counter-up-carbon.tsx"
+import { NativeCounterUp } from "@uitripled/react-carbon/src/components/native/native-counter-up-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeCounterUp } from "@uitripled/react-carbon/components/native/native-counter-up-carbon.tsx"
+import { NativeCounterUp } from "@uitripled/react-carbon/src/components/native/native-counter-up-carbon.tsx"
 
 export function BasicExample() {
   return (

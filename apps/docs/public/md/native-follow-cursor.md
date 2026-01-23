@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeFollowCursor } from "@uitripled/react-carbon/components/native/native-follow-cursor-carbon.tsx"
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 
 export function NativeFollowCursorDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-follow-cursor
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-follow-cursor" title="@uitripled/react-carbon/components/native/native-follow-cursor-carbon.tsx" />
+<ComponentSource name="native-follow-cursor" title="@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-follow-cursor
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeFollowCursor } from "@uitripled/react-carbon/components/native/native-follow-cursor-carbon.tsx"
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeFollowCursor } from "@uitripled/react-carbon/components/native/native-follow-cursor-carbon.tsx"
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 
 export function BasicExample() {
   return (

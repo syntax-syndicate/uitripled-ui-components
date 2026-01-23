@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassCheckoutCard } from "components/components/cards/shadcnui/glass-checkout-card.tsx";
+import { GlassCheckoutCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-checkout-card.tsx"
 
 export function GlassCheckoutCardDemo() {
-  return <GlassCheckoutCard />;
+  return (
+    <GlassCheckoutCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/glass-checkout-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glass-checkout-card-shadcnui" title="components/components/cards/shadcnui/glass-checkout-card.tsx" />
+<ComponentSource name="glass-checkout-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-checkout-card.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/glass-checkout-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassCheckoutCard } from "components/components/cards/shadcnui/glass-checkout-card.tsx";
+import { GlassCheckoutCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-checkout-card.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { GlassCheckoutCard } from "components/components/cards/shadcnui/glass-ch
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassCheckoutCard } from "components/components/cards/shadcnui/glass-checkout-card.tsx";
+import { GlassCheckoutCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-checkout-card.tsx"
 
 export function BasicExample() {
-  return <GlassCheckoutCard />;
+  return (
+    <GlassCheckoutCard />
+  )
 }
 ```
 

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FooterBlock } from "@uitripled/react-baseui/components/sections/footer-block-baseui.tsx"
+import { FooterBlock } from "@uitripled/react-baseui/src/components/sections/footer-block-baseui.tsx"
 
 export function FooterBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Footer Block` component uses the following components. Make sure you have t
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="footer-block-baseui" title="@uitripled/react-baseui/components/sections/footer-block-baseui.tsx" />
+<ComponentSource name="footer-block-baseui" title="@uitripled/react-baseui/src/components/sections/footer-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Footer Block` component uses the following components. Make sure you have t
 ## Usage
 
 ```tsx showLineNumbers
-import { FooterBlock } from "@uitripled/react-baseui/components/sections/footer-block-baseui.tsx"
+import { FooterBlock } from "@uitripled/react-baseui/src/components/sections/footer-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FooterBlock } from "@uitripled/react-baseui/components/sections/footer-block-baseui.tsx"
+import { FooterBlock } from "@uitripled/react-baseui/src/components/sections/footer-block-baseui.tsx"
 
 export function BasicExample() {
   return (

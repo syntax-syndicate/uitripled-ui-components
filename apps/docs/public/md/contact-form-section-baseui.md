@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { ContactForm } from "@uitripled/react-baseui/components/sections/contact-form-section-baseui.tsx"
+import { ContactForm } from "@uitripled/react-baseui/src/components/sections/contact-form-section-baseui.tsx"
 
 export function ContactFormDemo() {
   return (
@@ -46,7 +46,7 @@ The `Contact Form` component uses the following components. Make sure you have t
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="contact-form-section-baseui" title="@uitripled/react-baseui/components/sections/contact-form-section-baseui.tsx" />
+<ComponentSource name="contact-form-section-baseui" title="@uitripled/react-baseui/src/components/sections/contact-form-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Contact Form` component uses the following components. Make sure you have t
 ## Usage
 
 ```tsx showLineNumbers
-import { ContactForm } from "@uitripled/react-baseui/components/sections/contact-form-section-baseui.tsx"
+import { ContactForm } from "@uitripled/react-baseui/src/components/sections/contact-form-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { ContactForm } from "@uitripled/react-baseui/components/sections/contact-form-section-baseui.tsx"
+import { ContactForm } from "@uitripled/react-baseui/src/components/sections/contact-form-section-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeProfileNotch } from "@uitripled/react-shadcn/components/native/native-profile-notch-shadcnui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-shadcn/src/components/native/native-profile-notch-shadcnui.tsx"
 
 export function NativeProfileNotchDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-profile-notch-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-profile-notch-shadcnui" title="@uitripled/react-shadcn/components/native/native-profile-notch-shadcnui.tsx" />
+<ComponentSource name="native-profile-notch-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-profile-notch-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-profile-notch-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeProfileNotch } from "@uitripled/react-shadcn/components/native/native-profile-notch-shadcnui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-shadcn/src/components/native/native-profile-notch-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeProfileNotch } from "@uitripled/react-shadcn/components/native/native-profile-notch-shadcnui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-shadcn/src/components/native/native-profile-notch-shadcnui.tsx"
 
 export function BasicExample() {
   return (

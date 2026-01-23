@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeAvatarExpand } from "@uitripled/react-shadcn/components/native/native-avatar-expand-shadcnui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-shadcn/src/components/native/native-avatar-expand-shadcnui.tsx"
 
 export function NativeAvatarExpandDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-avatar-expand
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-avatar-expand" title="@uitripled/react-shadcn/components/native/native-avatar-expand-shadcnui.tsx" />
+<ComponentSource name="native-avatar-expand" title="@uitripled/react-shadcn/src/components/native/native-avatar-expand-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-avatar-expand
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeAvatarExpand } from "@uitripled/react-shadcn/components/native/native-avatar-expand-shadcnui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-shadcn/src/components/native/native-avatar-expand-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeAvatarExpand } from "@uitripled/react-shadcn/components/native/native-avatar-expand-shadcnui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-shadcn/src/components/native/native-avatar-expand-shadcnui.tsx"
 
 export function BasicExample() {
   return (

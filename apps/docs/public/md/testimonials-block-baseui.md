@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { TestimonialsBlock } from "@uitripled/react-baseui/components/sections/testimonials-block-baseui.tsx"
+import { TestimonialsBlock } from "@uitripled/react-baseui/src/components/sections/testimonials-block-baseui.tsx"
 
 export function TestimonialsBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Testimonials Block` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="testimonials-block-baseui" title="@uitripled/react-baseui/components/sections/testimonials-block-baseui.tsx" />
+<ComponentSource name="testimonials-block-baseui" title="@uitripled/react-baseui/src/components/sections/testimonials-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Testimonials Block` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { TestimonialsBlock } from "@uitripled/react-baseui/components/sections/testimonials-block-baseui.tsx"
+import { TestimonialsBlock } from "@uitripled/react-baseui/src/components/sections/testimonials-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { TestimonialsBlock } from "@uitripled/react-baseui/components/sections/testimonials-block-baseui.tsx"
+import { TestimonialsBlock } from "@uitripled/react-baseui/src/components/sections/testimonials-block-baseui.tsx"
 
 export function BasicExample() {
   return (

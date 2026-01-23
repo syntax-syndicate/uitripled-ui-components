@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeStartNow } from "@uitripled/react-baseui/components/native/native-start-now-baseui.tsx"
+import { NativeStartNow } from "@uitripled/react-baseui/src/components/native/native-start-now-baseui.tsx"
 
 export function NativeStartNowDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Start Now` component uses the following components. Make sure you ha
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-start-now-baseui" title="@uitripled/react-baseui/components/native/native-start-now-baseui.tsx" />
+<ComponentSource name="native-start-now-baseui" title="@uitripled/react-baseui/src/components/native/native-start-now-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Start Now` component uses the following components. Make sure you ha
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeStartNow } from "@uitripled/react-baseui/components/native/native-start-now-baseui.tsx"
+import { NativeStartNow } from "@uitripled/react-baseui/src/components/native/native-start-now-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeStartNow } from "@uitripled/react-baseui/components/native/native-start-now-baseui.tsx"
+import { NativeStartNow } from "@uitripled/react-baseui/src/components/native/native-start-now-baseui.tsx"
 
 export function BasicExample() {
   return (

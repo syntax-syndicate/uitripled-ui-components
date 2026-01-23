@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CinemaTicket } from "@uitripled/react-baseui/components/sections/cinema-ticket-baseui.tsx"
+import { CinemaTicket } from "@uitripled/react-baseui/src/components/sections/cinema-ticket-baseui.tsx"
 
 export function CinemaTicketDemo() {
   return (
@@ -46,7 +46,7 @@ The `Cinema Ticket` component uses the following components. Make sure you have 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cinema-ticket-baseui" title="@uitripled/react-baseui/components/sections/cinema-ticket-baseui.tsx" />
+<ComponentSource name="cinema-ticket-baseui" title="@uitripled/react-baseui/src/components/sections/cinema-ticket-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Cinema Ticket` component uses the following components. Make sure you have 
 ## Usage
 
 ```tsx showLineNumbers
-import { CinemaTicket } from "@uitripled/react-baseui/components/sections/cinema-ticket-baseui.tsx"
+import { CinemaTicket } from "@uitripled/react-baseui/src/components/sections/cinema-ticket-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CinemaTicket } from "@uitripled/react-baseui/components/sections/cinema-ticket-baseui.tsx"
+import { CinemaTicket } from "@uitripled/react-baseui/src/components/sections/cinema-ticket-baseui.tsx"
 
 export function BasicExample() {
   return (

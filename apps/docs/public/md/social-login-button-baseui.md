@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { SocialLoginButton } from "@uitripled/react-baseui/components/native/social-login-button-baseui.tsx"
+import { SocialLoginButton } from "@uitripled/react-baseui/src/components/native/social-login-button-baseui.tsx"
 
 export function SocialLoginButtonDemo() {
   return (
@@ -46,7 +46,7 @@ The `Social Login Button` component uses the following components. Make sure you
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="social-login-button-baseui" title="@uitripled/react-baseui/components/native/social-login-button-baseui.tsx" />
+<ComponentSource name="social-login-button-baseui" title="@uitripled/react-baseui/src/components/native/social-login-button-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Social Login Button` component uses the following components. Make sure you
 ## Usage
 
 ```tsx showLineNumbers
-import { SocialLoginButton } from "@uitripled/react-baseui/components/native/social-login-button-baseui.tsx"
+import { SocialLoginButton } from "@uitripled/react-baseui/src/components/native/social-login-button-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { SocialLoginButton } from "@uitripled/react-baseui/components/native/social-login-button-baseui.tsx"
+import { SocialLoginButton } from "@uitripled/react-baseui/src/components/native/social-login-button-baseui.tsx"
 
 export function BasicExample() {
   return (

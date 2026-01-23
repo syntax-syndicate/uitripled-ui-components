@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeFlipText } from "@uitripled/react-carbon/components/native/native-flip-text-carbon.tsx"
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 
 export function NativeFlipTextDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-flip-text
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-flip-text" title="@uitripled/react-carbon/components/native/native-flip-text-carbon.tsx" />
+<ComponentSource name="native-flip-text" title="@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-flip-text
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeFlipText } from "@uitripled/react-carbon/components/native/native-flip-text-carbon.tsx"
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeFlipText } from "@uitripled/react-carbon/components/native/native-flip-text-carbon.tsx"
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 
 export function BasicExample() {
   return (

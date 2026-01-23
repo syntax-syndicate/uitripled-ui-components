@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeStartNow } from "@uitripled/react-shadcn/components/native/native-start-now-shadcnui.tsx"
+import { NativeStartNow } from "@uitripled/react-shadcn/src/components/native/native-start-now-shadcnui.tsx"
 
 export function NativeStartNowDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-start-now-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-start-now-shadcnui" title="@uitripled/react-shadcn/components/native/native-start-now-shadcnui.tsx" />
+<ComponentSource name="native-start-now-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-start-now-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-start-now-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeStartNow } from "@uitripled/react-shadcn/components/native/native-start-now-shadcnui.tsx"
+import { NativeStartNow } from "@uitripled/react-shadcn/src/components/native/native-start-now-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeStartNow } from "@uitripled/react-shadcn/components/native/native-start-now-shadcnui.tsx"
+import { NativeStartNow } from "@uitripled/react-shadcn/src/components/native/native-start-now-shadcnui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FeatureComparisonTable } from "@uitripled/react-baseui/components/sections/feature-comparison-block-baseui.tsx"
+import { FeatureComparisonTable } from "@uitripled/react-baseui/src/components/sections/feature-comparison-block-baseui.tsx"
 
 export function FeatureComparisonTableDemo() {
   return (
@@ -46,7 +46,7 @@ The `Feature Comparison Table` component uses the following components. Make sur
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="feature-comparison-block-baseui" title="@uitripled/react-baseui/components/sections/feature-comparison-block-baseui.tsx" />
+<ComponentSource name="feature-comparison-block-baseui" title="@uitripled/react-baseui/src/components/sections/feature-comparison-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Feature Comparison Table` component uses the following components. Make sur
 ## Usage
 
 ```tsx showLineNumbers
-import { FeatureComparisonTable } from "@uitripled/react-baseui/components/sections/feature-comparison-block-baseui.tsx"
+import { FeatureComparisonTable } from "@uitripled/react-baseui/src/components/sections/feature-comparison-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FeatureComparisonTable } from "@uitripled/react-baseui/components/sections/feature-comparison-block-baseui.tsx"
+import { FeatureComparisonTable } from "@uitripled/react-baseui/src/components/sections/feature-comparison-block-baseui.tsx"
 
 export function BasicExample() {
   return (

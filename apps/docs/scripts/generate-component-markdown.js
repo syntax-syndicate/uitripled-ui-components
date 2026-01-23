@@ -114,27 +114,26 @@ function generateComponentMarkdown() {
           continue;
         }
 
-        // Read the component file
+        // Resolve the full path to the component file
         let componentFilePath = componentCodePath;
         let fullPath;
 
-        if (componentFilePath.startsWith("@uitripled/react-baseui")) {
+        if (componentFilePath.startsWith("@uitripled/")) {
+          const parts = componentFilePath.split("/");
+          const packageName = parts[1]; // e.g. react-shadcn
+          let rest = parts.slice(2).join("/"); // e.g. src/components/... or components/...
+
+          // Ensure we don't end up with src/src
+          if (rest.startsWith("src/")) {
+            rest = rest.replace("src/", "");
+          }
+
           fullPath = path.join(
             __dirname,
-            "../../../packages/components/react-baseui/src",
-            componentFilePath.replace("@uitripled/react-baseui/", "")
-          );
-        } else if (componentFilePath.startsWith("@uitripled/react-shadcn")) {
-          fullPath = path.join(
-            __dirname,
-            "../../../packages/components/react-shadcn/src",
-            componentFilePath.replace("@uitripled/react-shadcn/", "")
-          );
-        } else if (componentFilePath.startsWith("@uitripled/react-carbon")) {
-          fullPath = path.join(
-            __dirname,
-            "../../../packages/components/react-carbon/src",
-            componentFilePath.replace("@uitripled/react-carbon/", "")
+            "../../../packages/components",
+            packageName,
+            "src",
+            rest
           );
         } else {
           if (componentFilePath.startsWith("@/")) {

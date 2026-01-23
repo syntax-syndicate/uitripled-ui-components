@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProjectCard } from "components/components/cards/baseui/project-card-baseui.tsx";
+import { ProjectCard } from "@uitripled/react-baseui/src/components/cards/baseui/project-card-baseui.tsx"
 
 export function ProjectCardDemo() {
-  return <ProjectCard />;
+  return (
+    <ProjectCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Project Card` component uses the following components. Make sure you have t
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="project-card-baseui" title="components/components/cards/baseui/project-card-baseui.tsx" />
+<ComponentSource name="project-card-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/project-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Project Card` component uses the following components. Make sure you have t
 ## Usage
 
 ```tsx showLineNumbers
-import { ProjectCard } from "components/components/cards/baseui/project-card-baseui.tsx";
+import { ProjectCard } from "@uitripled/react-baseui/src/components/cards/baseui/project-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { ProjectCard } from "components/components/cards/baseui/project-card-bas
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProjectCard } from "components/components/cards/baseui/project-card-baseui.tsx";
+import { ProjectCard } from "@uitripled/react-baseui/src/components/cards/baseui/project-card-baseui.tsx"
 
 export function BasicExample() {
-  return <ProjectCard />;
+  return (
+    <ProjectCard />
+  )
 }
 ```
 

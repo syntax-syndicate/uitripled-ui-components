@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeFlipText } from "@/components/native/carbon/native-flip-text-carbon.tsx";
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 
 export function NativeFlipTextDemo() {
-  return <NativeFlipText />;
+  return (
+    <NativeFlipText />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-flip-text-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-flip-text-carbon" title="@/components/native/carbon/native-flip-text-carbon.tsx" />
+<ComponentSource name="native-flip-text-carbon" title="@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-flip-text-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeFlipText } from "@/components/native/carbon/native-flip-text-carbon.tsx";
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeFlipText } from "@/components/native/carbon/native-flip-text-carb
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeFlipText } from "@/components/native/carbon/native-flip-text-carbon.tsx";
+import { NativeFlipText } from "@uitripled/react-carbon/src/components/native/native-flip-text-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeFlipText />;
+  return (
+    <NativeFlipText />
+  )
 }
 ```
 

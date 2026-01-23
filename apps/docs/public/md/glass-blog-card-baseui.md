@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassBlogCard } from "components/components/cards/baseui/glass-blog-card-baseui.tsx";
+import { GlassBlogCard } from "@uitripled/react-baseui/src/components/cards/baseui/glass-blog-card-baseui.tsx"
 
 export function GlassBlogCardDemo() {
-  return <GlassBlogCard />;
+  return (
+    <GlassBlogCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Glass Blog Card` component uses the following components. Make sure you hav
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glass-blog-card-baseui" title="components/components/cards/baseui/glass-blog-card-baseui.tsx" />
+<ComponentSource name="glass-blog-card-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/glass-blog-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Glass Blog Card` component uses the following components. Make sure you hav
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassBlogCard } from "components/components/cards/baseui/glass-blog-card-baseui.tsx";
+import { GlassBlogCard } from "@uitripled/react-baseui/src/components/cards/baseui/glass-blog-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { GlassBlogCard } from "components/components/cards/baseui/glass-blog-car
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassBlogCard } from "components/components/cards/baseui/glass-blog-card-baseui.tsx";
+import { GlassBlogCard } from "@uitripled/react-baseui/src/components/cards/baseui/glass-blog-card-baseui.tsx"
 
 export function BasicExample() {
-  return <GlassBlogCard />;
+  return (
+    <GlassBlogCard />
+  )
 }
 ```
 

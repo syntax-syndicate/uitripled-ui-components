@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { HoverExpandCard } from "components/components/cards/baseui/hover-expand-baseui.tsx";
+import { HoverExpandCard } from "@uitripled/react-baseui/src/components/cards/baseui/hover-expand-baseui.tsx"
 
 export function HoverExpandCardDemo() {
-  return <HoverExpandCard />;
+  return (
+    <HoverExpandCard />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Hover Expand Card` component uses the following components. Make sure you h
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="hover-expand-card-baseui" title="components/components/cards/baseui/hover-expand-baseui.tsx" />
+<ComponentSource name="hover-expand-card-baseui" title="@uitripled/react-baseui/src/components/cards/baseui/hover-expand-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Hover Expand Card` component uses the following components. Make sure you h
 ## Usage
 
 ```tsx showLineNumbers
-import { HoverExpandCard } from "components/components/cards/baseui/hover-expand-baseui.tsx";
+import { HoverExpandCard } from "@uitripled/react-baseui/src/components/cards/baseui/hover-expand-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { HoverExpandCard } from "components/components/cards/baseui/hover-expand
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { HoverExpandCard } from "components/components/cards/baseui/hover-expand-baseui.tsx";
+import { HoverExpandCard } from "@uitripled/react-baseui/src/components/cards/baseui/hover-expand-baseui.tsx"
 
 export function BasicExample() {
-  return <HoverExpandCard />;
+  return (
+    <HoverExpandCard />
+  )
 }
 ```
 

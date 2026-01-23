@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeLiquidButton } from "@uitripled/react-shadcn/components/native/native-liquid-button-shadcnui.tsx"
+import { NativeLiquidButton } from "@uitripled/react-shadcn/src/components/native/native-liquid-button-shadcnui.tsx"
 
 export function NativeLiquidButtonDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-liquid-button-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-liquid-button-shadcnui" title="@uitripled/react-shadcn/components/native/native-liquid-button-shadcnui.tsx" />
+<ComponentSource name="native-liquid-button-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-liquid-button-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-liquid-button-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeLiquidButton } from "@uitripled/react-shadcn/components/native/native-liquid-button-shadcnui.tsx"
+import { NativeLiquidButton } from "@uitripled/react-shadcn/src/components/native/native-liquid-button-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeLiquidButton } from "@uitripled/react-shadcn/components/native/native-liquid-button-shadcnui.tsx"
+import { NativeLiquidButton } from "@uitripled/react-shadcn/src/components/native/native-liquid-button-shadcnui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeMagnetic } from "@uitripled/react-shadcn/components/native/native-magnetic-shadcnui.tsx"
+import { NativeMagnetic } from "@uitripled/react-shadcn/src/components/native/native-magnetic-shadcnui.tsx"
 
 export function NativeMagneticDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-magnetic-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-magnetic-shadcnui" title="@uitripled/react-shadcn/components/native/native-magnetic-shadcnui.tsx" />
+<ComponentSource name="native-magnetic-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-magnetic-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-magnetic-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeMagnetic } from "@uitripled/react-shadcn/components/native/native-magnetic-shadcnui.tsx"
+import { NativeMagnetic } from "@uitripled/react-shadcn/src/components/native/native-magnetic-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeMagnetic } from "@uitripled/react-shadcn/components/native/native-magnetic-shadcnui.tsx"
+import { NativeMagnetic } from "@uitripled/react-shadcn/src/components/native/native-magnetic-shadcnui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/components/sections/glassmorphism-statistics-card.tsx"
+import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-statistics-card.tsx"
 
 export function GlassmorphismStatisticsCardDemo() {
   return (
@@ -47,7 +47,7 @@ The `Glassmorphism Statistics Card` component uses the following components. Mak
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-statistics-card-shadcnui" title="@uitripled/react-shadcn/components/sections/glassmorphism-statistics-card.tsx" />
+<ComponentSource name="glassmorphism-statistics-card-shadcnui" title="@uitripled/react-shadcn/src/components/sections/glassmorphism-statistics-card.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -60,7 +60,7 @@ The `Glassmorphism Statistics Card` component uses the following components. Mak
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/components/sections/glassmorphism-statistics-card.tsx"
+import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-statistics-card.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -112,7 +112,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/components/sections/glassmorphism-statistics-card.tsx"
+import { GlassmorphismStatisticsCard } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-statistics-card.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlowyWavesHero } from "@uitripled/react-baseui/components/sections/glowy-waves-hero-baseui.tsx"
+import { GlowyWavesHero } from "@uitripled/react-baseui/src/components/sections/glowy-waves-hero-baseui.tsx"
 
 export function GlowyWavesHeroDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glowy Waves Hero` component uses the following components. Make sure you ha
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glowy-waves-hero-baseui" title="@uitripled/react-baseui/components/sections/glowy-waves-hero-baseui.tsx" />
+<ComponentSource name="glowy-waves-hero-baseui" title="@uitripled/react-baseui/src/components/sections/glowy-waves-hero-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glowy Waves Hero` component uses the following components. Make sure you ha
 ## Usage
 
 ```tsx showLineNumbers
-import { GlowyWavesHero } from "@uitripled/react-baseui/components/sections/glowy-waves-hero-baseui.tsx"
+import { GlowyWavesHero } from "@uitripled/react-baseui/src/components/sections/glowy-waves-hero-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlowyWavesHero } from "@uitripled/react-baseui/components/sections/glowy-waves-hero-baseui.tsx"
+import { GlowyWavesHero } from "@uitripled/react-baseui/src/components/sections/glowy-waves-hero-baseui.tsx"
 
 export function BasicExample() {
   return (

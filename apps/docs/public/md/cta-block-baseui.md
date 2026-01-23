@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { CTABlock } from "@uitripled/react-baseui/components/sections/cta-block-baseui.tsx"
+import { CTABlock } from "@uitripled/react-baseui/src/components/sections/cta-block-baseui.tsx"
 
 export function CTABlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `CTA Block` component uses the following components. Make sure you have them
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="cta-block-baseui" title="@uitripled/react-baseui/components/sections/cta-block-baseui.tsx" />
+<ComponentSource name="cta-block-baseui" title="@uitripled/react-baseui/src/components/sections/cta-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `CTA Block` component uses the following components. Make sure you have them
 ## Usage
 
 ```tsx showLineNumbers
-import { CTABlock } from "@uitripled/react-baseui/components/sections/cta-block-baseui.tsx"
+import { CTABlock } from "@uitripled/react-baseui/src/components/sections/cta-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { CTABlock } from "@uitripled/react-baseui/components/sections/cta-block-baseui.tsx"
+import { CTABlock } from "@uitripled/react-baseui/src/components/sections/cta-block-baseui.tsx"
 
 export function BasicExample() {
   return (

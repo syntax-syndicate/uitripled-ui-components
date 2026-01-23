@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeDialog } from "@uitripled/react-shadcn/components/native/native-dialog-shadcnui.tsx"
+import { NativeDialog } from "@uitripled/react-shadcn/src/components/native/native-dialog-shadcnui.tsx"
 
 export function NativeDialogDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-dialog
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-dialog" title="@uitripled/react-shadcn/components/native/native-dialog-shadcnui.tsx" />
+<ComponentSource name="native-dialog" title="@uitripled/react-shadcn/src/components/native/native-dialog-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-dialog
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeDialog } from "@uitripled/react-shadcn/components/native/native-dialog-shadcnui.tsx"
+import { NativeDialog } from "@uitripled/react-shadcn/src/components/native/native-dialog-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeDialog } from "@uitripled/react-shadcn/components/native/native-dialog-shadcnui.tsx"
+import { NativeDialog } from "@uitripled/react-shadcn/src/components/native/native-dialog-shadcnui.tsx"
 
 export function BasicExample() {
   return (

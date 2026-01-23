@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeMagnetic } from "@uitripled/react-baseui/components/native/native-magnetic-baseui.tsx"
+import { NativeMagnetic } from "@uitripled/react-baseui/src/components/native/native-magnetic-baseui.tsx"
 
 export function NativeMagneticDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Magnetic` component uses the following components. Make sure you hav
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-magnetic-baseui" title="@uitripled/react-baseui/components/native/native-magnetic-baseui.tsx" />
+<ComponentSource name="native-magnetic-baseui" title="@uitripled/react-baseui/src/components/native/native-magnetic-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Magnetic` component uses the following components. Make sure you hav
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeMagnetic } from "@uitripled/react-baseui/components/native/native-magnetic-baseui.tsx"
+import { NativeMagnetic } from "@uitripled/react-baseui/src/components/native/native-magnetic-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeMagnetic } from "@uitripled/react-baseui/components/native/native-magnetic-baseui.tsx"
+import { NativeMagnetic } from "@uitripled/react-baseui/src/components/native/native-magnetic-baseui.tsx"
 
 export function BasicExample() {
   return (

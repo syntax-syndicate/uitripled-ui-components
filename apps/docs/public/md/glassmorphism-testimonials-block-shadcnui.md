@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/components/sections/glassmorphism-testimonials-block.tsx"
+import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-testimonials-block.tsx"
 
 export function GlassmorphismTestimonialsDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Testimonials` component uses the following components. Make s
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-testimonials-block-shadcnui" title="@uitripled/react-shadcn/components/sections/glassmorphism-testimonials-block.tsx" />
+<ComponentSource name="glassmorphism-testimonials-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/glassmorphism-testimonials-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Testimonials` component uses the following components. Make s
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/components/sections/glassmorphism-testimonials-block.tsx"
+import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-testimonials-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/components/sections/glassmorphism-testimonials-block.tsx"
+import { GlassmorphismTestimonials } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-testimonials-block.tsx"
 
 export function BasicExample() {
   return (

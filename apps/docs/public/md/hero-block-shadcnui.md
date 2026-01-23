@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { HeroBlock } from "@uitripled/react-shadcn/components/sections/hero-block.tsx"
+import { HeroBlock } from "@uitripled/react-shadcn/src/components/sections/hero-block.tsx"
 
 export function HeroBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Hero Block` component uses the following components. Make sure you have the
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="hero-block-shadcnui" title="@uitripled/react-shadcn/components/sections/hero-block.tsx" />
+<ComponentSource name="hero-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/hero-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Hero Block` component uses the following components. Make sure you have the
 ## Usage
 
 ```tsx showLineNumbers
-import { HeroBlock } from "@uitripled/react-shadcn/components/sections/hero-block.tsx"
+import { HeroBlock } from "@uitripled/react-shadcn/src/components/sections/hero-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { HeroBlock } from "@uitripled/react-shadcn/components/sections/hero-block.tsx"
+import { HeroBlock } from "@uitripled/react-shadcn/src/components/sections/hero-block.tsx"
 
 export function BasicExample() {
   return (

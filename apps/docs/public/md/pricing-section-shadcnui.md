@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { PricingSection } from "@uitripled/react-shadcn/components/sections/pricing-section.tsx"
+import { PricingSection } from "@uitripled/react-shadcn/src/components/sections/pricing-section.tsx"
 
 export function PricingSectionDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/pricing-section-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="pricing-section-shadcnui" title="@uitripled/react-shadcn/components/sections/pricing-section.tsx" />
+<ComponentSource name="pricing-section-shadcnui" title="@uitripled/react-shadcn/src/components/sections/pricing-section.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/pricing-section-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { PricingSection } from "@uitripled/react-shadcn/components/sections/pricing-section.tsx"
+import { PricingSection } from "@uitripled/react-shadcn/src/components/sections/pricing-section.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { PricingSection } from "@uitripled/react-shadcn/components/sections/pricing-section.tsx"
+import { PricingSection } from "@uitripled/react-shadcn/src/components/sections/pricing-section.tsx"
 
 export function BasicExample() {
   return (

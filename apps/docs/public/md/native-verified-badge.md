@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeVerifiedBadge } from "@uitripled/react-shadcn/components/native/native-verified-badge-shadcnui.tsx"
+import { NativeVerifiedBadge } from "@uitripled/react-shadcn/src/components/native/native-verified-badge-shadcnui.tsx"
 
 export function NativeVerifiedBadgeDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-verified-badge
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-verified-badge" title="@uitripled/react-shadcn/components/native/native-verified-badge-shadcnui.tsx" />
+<ComponentSource name="native-verified-badge" title="@uitripled/react-shadcn/src/components/native/native-verified-badge-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-verified-badge
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeVerifiedBadge } from "@uitripled/react-shadcn/components/native/native-verified-badge-shadcnui.tsx"
+import { NativeVerifiedBadge } from "@uitripled/react-shadcn/src/components/native/native-verified-badge-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeVerifiedBadge } from "@uitripled/react-shadcn/components/native/native-verified-badge-shadcnui.tsx"
+import { NativeVerifiedBadge } from "@uitripled/react-shadcn/src/components/native/native-verified-badge-shadcnui.tsx"
 
 export function BasicExample() {
   return (

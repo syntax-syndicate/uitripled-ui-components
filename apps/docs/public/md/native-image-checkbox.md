@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeImageCheckbox } from "@uitripled/react-shadcn/components/native/native-image-checkbox-shadcnui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-shadcn/src/components/native/native-image-checkbox-shadcnui.tsx"
 
 export function NativeImageCheckboxDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-image-checkbox
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-image-checkbox" title="@uitripled/react-shadcn/components/native/native-image-checkbox-shadcnui.tsx" />
+<ComponentSource name="native-image-checkbox" title="@uitripled/react-shadcn/src/components/native/native-image-checkbox-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-image-checkbox
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeImageCheckbox } from "@uitripled/react-shadcn/components/native/native-image-checkbox-shadcnui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-shadcn/src/components/native/native-image-checkbox-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeImageCheckbox } from "@uitripled/react-shadcn/components/native/native-image-checkbox-shadcnui.tsx"
+import { NativeImageCheckbox } from "@uitripled/react-shadcn/src/components/native/native-image-checkbox-shadcnui.tsx"
 
 export function BasicExample() {
   return (

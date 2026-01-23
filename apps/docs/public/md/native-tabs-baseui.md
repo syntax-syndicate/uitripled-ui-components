@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeTabs } from "@uitripled/react-baseui/components/native/native-tabs-baseui.tsx"
+import { NativeTabs } from "@uitripled/react-baseui/src/components/native/native-tabs-baseui.tsx"
 
 export function NativeTabsDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Tabs` component uses the following components. Make sure you have th
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-tabs-baseui" title="@uitripled/react-baseui/components/native/native-tabs-baseui.tsx" />
+<ComponentSource name="native-tabs-baseui" title="@uitripled/react-baseui/src/components/native/native-tabs-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Tabs` component uses the following components. Make sure you have th
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTabs } from "@uitripled/react-baseui/components/native/native-tabs-baseui.tsx"
+import { NativeTabs } from "@uitripled/react-baseui/src/components/native/native-tabs-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeTabs } from "@uitripled/react-baseui/components/native/native-tabs-baseui.tsx"
+import { NativeTabs } from "@uitripled/react-baseui/src/components/native/native-tabs-baseui.tsx"
 
 export function BasicExample() {
   return (

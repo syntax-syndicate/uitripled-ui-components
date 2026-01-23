@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeTooltip } from "@uitripled/react-baseui/components/native/native-tooltip-baseui.tsx"
+import { NativeTooltip } from "@uitripled/react-baseui/src/components/native/native-tooltip-baseui.tsx"
 
 export function NativeTooltipDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Tooltip` component uses the following components. Make sure you have
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-tooltip-baseui" title="@uitripled/react-baseui/components/native/native-tooltip-baseui.tsx" />
+<ComponentSource name="native-tooltip-baseui" title="@uitripled/react-baseui/src/components/native/native-tooltip-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Tooltip` component uses the following components. Make sure you have
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTooltip } from "@uitripled/react-baseui/components/native/native-tooltip-baseui.tsx"
+import { NativeTooltip } from "@uitripled/react-baseui/src/components/native/native-tooltip-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeTooltip } from "@uitripled/react-baseui/components/native/native-tooltip-baseui.tsx"
+import { NativeTooltip } from "@uitripled/react-baseui/src/components/native/native-tooltip-baseui.tsx"
 
 export function BasicExample() {
   return (

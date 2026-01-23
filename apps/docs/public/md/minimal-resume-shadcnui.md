@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { MinimalResume } from "components/components/resumes/shadcnui/minimal-resume.tsx";
+import { MinimalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/minimal-resume.tsx"
 
 export function MinimalResumeDemo() {
-  return <MinimalResume />;
+  return (
+    <MinimalResume />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/minimal-resume-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="minimal-resume-shadcnui" title="components/components/resumes/shadcnui/minimal-resume.tsx" />
+<ComponentSource name="minimal-resume-shadcnui" title="@uitripled/react-shadcn/src/components/components/resumes/shadcnui/minimal-resume.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/minimal-resume-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { MinimalResume } from "components/components/resumes/shadcnui/minimal-resume.tsx";
+import { MinimalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/minimal-resume.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { MinimalResume } from "components/components/resumes/shadcnui/minimal-re
 
 - **Category**: resumes
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { MinimalResume } from "components/components/resumes/shadcnui/minimal-resume.tsx";
+import { MinimalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/minimal-resume.tsx"
 
 export function BasicExample() {
-  return <MinimalResume />;
+  return (
+    <MinimalResume />
+  )
 }
 ```
 

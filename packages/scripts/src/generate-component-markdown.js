@@ -1,8 +1,12 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const REGISTRY_JSON_PATH = path.join(__dirname, "../registry.json");
-const REGISTRY_DIR = path.join(__dirname, "../lib/registry");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const REGISTRY_JSON_PATH = path.join(__dirname, "../../registry/registry.json");
+const REGISTRY_DIR = path.join(__dirname, "../../registry/src/registry");
 const PUBLIC_MD_DIR = path.join(__dirname, "../public/md");
 
 /**
@@ -114,13 +118,31 @@ function generateComponentMarkdown() {
           continue;
         }
 
-        // Read the component file
-        let componentFilePath = componentCodePath;
-        if (componentFilePath.startsWith("@/")) {
-          componentFilePath = componentFilePath.replace("@/", "");
-        }
+        // Resolve the full path to the component file
+        let fullPath;
 
-        const fullPath = path.join(__dirname, "..", componentFilePath);
+        if (componentCodePath.startsWith("@uitripled/")) {
+          const parts = componentCodePath.split("/");
+          const packageName = parts[1]; // e.g. react-shadcn
+          let rest = parts.slice(2).join("/"); // e.g. src/components/... or components/...
+
+          // Ensure we don't end up with src/src
+          if (rest.startsWith("src/")) {
+            rest = rest.replace("src/", "");
+          }
+
+          fullPath = path.join(
+            __dirname,
+            "../../components",
+            packageName,
+            "src",
+            rest
+          );
+        } else if (componentCodePath.startsWith("@/")) {
+          fullPath = path.join(__dirname, "..", componentCodePath.replace("@/", ""));
+        } else {
+          fullPath = path.join(__dirname, "..", componentCodePath);
+        }
 
         if (!fs.existsSync(fullPath)) {
           console.warn(`Component file not found: ${fullPath}`);
@@ -334,3 +356,4 @@ ${registryDependencies.length > 0 ? registryDependencies.map((dep) => `- [${dep}
 
 // Run the script
 generateComponentMarkdown();
+

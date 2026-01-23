@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassOrderSummary } from "components/components/cards/shadcnui/glass-order-summary.tsx";
+import { GlassOrderSummary } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-order-summary.tsx"
 
 export function GlassOrderSummaryDemo() {
-  return <GlassOrderSummary />;
+  return (
+    <GlassOrderSummary />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/glass-order-summary-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glass-order-summary-shadcnui" title="components/components/cards/shadcnui/glass-order-summary.tsx" />
+<ComponentSource name="glass-order-summary-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-order-summary.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/glass-order-summary-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassOrderSummary } from "components/components/cards/shadcnui/glass-order-summary.tsx";
+import { GlassOrderSummary } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-order-summary.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { GlassOrderSummary } from "components/components/cards/shadcnui/glass-or
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassOrderSummary } from "components/components/cards/shadcnui/glass-order-summary.tsx";
+import { GlassOrderSummary } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-order-summary.tsx"
 
 export function BasicExample() {
-  return <GlassOrderSummary />;
+  return (
+    <GlassOrderSummary />
+  )
 }
 ```
 

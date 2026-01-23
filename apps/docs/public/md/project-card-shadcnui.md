@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProjectCard } from "components/components/cards/shadcnui/project-card.tsx";
+import { ProjectCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/project-card.tsx"
 
 export function ProjectCardDemo() {
-  return <ProjectCard />;
+  return (
+    <ProjectCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/project-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="project-card-shadcnui" title="components/components/cards/shadcnui/project-card.tsx" />
+<ComponentSource name="project-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/project-card.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/project-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { ProjectCard } from "components/components/cards/shadcnui/project-card.tsx";
+import { ProjectCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/project-card.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { ProjectCard } from "components/components/cards/shadcnui/project-card.t
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProjectCard } from "components/components/cards/shadcnui/project-card.tsx";
+import { ProjectCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/project-card.tsx"
 
 export function BasicExample() {
-  return <ProjectCard />;
+  return (
+    <ProjectCard />
+  )
 }
 ```
 

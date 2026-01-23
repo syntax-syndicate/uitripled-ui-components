@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/components/sections/glassmorphism-logo-showcase-block.tsx"
+import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-logo-showcase-block.tsx"
 
 export function GlassmorphismLogoShowcaseDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Logo Showcase` component uses the following components. Make 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-logo-showcase-block-shadcnui" title="@uitripled/react-shadcn/components/sections/glassmorphism-logo-showcase-block.tsx" />
+<ComponentSource name="glassmorphism-logo-showcase-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/glassmorphism-logo-showcase-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Logo Showcase` component uses the following components. Make 
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/components/sections/glassmorphism-logo-showcase-block.tsx"
+import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-logo-showcase-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/components/sections/glassmorphism-logo-showcase-block.tsx"
+import { GlassmorphismLogoShowcase } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-logo-showcase-block.tsx"
 
 export function BasicExample() {
   return (

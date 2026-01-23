@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeButton } from "@uitripled/react-baseui/components/native/native-button-baseui.tsx"
+import { NativeButton } from "@uitripled/react-baseui/src/components/native/native-button-baseui.tsx"
 
 export function NativeButtonDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Button` component uses the following components. Make sure you have 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-button-baseui" title="@uitripled/react-baseui/components/native/native-button-baseui.tsx" />
+<ComponentSource name="native-button-baseui" title="@uitripled/react-baseui/src/components/native/native-button-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Button` component uses the following components. Make sure you have 
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeButton } from "@uitripled/react-baseui/components/native/native-button-baseui.tsx"
+import { NativeButton } from "@uitripled/react-baseui/src/components/native/native-button-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeButton } from "@uitripled/react-baseui/components/native/native-button-baseui.tsx"
+import { NativeButton } from "@uitripled/react-baseui/src/components/native/native-button-baseui.tsx"
 
 export function BasicExample() {
   return (

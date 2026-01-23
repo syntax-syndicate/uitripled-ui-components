@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeLikesCounter } from "@uitripled/react-shadcn/components/native/native-likes-counter-shadcnui.tsx"
+import { NativeLikesCounter } from "@uitripled/react-shadcn/src/components/native/native-likes-counter-shadcnui.tsx"
 
 export function NativeLikesCounterDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-likes-counter
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-likes-counter" title="@uitripled/react-shadcn/components/native/native-likes-counter-shadcnui.tsx" />
+<ComponentSource name="native-likes-counter" title="@uitripled/react-shadcn/src/components/native/native-likes-counter-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-likes-counter
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeLikesCounter } from "@uitripled/react-shadcn/components/native/native-likes-counter-shadcnui.tsx"
+import { NativeLikesCounter } from "@uitripled/react-shadcn/src/components/native/native-likes-counter-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeLikesCounter } from "@uitripled/react-shadcn/components/native/native-likes-counter-shadcnui.tsx"
+import { NativeLikesCounter } from "@uitripled/react-shadcn/src/components/native/native-likes-counter-shadcnui.tsx"
 
 export function BasicExample() {
   return (

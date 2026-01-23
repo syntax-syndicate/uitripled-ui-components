@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeMorphingButton } from "@uitripled/react-shadcn/components/native/native-morphing-button-shadcnui.tsx"
+import { NativeMorphingButton } from "@uitripled/react-shadcn/src/components/native/native-morphing-button-shadcnui.tsx"
 
 export function NativeMorphingButtonDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-morphing-button
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-morphing-button" title="@uitripled/react-shadcn/components/native/native-morphing-button-shadcnui.tsx" />
+<ComponentSource name="native-morphing-button" title="@uitripled/react-shadcn/src/components/native/native-morphing-button-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-morphing-button
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeMorphingButton } from "@uitripled/react-shadcn/components/native/native-morphing-button-shadcnui.tsx"
+import { NativeMorphingButton } from "@uitripled/react-shadcn/src/components/native/native-morphing-button-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeMorphingButton } from "@uitripled/react-shadcn/components/native/native-morphing-button-shadcnui.tsx"
+import { NativeMorphingButton } from "@uitripled/react-shadcn/src/components/native/native-morphing-button-shadcnui.tsx"
 
 export function BasicExample() {
   return (

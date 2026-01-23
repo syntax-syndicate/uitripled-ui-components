@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlowyWavesHero } from "@uitripled/react-shadcn/components/sections/glowy-waves-hero.tsx"
+import { GlowyWavesHero } from "@uitripled/react-shadcn/src/components/sections/glowy-waves-hero.tsx"
 
 export function GlowyWavesHeroDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glowy Waves Hero` component uses the following components. Make sure you ha
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glowy-waves-hero-shadcnui" title="@uitripled/react-shadcn/components/sections/glowy-waves-hero.tsx" />
+<ComponentSource name="glowy-waves-hero-shadcnui" title="@uitripled/react-shadcn/src/components/sections/glowy-waves-hero.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glowy Waves Hero` component uses the following components. Make sure you ha
 ## Usage
 
 ```tsx showLineNumbers
-import { GlowyWavesHero } from "@uitripled/react-shadcn/components/sections/glowy-waves-hero.tsx"
+import { GlowyWavesHero } from "@uitripled/react-shadcn/src/components/sections/glowy-waves-hero.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlowyWavesHero } from "@uitripled/react-shadcn/components/sections/glowy-waves-hero.tsx"
+import { GlowyWavesHero } from "@uitripled/react-shadcn/src/components/sections/glowy-waves-hero.tsx"
 
 export function BasicExample() {
   return (

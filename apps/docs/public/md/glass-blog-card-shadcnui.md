@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassBlogCard } from "components/components/cards/shadcnui/glass-blog-card.tsx";
+import { GlassBlogCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-blog-card.tsx"
 
 export function GlassBlogCardDemo() {
-  return <GlassBlogCard />;
+  return (
+    <GlassBlogCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/glass-blog-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glass-blog-card-shadcnui" title="components/components/cards/shadcnui/glass-blog-card.tsx" />
+<ComponentSource name="glass-blog-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-blog-card.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/glass-blog-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassBlogCard } from "components/components/cards/shadcnui/glass-blog-card.tsx";
+import { GlassBlogCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-blog-card.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { GlassBlogCard } from "components/components/cards/shadcnui/glass-blog-c
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { GlassBlogCard } from "components/components/cards/shadcnui/glass-blog-card.tsx";
+import { GlassBlogCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/glass-blog-card.tsx"
 
 export function BasicExample() {
-  return <GlassBlogCard />;
+  return (
+    <GlassBlogCard />
+  )
 }
 ```
 

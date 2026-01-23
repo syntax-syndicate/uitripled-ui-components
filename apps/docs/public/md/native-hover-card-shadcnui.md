@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeHoverCard } from "@uitripled/react-shadcn/components/native/native-hover-card-shadcnui.tsx"
+import { NativeHoverCard } from "@uitripled/react-shadcn/src/components/native/native-hover-card-shadcnui.tsx"
 
 export function NativeHoverCardDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-hover-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-hover-card-shadcnui" title="@uitripled/react-shadcn/components/native/native-hover-card-shadcnui.tsx" />
+<ComponentSource name="native-hover-card-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-hover-card-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-hover-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeHoverCard } from "@uitripled/react-shadcn/components/native/native-hover-card-shadcnui.tsx"
+import { NativeHoverCard } from "@uitripled/react-shadcn/src/components/native/native-hover-card-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeHoverCard } from "@uitripled/react-shadcn/components/native/native-hover-card-shadcnui.tsx"
+import { NativeHoverCard } from "@uitripled/react-shadcn/src/components/native/native-hover-card-shadcnui.tsx"
 
 export function BasicExample() {
   return (

@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeTabs } from "@/components/native/carbon/native-tabs-carbon.tsx";
+import { NativeTabs } from "@uitripled/react-carbon/src/components/native/native-tabs-carbon.tsx"
 
 export function NativeTabsDemo() {
-  return <NativeTabs />;
+  return (
+    <NativeTabs />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-tabs-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-tabs-carbon" title="@/components/native/carbon/native-tabs-carbon.tsx" />
+<ComponentSource name="native-tabs-carbon" title="@uitripled/react-carbon/src/components/native/native-tabs-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-tabs-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeTabs } from "@/components/native/carbon/native-tabs-carbon.tsx";
+import { NativeTabs } from "@uitripled/react-carbon/src/components/native/native-tabs-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeTabs } from "@/components/native/carbon/native-tabs-carbon.tsx";
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeTabs } from "@/components/native/carbon/native-tabs-carbon.tsx";
+import { NativeTabs } from "@uitripled/react-carbon/src/components/native/native-tabs-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeTabs />;
+  return (
+    <NativeTabs />
+  )
 }
 ```
 

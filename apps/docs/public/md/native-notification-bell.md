@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeNotificationBell } from "@uitripled/react-shadcn/components/native/native-notification-bell-shadcnui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-shadcn/src/components/native/native-notification-bell-shadcnui.tsx"
 
 export function NativeNotificationBellDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-notification-bell
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-notification-bell" title="@uitripled/react-shadcn/components/native/native-notification-bell-shadcnui.tsx" />
+<ComponentSource name="native-notification-bell" title="@uitripled/react-shadcn/src/components/native/native-notification-bell-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-notification-bell
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeNotificationBell } from "@uitripled/react-shadcn/components/native/native-notification-bell-shadcnui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-shadcn/src/components/native/native-notification-bell-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -99,7 +99,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeNotificationBell } from "@uitripled/react-shadcn/components/native/native-notification-bell-shadcnui.tsx"
+import { NativeNotificationBell } from "@uitripled/react-shadcn/src/components/native/native-notification-bell-shadcnui.tsx"
 
 export function BasicExample() {
   return (

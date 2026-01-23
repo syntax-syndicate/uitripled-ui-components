@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeFollowCursor } from "@/components/native/carbon/native-follow-cursor-carbon.tsx";
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 
 export function NativeFollowCursorDemo() {
-  return <NativeFollowCursor />;
+  return (
+    <NativeFollowCursor />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-follow-cursor-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-follow-cursor-carbon" title="@/components/native/carbon/native-follow-cursor-carbon.tsx" />
+<ComponentSource name="native-follow-cursor-carbon" title="@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-follow-cursor-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeFollowCursor } from "@/components/native/carbon/native-follow-cursor-carbon.tsx";
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeFollowCursor } from "@/components/native/carbon/native-follow-cur
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeFollowCursor } from "@/components/native/carbon/native-follow-cursor-carbon.tsx";
+import { NativeFollowCursor } from "@uitripled/react-carbon/src/components/native/native-follow-cursor-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeFollowCursor />;
+  return (
+    <NativeFollowCursor />
+  )
 }
 ```
 

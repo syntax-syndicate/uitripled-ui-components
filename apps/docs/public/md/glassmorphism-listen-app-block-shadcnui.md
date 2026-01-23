@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismListenApp } from "@uitripled/react-shadcn/components/sections/glassmorphism-listen-app-block.tsx"
+import { GlassmorphismListenApp } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-listen-app-block.tsx"
 
 export function GlassmorphismListenAppDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Listen App` component uses the following components. Make sur
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-listen-app-block-shadcnui" title="@uitripled/react-shadcn/components/sections/glassmorphism-listen-app-block.tsx" />
+<ComponentSource name="glassmorphism-listen-app-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/glassmorphism-listen-app-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Listen App` component uses the following components. Make sur
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismListenApp } from "@uitripled/react-shadcn/components/sections/glassmorphism-listen-app-block.tsx"
+import { GlassmorphismListenApp } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-listen-app-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismListenApp } from "@uitripled/react-shadcn/components/sections/glassmorphism-listen-app-block.tsx"
+import { GlassmorphismListenApp } from "@uitripled/react-shadcn/src/components/sections/glassmorphism-listen-app-block.tsx"
 
 export function BasicExample() {
   return (

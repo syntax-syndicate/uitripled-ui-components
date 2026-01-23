@@ -185,13 +185,20 @@ import { SocialLoginButton } from "@uitripled/react-shadcn/src/components/native
 
 import { NativeNestedListBaseUI } from "@uitripled/react-baseui/src/components/native/native-nested-list-baseui";
 import { NativeProfileNotch as NativeProfileNotchBaseUI } from "@uitripled/react-baseui/src/components/native/native-profile-notch-baseui";
+import { NativeNotch as NativeNotchBaseUI } from "@uitripled/react-baseui/src/components/native/native-notch-baseui";
 import { NativeNestedListDemo } from "@uitripled/react-shadcn/src/components/native/demo/native-nested-list-demo";
 import {
   NativeProfileNotchDefault,
   NativeProfileNotchOverlay,
 } from "@uitripled/react-shadcn/src/components/native/demo/native-profile-notch-demo";
+import {
+  NativeNotchDefault,
+  NativeNotchLeftAlign,
+  NativeNotchRelative,
+} from "@uitripled/react-shadcn/src/components/native/demo/native-notch-demo";
 import { NativeNestedList } from "@uitripled/react-shadcn/src/components/native/native-nested-list-shadcnui";
 import { NativeProfileNotch } from "@uitripled/react-shadcn/src/components/native/native-profile-notch-shadcnui";
+import { NativeNotch } from "@uitripled/react-shadcn/src/components/native/native-notch-shadcnui";
 import { VerifiedBadge } from "@uitripled/react-shadcn/src/components/native/native-verified-badge-shadcnui";
 
 export const nativeComponents: Component[] = [
@@ -2537,5 +2544,126 @@ export const nativeComponents: Component[] = [
     codePath: "@uitripled/react-baseui/src/components/native/native-verified-badge-baseui.tsx",
     display: false,
     availableIn: ["baseui"],
+  },
+  {
+    id: "native-notch",
+    name: "Native Notch",
+    description:
+      "Dynamic Island-inspired notch component with smooth spring animations, draggable physics, and expandable content area",
+    category: "native",
+    tags: [
+      "notch",
+      "dynamic-island",
+      "native",
+      "interactive",
+      "draggable",
+      "animation",
+      "ios",
+      "glassmorphism",
+      "profile",
+    ],
+    component: NativeNotch,
+    baseuiComponent: NativeNotchBaseUI,
+    variants: [
+      {
+        id: "default",
+        name: "Default",
+        description:
+          "Profile notch with avatar, name, username, and description",
+        component: NativeNotchDefault,
+        code: `<NativeNotch
+  collapsedIcon={
+    <Avatar className="w-10 h-10">
+      <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+      <AvatarFallback>SC</AvatarFallback>
+    </Avatar>
+  }
+>
+  <div className="text-white">
+    <div className="flex items-start gap-3 mb-3">
+      <Avatar className="w-12 h-12">
+        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+        <AvatarFallback>SC</AvatarFallback>
+      </Avatar>
+      <div className="flex-1">
+        <h3 className="font-semibold text-base">shadcn</h3>
+        <p className="text-sm text-zinc-400">@shadcn</p>
+      </div>
+    </div>
+    <p className="text-sm text-zinc-300 leading-relaxed">
+      Building beautiful, accessible components for the web.
+    </p>
+  </div>
+</NativeNotch>`,
+      },
+      {
+        id: "left-align",
+        name: "Left Aligned",
+        description: "Profile notch positioned on the left side",
+        component: NativeNotchLeftAlign,
+        code: `<NativeNotch
+  collapsedIcon={
+    <Avatar className="w-10 h-10">
+      <AvatarImage src="https://github.com/vercel.png" alt="@vercel" />
+      <AvatarFallback>VC</AvatarFallback>
+    </Avatar>
+  }
+  position={{ top: 32, align: "left" }}
+>
+  <div className="text-white">
+    <div className="flex items-start gap-3 mb-3">
+      <Avatar className="w-12 h-12">
+        <AvatarImage src="https://github.com/vercel.png" alt="@vercel" />
+        <AvatarFallback>VC</AvatarFallback>
+      </Avatar>
+      <div className="flex-1">
+        <h3 className="font-semibold text-base">Vercel</h3>
+        <p className="text-sm text-zinc-400">@vercel</p>
+      </div>
+    </div>
+    <p className="text-sm text-zinc-300 leading-relaxed">
+      Develop. Preview. Ship. The best frontend teams use Vercel.
+    </p>
+  </div>
+</NativeNotch>`,
+      },
+      {
+        id: "relative",
+        name: "Relative Position",
+        description: "Non-fixed notch that flows with document layout",
+        component: NativeNotchRelative,
+        code: `<NativeNotch
+  collapsedIcon={
+    <Avatar className="w-10 h-10">
+      <AvatarImage src="https://github.com/nextjs.png" alt="@nextjs" />
+      <AvatarFallback>NX</AvatarFallback>
+    </Avatar>
+  }
+  className="relative top-0 left-0"
+  position={{ top: 0, align: "left" }}
+>
+  <div className="text-white">
+    <div className="flex items-start gap-3 mb-3">
+      <Avatar className="w-12 h-12">
+        <AvatarImage src="https://github.com/nextjs.png" alt="@nextjs" />
+        <AvatarFallback>NX</AvatarFallback>
+      </Avatar>
+      <div className="flex-1">
+        <h3 className="font-semibold text-base">Next.js</h3>
+        <p className="text-sm text-zinc-400">@nextjs</p>
+      </div>
+    </div>
+    <p className="text-sm text-zinc-300 leading-relaxed">
+      The React Framework for the Web.
+    </p>
+  </div>
+</NativeNotch>`,
+      },
+    ],
+    codePath: "@uitripled/react-shadcn/src/components/native/native-notch-shadcnui.tsx",
+    duration: "400ms",
+    easing: "spring",
+    display: true,
+    availableIn: ["shadcnui", "baseui"],
   },
 ];

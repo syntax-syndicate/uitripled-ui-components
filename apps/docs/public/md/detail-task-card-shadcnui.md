@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { DetailTaskCard } from "components/components/cards/shadcnui/detail-task.tsx";
+import { DetailTaskCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/detail-task.tsx"
 
 export function DetailTaskCardDemo() {
-  return <DetailTaskCard />;
+  return (
+    <DetailTaskCard />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/detail-task-card-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="detail-task-card-shadcnui" title="components/components/cards/shadcnui/detail-task.tsx" />
+<ComponentSource name="detail-task-card-shadcnui" title="@uitripled/react-shadcn/src/components/components/cards/shadcnui/detail-task.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/detail-task-card-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { DetailTaskCard } from "components/components/cards/shadcnui/detail-task.tsx";
+import { DetailTaskCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/detail-task.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { DetailTaskCard } from "components/components/cards/shadcnui/detail-task
 
 - **Category**: cards
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { DetailTaskCard } from "components/components/cards/shadcnui/detail-task.tsx";
+import { DetailTaskCard } from "@uitripled/react-shadcn/src/components/components/cards/shadcnui/detail-task.tsx"
 
 export function BasicExample() {
-  return <DetailTaskCard />;
+  return (
+    <DetailTaskCard />
+  )
 }
 ```
 

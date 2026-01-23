@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { StandardResume } from "components/components/resumes/baseui/standard-resume-baseui.tsx";
+import { StandardResume } from "@uitripled/react-baseui/src/components/resumes/baseui/standard-resume-baseui.tsx"
 
 export function StandardResumeDemo() {
-  return <StandardResume />;
+  return (
+    <StandardResume />
+  )
 }
 ```
 
@@ -44,7 +46,7 @@ The `Standard Resume` component uses the following components. Make sure you hav
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="standard-resume-baseui" title="components/components/resumes/baseui/standard-resume-baseui.tsx" />
+<ComponentSource name="standard-resume-baseui" title="@uitripled/react-baseui/src/components/resumes/baseui/standard-resume-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +59,7 @@ The `Standard Resume` component uses the following components. Make sure you hav
 ## Usage
 
 ```tsx showLineNumbers
-import { StandardResume } from "components/components/resumes/baseui/standard-resume-baseui.tsx";
+import { StandardResume } from "@uitripled/react-baseui/src/components/resumes/baseui/standard-resume-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -68,15 +70,14 @@ import { StandardResume } from "components/components/resumes/baseui/standard-re
 
 - **Category**: resumes
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
 **UI Components**:
-
 - button
 
 This component uses **Framer Motion** for animations and motion effects.
@@ -105,14 +106,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { StandardResume } from "components/components/resumes/baseui/standard-resume-baseui.tsx";
+import { StandardResume } from "@uitripled/react-baseui/src/components/resumes/baseui/standard-resume-baseui.tsx"
 
 export function BasicExample() {
-  return <StandardResume />;
+  return (
+    <StandardResume />
+  )
 }
 ```
 

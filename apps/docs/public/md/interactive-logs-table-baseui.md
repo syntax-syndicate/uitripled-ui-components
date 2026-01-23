@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { InteractiveLogsTable } from "@uitripled/react-baseui/components/sections/interactive-logs-table-baseui.tsx"
+import { InteractiveLogsTable } from "@uitripled/react-baseui/src/components/sections/interactive-logs-table-baseui.tsx"
 
 export function InteractiveLogsTableDemo() {
   return (
@@ -46,7 +46,7 @@ The `Interactive Logs Table` component uses the following components. Make sure 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="interactive-logs-table-baseui" title="@uitripled/react-baseui/components/sections/interactive-logs-table-baseui.tsx" />
+<ComponentSource name="interactive-logs-table-baseui" title="@uitripled/react-baseui/src/components/sections/interactive-logs-table-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Interactive Logs Table` component uses the following components. Make sure 
 ## Usage
 
 ```tsx showLineNumbers
-import { InteractiveLogsTable } from "@uitripled/react-baseui/components/sections/interactive-logs-table-baseui.tsx"
+import { InteractiveLogsTable } from "@uitripled/react-baseui/src/components/sections/interactive-logs-table-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { InteractiveLogsTable } from "@uitripled/react-baseui/components/sections/interactive-logs-table-baseui.tsx"
+import { InteractiveLogsTable } from "@uitripled/react-baseui/src/components/sections/interactive-logs-table-baseui.tsx"
 
 export function BasicExample() {
   return (

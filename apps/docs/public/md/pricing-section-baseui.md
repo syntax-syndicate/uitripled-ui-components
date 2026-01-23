@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { PricingSection } from "@uitripled/react-baseui/components/sections/pricing-section-baseui.tsx"
+import { PricingSection } from "@uitripled/react-baseui/src/components/sections/pricing-section-baseui.tsx"
 
 export function PricingSectionDemo() {
   return (
@@ -46,7 +46,7 @@ The `Pricing Section` component uses the following components. Make sure you hav
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="pricing-section-baseui" title="@uitripled/react-baseui/components/sections/pricing-section-baseui.tsx" />
+<ComponentSource name="pricing-section-baseui" title="@uitripled/react-baseui/src/components/sections/pricing-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Pricing Section` component uses the following components. Make sure you hav
 ## Usage
 
 ```tsx showLineNumbers
-import { PricingSection } from "@uitripled/react-baseui/components/sections/pricing-section-baseui.tsx"
+import { PricingSection } from "@uitripled/react-baseui/src/components/sections/pricing-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { PricingSection } from "@uitripled/react-baseui/components/sections/pricing-section-baseui.tsx"
+import { PricingSection } from "@uitripled/react-baseui/src/components/sections/pricing-section-baseui.tsx"
 
 export function BasicExample() {
   return (

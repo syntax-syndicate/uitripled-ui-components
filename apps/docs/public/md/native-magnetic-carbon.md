@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeMagnetic } from "@/components/native/carbon/native-magnetic-carbon.tsx";
+import { NativeMagnetic } from "@uitripled/react-carbon/src/components/native/native-magnetic-carbon.tsx"
 
 export function NativeMagneticDemo() {
-  return <NativeMagnetic />;
+  return (
+    <NativeMagnetic />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/native-magnetic-carbon
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-magnetic-carbon" title="@/components/native/carbon/native-magnetic-carbon.tsx" />
+<ComponentSource name="native-magnetic-carbon" title="@uitripled/react-carbon/src/components/native/native-magnetic-carbon.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/native-magnetic-carbon
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeMagnetic } from "@/components/native/carbon/native-magnetic-carbon.tsx";
+import { NativeMagnetic } from "@uitripled/react-carbon/src/components/native/native-magnetic-carbon.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { NativeMagnetic } from "@/components/native/carbon/native-magnetic-carbo
 
 - **Category**: native
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -93,14 +95,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { NativeMagnetic } from "@/components/native/carbon/native-magnetic-carbon.tsx";
+import { NativeMagnetic } from "@uitripled/react-carbon/src/components/native/native-magnetic-carbon.tsx"
 
 export function BasicExample() {
-  return <NativeMagnetic />;
+  return (
+    <NativeMagnetic />
+  )
 }
 ```
 

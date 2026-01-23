@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { BottomModal } from "components/modals/bottom-modal.tsx";
+import { BottomModal } from "@uitripled/react-shadcn/src/components/modals/bottom-modal.tsx"
 
 export function BottomModalDemo() {
-  return <BottomModal />;
+  return (
+    <BottomModal />
+  )
 }
 ```
 
@@ -36,15 +38,9 @@ npx shadcn@latest add @uitripled/bottom-modal
 
 <Steps>
 
-<Step>Add the required components to your project.</Step>
-
-The `Bottom Modal` component uses the following components. Make sure you have them installed in your project.
-
-- button
-
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="bottom-modal" title="components/modals/bottom-modal.tsx" />
+<ComponentSource name="bottom-modal" title="@uitripled/react-shadcn/src/components/modals/bottom-modal.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -57,7 +53,7 @@ The `Bottom Modal` component uses the following components. Make sure you have t
 ## Usage
 
 ```tsx showLineNumbers
-import { BottomModal } from "components/modals/bottom-modal.tsx";
+import { BottomModal } from "@uitripled/react-shadcn/src/components/modals/bottom-modal.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -67,19 +63,13 @@ import { BottomModal } from "components/modals/bottom-modal.tsx";
 ## Component Details
 
 - **Category**: native
-- **Tags**: modal, bottom, slide, overlay, glassmorphism
+
 
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
-- `lucide-react`
 - `react`
-
-**UI Components**:
-
-- button
 
 This component uses **Framer Motion** for animations and motion effects.
 
@@ -107,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { BottomModal } from "components/modals/bottom-modal.tsx";
+import { BottomModal } from "@uitripled/react-shadcn/src/components/modals/bottom-modal.tsx"
 
 export function BasicExample() {
-  return <BottomModal />;
+  return (
+    <BottomModal />
+  )
 }
 ```
 
@@ -131,4 +123,4 @@ This component is part of the UI TripleD component library, a collection of prod
 
 ## Related Components
 
-- [button](/docs/components/button)
+No related components.

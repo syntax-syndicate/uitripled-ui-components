@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeProfileNotch } from "@uitripled/react-baseui/components/native/native-profile-notch-baseui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-baseui/src/components/native/native-profile-notch-baseui.tsx"
 
 export function NativeProfileNotchDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Profile Notch` component uses the following components. Make sure yo
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-profile-notch-baseui" title="@uitripled/react-baseui/components/native/native-profile-notch-baseui.tsx" />
+<ComponentSource name="native-profile-notch-baseui" title="@uitripled/react-baseui/src/components/native/native-profile-notch-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Profile Notch` component uses the following components. Make sure yo
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeProfileNotch } from "@uitripled/react-baseui/components/native/native-profile-notch-baseui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-baseui/src/components/native/native-profile-notch-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeProfileNotch } from "@uitripled/react-baseui/components/native/native-profile-notch-baseui.tsx"
+import { NativeProfileNotch } from "@uitripled/react-baseui/src/components/native/native-profile-notch-baseui.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeHoverCard } from "@uitripled/react-baseui/components/native/native-hover-card-baseui.tsx"
+import { NativeHoverCard } from "@uitripled/react-baseui/src/components/native/native-hover-card-baseui.tsx"
 
 export function NativeHoverCardDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Hover Card` component uses the following components. Make sure you h
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-hover-card-baseui" title="@uitripled/react-baseui/components/native/native-hover-card-baseui.tsx" />
+<ComponentSource name="native-hover-card-baseui" title="@uitripled/react-baseui/src/components/native/native-hover-card-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Hover Card` component uses the following components. Make sure you h
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeHoverCard } from "@uitripled/react-baseui/components/native/native-hover-card-baseui.tsx"
+import { NativeHoverCard } from "@uitripled/react-baseui/src/components/native/native-hover-card-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeHoverCard } from "@uitripled/react-baseui/components/native/native-hover-card-baseui.tsx"
+import { NativeHoverCard } from "@uitripled/react-baseui/src/components/native/native-hover-card-baseui.tsx"
 
 export function BasicExample() {
   return (

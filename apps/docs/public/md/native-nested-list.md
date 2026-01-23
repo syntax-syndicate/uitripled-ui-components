@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeNestedList } from "@uitripled/react-shadcn/components/native/native-nested-list-shadcnui.tsx"
+import { NativeNestedList } from "@uitripled/react-shadcn/src/components/native/native-nested-list-shadcnui.tsx"
 
 export function NativeNestedListDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-nested-list
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-nested-list" title="@uitripled/react-shadcn/components/native/native-nested-list-shadcnui.tsx" />
+<ComponentSource name="native-nested-list" title="@uitripled/react-shadcn/src/components/native/native-nested-list-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-nested-list
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeNestedList } from "@uitripled/react-shadcn/components/native/native-nested-list-shadcnui.tsx"
+import { NativeNestedList } from "@uitripled/react-shadcn/src/components/native/native-nested-list-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeNestedList } from "@uitripled/react-shadcn/components/native/native-nested-list-shadcnui.tsx"
+import { NativeNestedList } from "@uitripled/react-shadcn/src/components/native/native-nested-list-shadcnui.tsx"
 
 export function BasicExample() {
   return (

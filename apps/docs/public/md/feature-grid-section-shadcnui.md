@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FeatureGridSection } from "@uitripled/react-shadcn/components/sections/feature-grid-section.tsx"
+import { FeatureGridSection } from "@uitripled/react-shadcn/src/components/sections/feature-grid-section.tsx"
 
 export function FeatureGridSectionDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/feature-grid-section-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="feature-grid-section-shadcnui" title="@uitripled/react-shadcn/components/sections/feature-grid-section.tsx" />
+<ComponentSource name="feature-grid-section-shadcnui" title="@uitripled/react-shadcn/src/components/sections/feature-grid-section.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/feature-grid-section-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { FeatureGridSection } from "@uitripled/react-shadcn/components/sections/feature-grid-section.tsx"
+import { FeatureGridSection } from "@uitripled/react-shadcn/src/components/sections/feature-grid-section.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FeatureGridSection } from "@uitripled/react-shadcn/components/sections/feature-grid-section.tsx"
+import { FeatureGridSection } from "@uitripled/react-shadcn/src/components/sections/feature-grid-section.tsx"
 
 export function BasicExample() {
   return (

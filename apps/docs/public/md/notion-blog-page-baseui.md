@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NotionBlogPage } from "@uitripled/react-baseui/components/sections/notion-blog-page-baseui.tsx"
+import { NotionBlogPage } from "@uitripled/react-baseui/src/components/sections/notion-blog-page-baseui.tsx"
 
 export function NotionBlogPageDemo() {
   return (
@@ -46,7 +46,7 @@ The `Notion Blog Page` component uses the following components. Make sure you ha
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="notion-blog-page-baseui" title="@uitripled/react-baseui/components/sections/notion-blog-page-baseui.tsx" />
+<ComponentSource name="notion-blog-page-baseui" title="@uitripled/react-baseui/src/components/sections/notion-blog-page-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Notion Blog Page` component uses the following components. Make sure you ha
 ## Usage
 
 ```tsx showLineNumbers
-import { NotionBlogPage } from "@uitripled/react-baseui/components/sections/notion-blog-page-baseui.tsx"
+import { NotionBlogPage } from "@uitripled/react-baseui/src/components/sections/notion-blog-page-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NotionBlogPage } from "@uitripled/react-baseui/components/sections/notion-blog-page-baseui.tsx"
+import { NotionBlogPage } from "@uitripled/react-baseui/src/components/sections/notion-blog-page-baseui.tsx"
 
 export function BasicExample() {
   return (

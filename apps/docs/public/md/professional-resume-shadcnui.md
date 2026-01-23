@@ -5,14 +5,16 @@ component: true
 ---
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProfessionalResume } from "components/components/resumes/shadcnui/professional-resume.tsx";
+import { ProfessionalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/professional-resume.tsx"
 
 export function ProfessionalResumeDemo() {
-  return <ProfessionalResume />;
+  return (
+    <ProfessionalResume />
+  )
 }
 ```
 
@@ -38,7 +40,7 @@ npx shadcn@latest add @uitripled/professional-resume-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="professional-resume-shadcnui" title="components/components/resumes/shadcnui/professional-resume.tsx" />
+<ComponentSource name="professional-resume-shadcnui" title="@uitripled/react-shadcn/src/components/components/resumes/shadcnui/professional-resume.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -51,7 +53,7 @@ npx shadcn@latest add @uitripled/professional-resume-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { ProfessionalResume } from "components/components/resumes/shadcnui/professional-resume.tsx";
+import { ProfessionalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/professional-resume.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -62,10 +64,10 @@ import { ProfessionalResume } from "components/components/resumes/shadcnui/profe
 
 - **Category**: resumes
 
+
 ### Technical Specifications
 
 **Dependencies**:
-
 - `framer-motion`
 - `react`
 
@@ -95,14 +97,16 @@ The component follows accessibility best practices:
 ### Basic Example
 
 ```tsx
-"use client";
+"use client"
 
-import * as React from "react";
+import * as React from "react"
 
-import { ProfessionalResume } from "components/components/resumes/shadcnui/professional-resume.tsx";
+import { ProfessionalResume } from "@uitripled/react-shadcn/src/components/components/resumes/shadcnui/professional-resume.tsx"
 
 export function BasicExample() {
-  return <ProfessionalResume />;
+  return (
+    <ProfessionalResume />
+  )
 }
 ```
 

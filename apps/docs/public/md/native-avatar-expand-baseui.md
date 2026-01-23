@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeAvatarExpand } from "@uitripled/react-baseui/components/native/native-avatar-expand-baseui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-baseui/src/components/native/native-avatar-expand-baseui.tsx"
 
 export function NativeAvatarExpandDemo() {
   return (
@@ -46,7 +46,7 @@ The `Native Avatar Expand` component uses the following components. Make sure yo
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-avatar-expand-baseui" title="@uitripled/react-baseui/components/native/native-avatar-expand-baseui.tsx" />
+<ComponentSource name="native-avatar-expand-baseui" title="@uitripled/react-baseui/src/components/native/native-avatar-expand-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Native Avatar Expand` component uses the following components. Make sure yo
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeAvatarExpand } from "@uitripled/react-baseui/components/native/native-avatar-expand-baseui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-baseui/src/components/native/native-avatar-expand-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeAvatarExpand } from "@uitripled/react-baseui/components/native/native-avatar-expand-baseui.tsx"
+import { NativeAvatarExpand } from "@uitripled/react-baseui/src/components/native/native-avatar-expand-baseui.tsx"
 
 export function BasicExample() {
   return (

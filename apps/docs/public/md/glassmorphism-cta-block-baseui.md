@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismCTA } from "@uitripled/react-baseui/components/sections/glassmorphism-cta-block-baseui.tsx"
+import { GlassmorphismCTA } from "@uitripled/react-baseui/src/components/sections/glassmorphism-cta-block-baseui.tsx"
 
 export function GlassmorphismCTADemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism CTA` component uses the following components. Make sure you h
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-cta-block-baseui" title="@uitripled/react-baseui/components/sections/glassmorphism-cta-block-baseui.tsx" />
+<ComponentSource name="glassmorphism-cta-block-baseui" title="@uitripled/react-baseui/src/components/sections/glassmorphism-cta-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism CTA` component uses the following components. Make sure you h
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismCTA } from "@uitripled/react-baseui/components/sections/glassmorphism-cta-block-baseui.tsx"
+import { GlassmorphismCTA } from "@uitripled/react-baseui/src/components/sections/glassmorphism-cta-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismCTA } from "@uitripled/react-baseui/components/sections/glassmorphism-cta-block-baseui.tsx"
+import { GlassmorphismCTA } from "@uitripled/react-baseui/src/components/sections/glassmorphism-cta-block-baseui.tsx"
 
 export function BasicExample() {
   return (

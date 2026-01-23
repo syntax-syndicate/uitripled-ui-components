@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { HeroSection } from "@uitripled/react-shadcn/components/sections/hero-section.tsx"
+import { HeroSection } from "@uitripled/react-shadcn/src/components/sections/hero-section.tsx"
 
 export function HeroSectionDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/hero-section-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="hero-section-shadcnui" title="@uitripled/react-shadcn/components/sections/hero-section.tsx" />
+<ComponentSource name="hero-section-shadcnui" title="@uitripled/react-shadcn/src/components/sections/hero-section.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/hero-section-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { HeroSection } from "@uitripled/react-shadcn/components/sections/hero-section.tsx"
+import { HeroSection } from "@uitripled/react-shadcn/src/components/sections/hero-section.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { HeroSection } from "@uitripled/react-shadcn/components/sections/hero-section.tsx"
+import { HeroSection } from "@uitripled/react-shadcn/src/components/sections/hero-section.tsx"
 
 export function BasicExample() {
   return (

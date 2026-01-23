@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FeatureGridSection } from "@uitripled/react-baseui/components/sections/feature-grid-section-baseui.tsx"
+import { FeatureGridSection } from "@uitripled/react-baseui/src/components/sections/feature-grid-section-baseui.tsx"
 
 export function FeatureGridSectionDemo() {
   return (
@@ -46,7 +46,7 @@ The `Feature Grid Section` component uses the following components. Make sure yo
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="feature-grid-section-baseui" title="@uitripled/react-baseui/components/sections/feature-grid-section-baseui.tsx" />
+<ComponentSource name="feature-grid-section-baseui" title="@uitripled/react-baseui/src/components/sections/feature-grid-section-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Feature Grid Section` component uses the following components. Make sure yo
 ## Usage
 
 ```tsx showLineNumbers
-import { FeatureGridSection } from "@uitripled/react-baseui/components/sections/feature-grid-section-baseui.tsx"
+import { FeatureGridSection } from "@uitripled/react-baseui/src/components/sections/feature-grid-section-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FeatureGridSection } from "@uitripled/react-baseui/components/sections/feature-grid-section-baseui.tsx"
+import { FeatureGridSection } from "@uitripled/react-baseui/src/components/sections/feature-grid-section-baseui.tsx"
 
 export function BasicExample() {
   return (

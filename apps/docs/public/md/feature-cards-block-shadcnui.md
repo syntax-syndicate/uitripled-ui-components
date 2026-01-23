@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FeatureCardsGrid } from "@uitripled/react-shadcn/components/sections/feature-cards-block.tsx"
+import { FeatureCardsGrid } from "@uitripled/react-shadcn/src/components/sections/feature-cards-block.tsx"
 
 export function FeatureCardsGridDemo() {
   return (
@@ -47,7 +47,7 @@ The `Feature Cards Grid` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="feature-cards-block-shadcnui" title="@uitripled/react-shadcn/components/sections/feature-cards-block.tsx" />
+<ComponentSource name="feature-cards-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/feature-cards-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -60,7 +60,7 @@ The `Feature Cards Grid` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { FeatureCardsGrid } from "@uitripled/react-shadcn/components/sections/feature-cards-block.tsx"
+import { FeatureCardsGrid } from "@uitripled/react-shadcn/src/components/sections/feature-cards-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -112,7 +112,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FeatureCardsGrid } from "@uitripled/react-shadcn/components/sections/feature-cards-block.tsx"
+import { FeatureCardsGrid } from "@uitripled/react-shadcn/src/components/sections/feature-cards-block.tsx"
 
 export function BasicExample() {
   return (

@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { ProjectsBlock } from "@uitripled/react-shadcn/components/sections/projects-block.tsx"
+import { ProjectsBlock } from "@uitripled/react-shadcn/src/components/sections/projects-block.tsx"
 
 export function ProjectsBlockDemo() {
   return (
@@ -46,7 +46,7 @@ The `Projects Block` component uses the following components. Make sure you have
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="projects-block-shadcnui" title="@uitripled/react-shadcn/components/sections/projects-block.tsx" />
+<ComponentSource name="projects-block-shadcnui" title="@uitripled/react-shadcn/src/components/sections/projects-block.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Projects Block` component uses the following components. Make sure you have
 ## Usage
 
 ```tsx showLineNumbers
-import { ProjectsBlock } from "@uitripled/react-shadcn/components/sections/projects-block.tsx"
+import { ProjectsBlock } from "@uitripled/react-shadcn/src/components/sections/projects-block.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { ProjectsBlock } from "@uitripled/react-shadcn/components/sections/projects-block.tsx"
+import { ProjectsBlock } from "@uitripled/react-shadcn/src/components/sections/projects-block.tsx"
 
 export function BasicExample() {
   return (

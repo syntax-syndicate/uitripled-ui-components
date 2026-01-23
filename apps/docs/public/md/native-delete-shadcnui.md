@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { NativeDelete } from "@uitripled/react-shadcn/components/native/native-delete-shadcnui.tsx"
+import { NativeDelete } from "@uitripled/react-shadcn/src/components/native/native-delete-shadcnui.tsx"
 
 export function NativeDeleteDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/native-delete-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="native-delete-shadcnui" title="@uitripled/react-shadcn/components/native/native-delete-shadcnui.tsx" />
+<ComponentSource name="native-delete-shadcnui" title="@uitripled/react-shadcn/src/components/native/native-delete-shadcnui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/native-delete-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { NativeDelete } from "@uitripled/react-shadcn/components/native/native-delete-shadcnui.tsx"
+import { NativeDelete } from "@uitripled/react-shadcn/src/components/native/native-delete-shadcnui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { NativeDelete } from "@uitripled/react-shadcn/components/native/native-delete-shadcnui.tsx"
+import { NativeDelete } from "@uitripled/react-shadcn/src/components/native/native-delete-shadcnui.tsx"
 
 export function BasicExample() {
   return (

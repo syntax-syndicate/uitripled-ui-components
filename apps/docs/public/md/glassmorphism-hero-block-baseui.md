@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { GlassmorphismHero } from "@uitripled/react-baseui/components/sections/glassmorphism-hero-block-baseui.tsx"
+import { GlassmorphismHero } from "@uitripled/react-baseui/src/components/sections/glassmorphism-hero-block-baseui.tsx"
 
 export function GlassmorphismHeroDemo() {
   return (
@@ -46,7 +46,7 @@ The `Glassmorphism Hero` component uses the following components. Make sure you 
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="glassmorphism-hero-block-baseui" title="@uitripled/react-baseui/components/sections/glassmorphism-hero-block-baseui.tsx" />
+<ComponentSource name="glassmorphism-hero-block-baseui" title="@uitripled/react-baseui/src/components/sections/glassmorphism-hero-block-baseui.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -59,7 +59,7 @@ The `Glassmorphism Hero` component uses the following components. Make sure you 
 ## Usage
 
 ```tsx showLineNumbers
-import { GlassmorphismHero } from "@uitripled/react-baseui/components/sections/glassmorphism-hero-block-baseui.tsx"
+import { GlassmorphismHero } from "@uitripled/react-baseui/src/components/sections/glassmorphism-hero-block-baseui.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -110,7 +110,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { GlassmorphismHero } from "@uitripled/react-baseui/components/sections/glassmorphism-hero-block-baseui.tsx"
+import { GlassmorphismHero } from "@uitripled/react-baseui/src/components/sections/glassmorphism-hero-block-baseui.tsx"
 
 export function BasicExample() {
   return (

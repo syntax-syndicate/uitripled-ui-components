@@ -9,7 +9,7 @@ component: true
 
 import * as React from "react"
 
-import { FAQSection } from "@uitripled/react-shadcn/components/sections/faq-section.tsx"
+import { FAQSection } from "@uitripled/react-shadcn/src/components/sections/faq-section.tsx"
 
 export function FAQSectionDemo() {
   return (
@@ -40,7 +40,7 @@ npx shadcn@latest add @uitripled/faq-section-shadcnui
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="faq-section-shadcnui" title="@uitripled/react-shadcn/components/sections/faq-section.tsx" />
+<ComponentSource name="faq-section-shadcnui" title="@uitripled/react-shadcn/src/components/sections/faq-section.tsx" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -53,7 +53,7 @@ npx shadcn@latest add @uitripled/faq-section-shadcnui
 ## Usage
 
 ```tsx showLineNumbers
-import { FAQSection } from "@uitripled/react-shadcn/components/sections/faq-section.tsx"
+import { FAQSection } from "@uitripled/react-shadcn/src/components/sections/faq-section.tsx"
 ```
 
 ```tsx showLineNumbers
@@ -101,7 +101,7 @@ The component follows accessibility best practices:
 
 import * as React from "react"
 
-import { FAQSection } from "@uitripled/react-shadcn/components/sections/faq-section.tsx"
+import { FAQSection } from "@uitripled/react-shadcn/src/components/sections/faq-section.tsx"
 
 export function BasicExample() {
   return (
