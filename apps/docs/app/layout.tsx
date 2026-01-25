@@ -6,13 +6,21 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { UILibraryProvider } from "@/components/ui-library-provider";
 import { baseMetadata, siteConfig } from "@/lib/seo";
 import type { Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { OpenPanelComponent } from '@openpanel/nextjs';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = baseMetadata;
 
@@ -67,7 +75,9 @@ export default function RootLayout({
           type="application/rss+xml"
         />
       </head>
-      <body className={inter.className}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Script
           id="structured-data"
           type="application/ld+json"

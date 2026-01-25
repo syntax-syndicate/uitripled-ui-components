@@ -402,7 +402,7 @@ export function TweetsSlider() {
                         author={tweet.author}
                         content={tweet.content}
                         url={tweet.url}
-                        className="w-[300px] sm:w-[350px] h-[205px] shrink-0 rounded-xl border border-border bg-background p-5 shadow-sm transition-all hover:shadow-md hover:border-foreground/20 backdrop-blur-none"
+                        className="w-[300px] sm:w-[350px] h-[190px] shrink-0 rounded-xl border border-border bg-background p-5 shadow-sm transition-all hover:shadow-md hover:border-foreground/20 backdrop-blur-none"
                       />
                     );
                   }
