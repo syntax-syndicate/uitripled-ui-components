@@ -15,6 +15,24 @@ function StarCount({ promise }: { promise: Promise<number> }) {
   );
 }
 
+function StarCountFallback({ digits = 3 }: { digits?: number }) {
+  return (
+    <span className="inline-flex items-center gap-1 font-medium tabular-nums">
+      <span className="sr-only">Loading star rating</span>
+      {Array.from({ length: digits }).map((_, index) => (
+        <span
+          key={`star-skeleton-${index}`}
+          className="inline-block h-[1em] w-[1ch] rounded-sm bg-muted animate-pulse"
+          aria-hidden="true"
+          style={{
+            animationDelay: `${index * 100}ms`,
+          }}
+        />
+      ))}
+    </span>
+  );
+}
+
 function fetchStarCount(): Promise<number> {
   return fetch(`https://api.github.com/repos/${GITHUB_REPO}`, {
     next: { revalidate: 3600 },
@@ -49,8 +67,8 @@ export function GithubStarButton() {
         <div className="mx-2 h-4 w-[1px] bg-border" />
 
         <div className="flex items-center gap-1 text-muted-foreground transition-colors group-hover:text-foreground">
-           <Suspense fallback={<span className="text-xs">...</span>}>
-              <StarCount promise={starCountPromise} />
+           <Suspense fallback={<StarCountFallback digits={3} />}>
+            <StarCount promise={starCountPromise} />
            </Suspense>
         </div>
       </a>
