@@ -147,10 +147,12 @@ function WorkflowConnectionLine({
     <path
       d={path}
       fill="none"
-      stroke="hsl(var(--primary))"
-      strokeWidth={2.5}
-      strokeDasharray="6,4"
-      opacity={0.5}
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeDasharray="8,6"
+      strokeLinecap="round"
+      opacity={0.35}
+      className="text-foreground"
     />
   );
 }
@@ -298,8 +300,10 @@ export function N8nWorkflowBlock() {
         >
           {/* SVG Connections */}
           <svg
-            className="absolute inset-0 pointer-events-none"
-            style={{ width: contentSize.width, height: contentSize.height }}
+            className="absolute top-0 left-0 pointer-events-none"
+            width={contentSize.width}
+            height={contentSize.height}
+            style={{ overflow: "visible" }}
             aria-hidden="true"
           >
             {connections.map((c) => (
