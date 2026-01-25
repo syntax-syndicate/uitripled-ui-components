@@ -26,8 +26,13 @@ export function NativeUserCard({
 }: NativeUserCardProps) {
   const CardContent = (
     <motion.div
-      initial={{ opacity: 0, scale: 0.98, y: 5 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
+      initial="initial"
+      animate="animate"
+      whileHover="hover"
+      variants={{
+        initial: { opacity: 0, scale: 0.98, y: 5 },
+        animate: { opacity: 1, scale: 1, y: 0 },
+      }}
       transition={{
         type: "spring",
         stiffness: 400,
@@ -42,7 +47,7 @@ export function NativeUserCard({
         <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg sm:h-12 sm:w-12">
           <Avatar className="h-full w-full rounded-lg">
             <AvatarImage src={imageSrc} alt={name} className="object-cover" />
-            <AvatarFallback>{name.charAt(0)}</AvatarFallback>
+            <AvatarFallback className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground font-semibold">{name.charAt(0)}</AvatarFallback>
           </Avatar>
         </div>
 
@@ -59,13 +64,19 @@ export function NativeUserCard({
       <div className="relative shrink-0 pl-2">
         <Button
           size="icon"
-          className="h-10 w-10 shrink-0 rounded-lg bg-primary text-primary-foreground opacity-100 transition-transform duration-300 group-hover:scale-105 sm:h-12 sm:w-12"
+          className="h-10 w-10 shrink-0 rounded-lg bg-primary text-primary-foreground opacity-100 transition-transform duration-300 sm:h-12 sm:w-12"
           asChild
         >
-          <motion.div
-            whileTap={{ scale: 0.95 }}
-          >
-            <ArrowRight className="h-3 w-3" />
+          <motion.div whileTap={{ scale: 0.95 }}>
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { x: 3 },
+              }}
+              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            >
+              <ArrowRight className="h-3 w-3" />
+            </motion.span>
           </motion.div>
         </Button>
       </div>

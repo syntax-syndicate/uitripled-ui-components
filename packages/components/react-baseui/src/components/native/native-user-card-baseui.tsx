@@ -31,8 +31,13 @@ export function NativeUserCard({
 }: NativeUserCardProps) {
   const CardContent = (
     <motion.div
-      initial={{ opacity: 0, scale: 0.98, y: 5 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
+      initial="initial"
+      animate="animate"
+      whileHover="hover"
+      variants={{
+        initial: { opacity: 0, scale: 0.98, y: 5 },
+        animate: { opacity: 1, scale: 1, y: 0 },
+      }}
       transition={transition}
       className={cn(
         "group relative flex w-full max-w-full items-center justify-between gap-4 rounded-lg border border-border bg-card p-1 transition-all duration-300",
@@ -62,12 +67,20 @@ export function NativeUserCard({
       <div className="relative shrink-0 pl-2">
         <Button
           className={cn(
-            "flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-primary text-primary-foreground opacity-100 transition-transform duration-300 group-hover:scale-105 sm:h-12 sm:w-12",
+            "flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center rounded-lg bg-primary text-primary-foreground opacity-100 transition-transform duration-300 sm:h-12 sm:w-12",
             "outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           )}
         >
           <motion.div whileTap={{ scale: 0.95 }}>
-            <ArrowRight className="h-3 w-3" />
+            <motion.span
+              className="inline-block"
+              variants={{
+                hover: { x: 3 },
+              }}
+              transition={{ type: "spring", stiffness: 400, damping: 25 }}
+            >
+              <ArrowRight className="h-3 w-3" />
+            </motion.span>
           </motion.div>
         </Button>
       </div>
