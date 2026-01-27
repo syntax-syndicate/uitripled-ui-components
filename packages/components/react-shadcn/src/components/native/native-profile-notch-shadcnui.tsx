@@ -72,28 +72,28 @@ export function NativeProfileNotch({
         animate={{
           width: isOpen ? 320 : 160,
           height: isOpen ? 380 : 60,
-          borderRadius: isOpen ? 24 : 24,
+          borderRadius: isOpen ? 32 : 32,
         }}
         transition={{
           width: {
-            delay: isOpen ? 0 : 0.3,
+            delay: isOpen ? 0 : 0.25,
             type: "spring",
             stiffness: 260,
-            damping: 20,
+            damping: 30,
           },
           height: {
-            delay: isOpen ? 0.2 : 0,
+            delay: isOpen ? 0.15 : 0,
             type: "spring",
             stiffness: 260,
-            damping: 20,
+            damping: 30,
           },
           borderRadius: {
-            delay: isOpen ? 0 : 0.3,
+            delay: isOpen ? 0 : 0.25,
             type: "spring",
             stiffness: 260,
-            damping: 20,
+            damping: 30,
           },
-          layout: { duration: 0.3 },
+          layout: { duration: 0.35, ease: "easeInOut" },
         }}
         onClick={() => !isOpen && setIsOpen(true)}
       >
@@ -102,8 +102,10 @@ export function NativeProfileNotch({
             <motion.div
               key="collapsed"
               className="absolute inset-0 flex items-center justify-center w-full h-full"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.1 }}
+              transition={{ duration: 0.2 }}
             >
               <div className="flex items-center gap-3 px-4 w-full">
                 <Avatar className="w-8 h-8 flex-shrink-0">
@@ -132,7 +134,8 @@ export function NativeProfileNotch({
               key="expanded"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.1, duration: 0.2 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               className="flex flex-col h-full relative p-6 cursor-default"
             >
               {/* Close Button */}
